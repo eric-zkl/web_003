@@ -1,0 +1,74 @@
+<!-- 黄诗捷
+按钮部件 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>divbutton</title>
+	<link rel="stylesheet" type="text/css" href="css/div.css">
+	<style type="text/css">
+		button {
+			padding: 8px 16px;
+			font-size: 14px;
+			background: #eee;
+			border: none;
+			transition: background 0.3s;
+		}
+		button:hover {
+			background: #ddd;
+		}
+		button:focus {
+			outline: none;
+		}
+
+		button.full-radius {
+			border-radius: 30px;
+		}
+		button.shadow {
+			box-shadow: 1px 1px 5px #888888;
+
+		}
+        /*按钮边框变色（蓝）*/
+        button.dark:hover {
+			animation: 30s infinite;
+			border: 2px solid lightblue;
+		}
+        /*按钮方变圆角*/	
+        button.angle{
+			transition: 2s;
+        }
+        button.angle:hover{
+			/*border-bottom-right-radius: 25px;
+			border-bottom-left-radius: 25px;*/  
+			border-radius: 35px 35px;
+		}
+		button.underline{
+			text-decoration:underline;
+			animation: 5s infinite;
+/*			text-decoration-color:red;  
+*/		}
+
+	</style>
+</head>
+<body>
+	<!-- <div class="esay"></div> -->
+
+<div class="btn-group">
+	<p>
+	    <button class="full-radius">see more</button>
+	</p>
+	<p>
+	    <button class="dark">see more</button>
+	</p>
+	<p>
+	    <button class="shadow">see more</button>
+	</p>
+	<p>
+		<button class="angle">see more</button>
+	</p>
+	<p>
+		<button class="underline">see more</button>
+	</p>
+</div>
+</body>
+</html>
