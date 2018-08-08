@@ -3,6 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-08 11:02:59
+	最后修改时间：2018-08-08 15:18:54
  */
 
 p {
@@ -14,6 +15,10 @@ p {
 	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 	border-radius: 8px;
 	overflow: hidden;
+}
+
+.card img, .card video {
+	display: block;
 }
 
 .card h2, .card p {
