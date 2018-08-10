@@ -1,0 +1,77 @@
+/*
+    适用于全局的样式表
+
+    作者：cyl
+    创建时间：2018-08-08 11:02:59
+    最后修改时间：2018-08-08 15:18:54
+ */
+
+body {
+    margin: 51px 0 0 0;
+    padding: 0;
+}
+
+/* 每个栏目 */
+body>section, footer>section {
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
+}
+
+/* 段落 */
+p {
+    text-indent: 2em;
+}
+
+/* 卡片 */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 卡片中的图片和视频 */
+.card img, .card video {
+    display: block;
+}
+
+/* 卡片中的标题和段落 */
+.card h2, .card p {
+    margin: 24px 32px;
+}
+
+/* 卡片中的标题 */
+.card h2 {
+    font-weight: normal;
+}
+
+/* 页面底部 */
+footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    color: #fff;
+    background: #2E2E2E;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    body>section, footer>section {
+        width: 750px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    body>section, footer>section {
+        width: 970px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    body>section, footer>section {
+        width: 1170px;
+    }
+}
