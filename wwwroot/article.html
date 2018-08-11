@@ -1,0 +1,128 @@
+<!-- 
+    文章页（通用）
+
+    作者：cyl
+    创建时间：2018-08-11 18:14:05
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>主页</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <!-- TODO: 需要加入Logo -->
+                    <img alt="Logo" src="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li class="active"><a href="#">经济</a></li>
+                    <li><a href="#">特色发展</a></li>
+                    <li><a href="#">困难</a></li>
+                    <li><a href="#">末专题</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 面包屑 -->
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">经济</a></li>
+            <li class="active">360：iMessage垃圾信息的泛滥已超越传统垃圾短信</li>
+        </ol>
+    </div>
+    <!-- 文章 -->
+    <article class="container">
+        <!-- 标题 -->
+        <h1>360：iMessage垃圾信息的泛滥已超越传统垃圾短信</h1>
+        <!-- 来源 -->
+        <div class="source">
+            <!-- 作者 -->
+            <span>21世纪经济报道(广州)</span>
+            <!-- 分隔符（不要往里添加内容） -->
+            <span class="delimiter"></span>
+            <!-- 发布时间 -->
+            <time>2018-08-03 07:38:58</time>
+        </div>
+        <!-- 引文 -->
+        <blockquote>
+            “批量检测用户ID、手机号”“陌生ID允许信息推送”“批量注册Apple ID”，这是苹果推信产业链生存的基础，不改变这三大现状，“苹果推信”产业链将始终存在。
+        </blockquote>
+        <!-- 正文 -->
+        <div class="text">
+            <!-- 段落 -->
+            <p>传统骚扰短信日渐式微之后，基于iMessage的垃圾信息开始迅速崛起，而且充斥着在传统短信中被封杀、屏蔽的博彩、色情、诈骗等黑色推广信息。</p>
+            <!-- 附加媒体 -->
+            <div class="figure-wrapper">
+                <figure class="card">
+                    <!-- 图片或视频 -->
+                    <img src="img/temp/planet_10-wallpaper-1920x1080.jpg">
+                    <!-- 描述文本 -->
+                    <figcaption>此处是描述文本</figcaption>
+                </figure>
+            </div>
+            <!-- 段落 -->
+            <p>近日，大量苹果用户遭垃圾信息骚扰的新闻被频繁曝光，诸如澳门赌博、世界杯赌球、彩票、色情小说、电商平台营销、P2P理财推广等等内容充斥着苹果用户的iMessage。</p>
+            <!-- 段落 -->
+            <p>传统短信经由运营商通道发送，运营商、各大手机助手会对各种违法、骚扰类信息内容进行审核、屏蔽。但iMessage则类似于苹果开发的“聊天软件”，其内容通过网络传播，苹果本身不对iMessage内容进行审查，也并不向手机助手、监管部门开放其内容，也正是因此，iMessage暂时无法借鉴传统短信的治理路径。目前，消费者只能通过在短信设置中“关闭iMessage”“开通过滤未知发件人”的方式屏蔽，这两类措施均不影响正常短信的接收。</p>
+        </div>
+    </article>
+    <!-- 翻页器 -->
+    <div class="container">
+        <div class="row">
+            <!-- 上一篇文章 -->
+            <a class="col-md-6 col-xs-12 article-turner" href="#">
+                <div class="tips">上一篇</div>
+                <div class="title">文章标题1</div>
+            </a>
+            <!-- 下一篇文章 -->
+            <a class="col-md-6 col-xs-12 article-turner" href="#">
+                <div class="tips">下一篇</div>
+                <div class="title">文章标题2</div>
+            </a>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="container">底部</footer>
+    <!-- bootcss代码库 -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/*
+	文章页的样式表
+
+	作者：cyl
+	创建时间：2018-08-11 18:15:54
+ */
+
+/* 文章 */
+article {
+	margin: 24px 0;
+}
+
+/* 文章的标题 */
+article h1 {
+}
+
+/* 文章的来源 */
+article .source {
+	margin: 8px 0;
+	font-size: 12px;
+}
+
+/* 文章来源中的分割符 */
+article .source .delimiter {
+	width: 2px;
+	height: 2px;
+	margin: 0 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #000;
+	border-radius: 1px;
+}
+
+/* 文章的引用 */
+article blockquote {
+	margin: 50px 0;
+	color: #888;
+}
+
+/* 文章的正文 */
+article .text {
+	margin: 50px 0;
+}
+
+/* 文章的段落 */
+article p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* 文章的附加媒体的包装 */
+article .figure-wrapper {
+	margin: 24px 5%;
+	display: flex;
+}
+
+/* 文章的附加媒体 */
+article figure {
+	margin: 0 auto;
+	position: relative;
+}
+
+/* 文章中附加媒体的实际元素 */
+article figure img, article figure video {
+	max-width: 100%;
+}
+
+/* 文章中附加媒体的描述文本 */
+article figure figcaption {
+	width: 100%;
+	padding: 16px;
+	color: rgba(255,255,255,0.7);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: transform 0.5s
+}
+article figure:hover figcaption {
+	transform: translateY(100%);
+}
+
+/* 文章翻页器 */
+.article-turner {
+	color: #888;
+	background: #eee;
+	padding: 15px;
+	transition: all 0.3s;
+}
+.article-turner:hover, .article-turner:focus {
+	color: #fff;
+	background-color: #FF9000;
+	text-decoration: none;
+}
+
+/* 文章翻页器的提示 */
+.article-turner .tips {
+	margin-bottom: 4px;
+}
+
+/* 文章翻页器的标题 */
+.article-turner .title {
+	font-size: 30px;
+}
