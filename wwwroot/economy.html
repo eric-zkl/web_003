@@ -16,6 +16,23 @@
             height: 500px;
             background: #F6622D;
         }
+
+        /*轮播大盒子css*/
+        .economy-broadcast-container{
+            width: 100%;
+            height: 50%;
+            /*未生效*/
+            background: #F6622D;
+
+        }
+
+        .lunbocard{
+            float: left;
+            width: 22.5%;
+            border: 30px solid #E31687;
+        }
+
+
     </style>
 </head>
 <body>
@@ -66,34 +83,43 @@
     <section class="container">XXXX</section>
     <!-- 栏目（3）轮播图片 -->
     <section class="container">
-        <div class="scrcont" style="visibility: visible; overflow: hidden;
-        position: relative;z-index: 2; left: 0px;width: 10000px;">
-            <!--left是一个变动的值-->
-            <ul style="margin:0px;padding: 0px;position: relative;
-            list-style-type: none;z-index: 1;width: 3250px;left: -555px;">
-                <li style="overflow: hidden;float: left;width: 230px;height: 170px;">
-                    <a href="http://gx.people.com.cn/n2/2018/0725/c386497-31857203.html" target="_blank">
-                        <img src="231.jpg" width="230" height="170" alt="摄影师扎根广西60年">
-                        <div></div>
-                        <span>摄影师扎根广西60年</span>
-                    </a>
-                </li>
-                <li style="overflow: hidden;float: left;width: 230px;height: 170px;">
-                    <a href="http://gx.people.com.cn/n2/2018/0725/c386497-31857203.html" target="_blank">
-                        <img src="231.jpg" width="230" height="170" alt="摄影师扎根广西60年">
-                        <div></div>
-                        <span>摄影师扎根广西60年</span>
-                    </a>
-                </li>
-                <li style="overflow: hidden;float: left;width: 230px;height: 170px;">
-                    <a href="http://gx.people.com.cn/n2/2018/0725/c386497-31857203.html" target="_blank">
-                        <img src="231.jpg" width="230" height="170" alt="摄影师扎根广西60年">
-                        <div></div>
-                        <span>摄影师扎根广西60年</span>
-                    </a>
-                </li>
-            </ul>
+
+        <!--轮播盒子容器，橘色-->
+        <div class="economy-broadcast-container">
+
+            <!--左边按钮-->
+
+            <button type="button" >
+                <div class="glyphicon glyphicon-chevron-left" ></div>
+            </button>
+
+                            <!--轮播图片-->
+             <ul>
+                    <div class="lunbocard">
+                        <img src="image\economy\231.jpg"  width="230" height="170" >
+                    </div>
+
+                    <div class="lunbocard">
+                        <img src="image\economy\231.jpg" width="230" height="170">
+                    </div>
+
+                    <div class="lunbocard">
+                        <img src="image\economy\231.jpg" width="230" height="170">
+                    </div>
+
+                    <div class="lunbocard">
+                        <img src="image\economy\231.jpg" width="230" height="170">
+                    </div>
+                </ul>
+
+            <!--右边按钮-->
+            <button type="button" >
+                <div class="glyphicon glyphicon-chevron-right" ></div>
+            </button>
+
         </div>
+
+
     </section>
     <!--&lt;!&ndash; 未来 &ndash;&gt;-->
     <!--<section class="container">未来</section>-->
