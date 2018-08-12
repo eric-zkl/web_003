@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-08 11:02:59
-    最后修改时间：2018-08-08 15:18:54
+    最后修改时间：2018-08-11 18:15:23
  */
 
 body {
@@ -11,21 +11,29 @@ body {
     padding: 0;
 }
 
-/* 每个栏目 */
+/************** 栏目 **************/
+/* 基本栏目 */
 body>section, footer>section {
-    margin: auto;
     padding-top: 52px;
     padding-bottom: 52px;
     border: 1px solid #aaa;  /* cyl - TODO: only testing; */
 }
 
-/* 段落 */
+/************** 段落 **************/
+/* 基本段落 */
 p {
     text-indent: 2em;
 }
 
+/********** 锚（超链接） ***********/
+a {
+    transition: color 0.3s;
+}
+
+/************** 卡片 **************/
 /* 卡片 */
 .card {
+    padding: 0;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     border-radius: 8px;
@@ -38,7 +46,7 @@ p {
 }
 
 /* 卡片中的标题和段落 */
-.card h2, .card p {
+.card h2, .card p, .card .button {
     margin: 24px 32px;
 }
 
@@ -47,33 +55,72 @@ p {
     font-weight: normal;
 }
 
-/* 页面底部 */
+/* 垂直卡片中的图片 */
+.card-vertical img {
+    height: 300px;
+    background-color: #eee;
+}
+
+/************** 按钮 **************/
+/* 基本按钮 */
+.button {
+    padding: 12px 24px;
+    color: inherit;
+    font-size: 14px;
+    background: #eee;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+.button:hover, .button:focus  {
+    color: inherit;
+    text-decoration: none;
+}
+.button:hover {
+    background: #ddd;
+}
+.button:focus {
+    outline: none;
+}
+
+/* 全圆角的按钮 */
+.button-fullradius {
+    border-radius: 9999999999999999px;
+}
+
+/* 带阴影的按钮 */
+.button-shadow {
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+/**************** 巨幕 ****************/
+/* 巨幕中的标题 */
+.jumbotron h1 {
+    font-size: 40px;
+}
+
+/* 巨幕中的段落 */
+.jumbotron p {
+    margin-top: 32px;
+}
+
+/* 巨幕中的按钮 */
+.jumbotron .button {
+    margin-top: 24px;
+}
+
+/*************** 面包屑 ***************/
+.breadcrumb {
+    margin: 36px 0;
+    padding: 0;
+    background: unset;
+}
+
+/************** 页面底部 **************/
 footer {
     padding-top: 56px;
     padding-bottom: 56px;
     color: #fff;
     background: #2E2E2E;
-}
-
-
-
-/* 小屏幕（平板，大于等于 768px） */
-@media (min-width: 768px) {
-    body>section, footer>section {
-        width: 750px;
-    }
-}
-
-/* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) {
-    body>section, footer>section {
-        width: 970px;
-    }
-}
-
-/* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) {
-    body>section, footer>section {
-        width: 1170px;
-    }
 }

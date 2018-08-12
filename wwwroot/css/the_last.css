@@ -1,0 +1,119 @@
+/*
+    末专题的样式表
+
+    作者：cyl
+    创建日期：2018-08-11 15:09:02
+ */
+
+/************** 定制巨幕 **************/
+#jumbotron {
+    color: #fff;
+    margin-bottom: 0;
+    background-image: linear-gradient(to right, red, transparent), url(../img/temp/planet_10-wallpaper-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbotron .button {
+    background-color: #FF851C;
+}
+#jumbotron .button:hover {
+    background-color: #FFA557;
+}
+
+/**************** 回顾解读 ****************/
+#interpretation .tab-label-bar {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#interpretation .tab-label {
+    padding: 24px 44px;
+    margin: 0 16px;
+    background-color: #eee;
+    transition: all 0.3s;
+}
+#interpretation .tab-label:hover, #interpretation .tab-label:focus {
+    color: #fff;
+    background-color: #FF5B32;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+#interpretation .tab-content {
+    position: relative;
+}
+
+#interpretation .tab-content>img {
+    width: 50%;
+    height: 300px;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#interpretation .tab-content>.card {
+    width: 60%;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+/**************** 广西转变 ****************/
+#gx_transform .col-md-4 {
+    padding: 16px;
+}
+
+/**************** 谋新局面 ****************/
+/* 聊天对话 */
+.chat-dialogue {
+    display: flex;
+    margin: 36px 0  ;
+}
+
+/* 聊天头像 */
+.chat-head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    flex-shrink: 0;
+    background-color: #eee; /* cyl - TODO: only dome */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 聊天气泡 */
+.chat-bubble {
+    max-width: 50%;
+    margin: 0 8px;
+    display: flex;
+}
+
+.chat-dialogue-left, .chat-dialogue-left .chat-bubble {
+    flex-direction: row;
+}
+.chat-dialogue-right, .chat-dialogue-right .chat-bubble {
+    flex-direction: row-reverse;
+}
+
+/* 聊天气泡的指示器（三角形） */
+.chat-dialogue .chat-bubble:before {
+    width: 0px;
+    height: 0px;
+    content: "";
+    margin-top: 40px;
+    border: 10px transparent solid;
+}
+.chat-dialogue-left .chat-bubble:before {
+    border-right: 17px #eee solid;
+}
+.chat-dialogue-right .chat-bubble:before {
+    border-left: 17px #eee solid;
+}
+
+/* 聊天信息 */
+.chat-msg {
+    padding: 24px;
+    background-color: #eee;
+    border-radius: 8px;
+}
