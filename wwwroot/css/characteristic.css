@@ -1,0 +1,72 @@
+/*
+	特色发展专题的样式表
+
+	作者：cyl
+	创建时间：2018-08-13 21:29:08
+ */
+
+/************ 数据说改革 ************/
+/* 数据组 */
+#data_list>.row {
+	margin-top: 36px;
+	margin-bottom: 8px;
+}
+
+/* 数据项 */
+#data_list .item {
+	color: #000;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+#data_list .item:hover {
+	color: #fff;
+	background: #FFC159;  /* cyl - TODO: only texting */
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 数据项的图标 */
+#data_list .item .icon {
+	width: 100px;
+	height: 100px;
+	flex-shrink: 0;
+	background: #eee;  /* cyl - TODO: only texting */
+	border-radius: 50px;  /* cyl - TODO: only texting */
+}
+
+/* 数据项的文本 */
+#data_list .item .text {
+	margin-left: 16px;
+	flex-grow: 1;
+}
+
+/* 数据项的标题 */
+#data_list .item .title {
+	font-size: 18px;
+}
+
+/* 数据项的副标题 */
+#data_list .item .subtitle {
+	margin-top: 4px;
+	color: rgba(0,0,0,0.7);
+	transition: color 0.3s;
+}
+#data_list .item:hover .subtitle {
+	color: rgba(255,255,255,0.7);
+}
+
+/* 数据项的指示器（一般是箭头） */
+#data_list .item .indicator {
+	margin-right: 16px;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.3s;
+}
+#data_list .item:hover .indicator {
+	opacity: 1;
+	margin-left: 16px;
+	margin-right: 0;
+}
