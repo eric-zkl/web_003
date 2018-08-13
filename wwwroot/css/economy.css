@@ -2,113 +2,75 @@
 经济栏样式
 作者：Hshijie
 时间：2018.8.12
+最后修改时间：2018-08-13 15:20:25 cyl
 */
 
-/*第一栏专题*/
-
-.econnmy-fbox{
+/*********** 经济特区 **********/
+#special_economic_zone .col-md-4 {
     padding: 16px;
-    background-color: #b1b3b5;
-    float: left;
 }
-.econnmy-card1{
-    padding: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    border-radius: 8px;
+
+/*********** 第二栏 **********/
+/* 每个部分 */
+#second_part .pane {
+    margin-top: 24px;
     overflow: hidden;
+}
+
+/* 卡片 */
+#second_part .pane .card {
+    width: 30%;
+    margin: 36px 0;
     float: left;
 }
-* 卡片中的图片和视频 */
-.econnmy-card1 img, .econnmy-card1 video {
-    display: block;
-}
 
-/* 卡片中的标题和段落 */
-.econnmy-card1 h2, .econnmy-card1 p, .econnmy-card1 .button {
-    margin: 24px 32px;
-}
-
-/* 卡片中的标题 */
-.econnmy-card1 h2 {
-    font-weight: normal;
-}
-
-/* 垂直卡片中的图片 */
-.econnmy-card1 img {
-    height: 300px;
-    background-color: #eee;
-}
-
-/*
-第二栏目专题
-
-需要修改：
-       文本新闻文字排版问题
-       “了解更多”没做好
- */
-
-/*一级标题*/
-.econnmy-sbox{
-    padding: 10px;
-    background:#8f949a;
-}
-/*二级标题*/
-.econnmy-card2{
-    margin: 20px 10px 10px 10px;
-    border-radius: 10px;
-    width: 1079px;
-    height: 240px;
-    background: white;
-    position: relative;
-    /*!*left: 30px;*!*/
-    /*!*top: 20px;*!*/
-
-}
-/*链接图片*/
-.econnmy-img{
-    border-radius: 10px;
-    width: 400px;
-    height: 168px;
-    box-shadow:5px 5px 10px #888888;
-    text-align: center;
-    background-color:#8f949a;
-    float:left;
-    position: relative;
-    left: -10px;
-    top: 20px;
-}
-/*存放新闻盒子*/
-.econnmy-pbox{
-    border-radius: 10px;
-    width: 600px;
-    height: 240px;
-    float:right;
-    background-color: white;
-
-}
-
-/*了解更多*/
-.pbox-link{
-    float: right;
-    text-align: center;
-    text-decoration:underline;
-    /*padding: 10px 5px 5px;*/
-    margin: 80px;
-}
-
-/*第三栏
-轮播大盒子css,,,,橘色高度未生效，隐藏图片功能没有做，按钮没有居中设置*/
-.economy-broadcast-container{
+/* 卡片里的图片 */
+#second_part .pane .card img {
     width: 100%;
-    height: 50%;
-    background:#b1b3b5;
-}
-/*轮播修饰*/
-.lunbocard{
-    float: left;
-    width: 22.5%;
-    border: 30px solid #8f949a;
 }
 
+/* 卡片里的描述 */
+#second_part .pane .text {
+    padding: 16px 32px 16px 30%;
+    margin-left: 36px;
+    background: #f8f8f8;
+    height: 100%;
+}
 
+/* 卡片描述里的标题 */
+#second_part .pane .text h2 {
+    margin-bottom: 24px;
+}
+
+/* 卡片的按钮栏 */
+#second_part .pane .action-bar {
+    margin: 24px 0 16px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+/* 卡片的按钮 */
+#second_part .pane .action {
+    color: #000;
+    float: right;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: #000 2px solid;
+}
+
+/*********** 第三栏 **********/
+/* 轮播 */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* 轮播页面 */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+}
