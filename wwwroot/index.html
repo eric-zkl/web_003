@@ -1,0 +1,240 @@
+<!-- 
+    首页
+
+    作者：cyl
+    创建时间：2018-08-12 12:04:25
+    最后修改时间：2018-08-13 10:23:56
+
+    备注：现代栏目的轮播只是有样子，没有效果。
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .top-pic-col {
+            height: 500px;
+            background: #F6622D;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <!-- TODO: 需要加入Logo -->
+                    <img alt="Logo" src="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">经济</a></li>
+                    <li><a href="#">特色发展</a></li>
+                    <li><a href="#">困难</a></li>
+                    <li><a href="#">末专题</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 头版大图 -->
+    <section class="container top-pic-col">头版大图</section>
+    <!-- 视频 -->
+    <section class="container">
+        <!-- 标签栏 -->
+        <ul id="video_tab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#video_01" data-toggle="tab">视频标题1</a>
+            </li>
+            <li><a href="#video_02" data-toggle="tab">视频标题2</a></li>
+        </ul>
+        <!-- 标签页内容 -->
+        <div id="video_tab_content" class="tab-content">
+            <!-- 标签页01 -->
+            <div class="container-fluid tab-pane fade in active" id="video_01">
+                <div class="row">
+                    <!-- 卡片 -->
+                    <div class="col-md-6 card">
+                        <!-- 视频 -->
+                        <video src="" controls="controls"></video>
+                    </div>
+                    <!-- 简述文本 -->
+                    <div class="col-md-6 text">
+                        <!-- 段落 -->
+                        <p>两只老虎两只老虎跑得快，跑得快，一只没有眼睛一只没有耳朵真奇怪真奇怪</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 标签页02 -->
+            <div class="container-fluid tab-pane fade" id="video_02">
+                <div class="row">
+                    <!-- 卡片 -->
+                    <div class="col-md-6 card">
+                        <!-- 视频 -->
+                        <video src="" controls="controls"></video>
+                    </div>
+                    <!-- 简述文本 -->
+                    <div class="col-md-6 text">
+                        <!-- 段落 -->
+                        <p>两只老虎两只老虎跑得快，跑得快，一只没有眼睛一只没有耳朵真奇怪真奇怪</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 历史 -->
+    <section class="container">
+        <h1>历史</h1>
+        <div id="history_collapse" class="c-collapse-container">
+            <div class="c-collapse">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+            <div class="c-collapse active">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+            <div class="c-collapse">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+            <div class="c-collapse">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+            <div class="c-collapse">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+            <div class="c-collapse">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>一些文字简述</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 现代 -->
+    <section class="container">
+        <h1>现代</h1>
+        <div id="contemporary_carousel">
+            <div class="card slide slide-3"></div>
+            <div class="card slide slide-2"></div>
+            <div class="card slide slide-1"></div>
+        </div>
+    </section>
+    <!-- 未来 -->
+    <section class="container">
+        <h1>未来</h1>
+        <div id="future_tab">
+            <div class="tab-content">
+                <!-- 标签页01 -->
+                <div id="future_card_01" class="card container-fluid tab-pane fade in active " style="background-image: linear-gradient(to left, #fff 40%, transparent), url(img/temp/W020180601351337931192.jpg);">
+                    <div class="text text-dark">
+                        <h2>二级标题1</h2>
+                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
+                    </div>
+                </div>
+                <!-- 标签页02 -->
+                <div id="future_card_02" class="card container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(img/temp/W020180601351337931192.jpg);">
+                    <div class="text text-dark">
+                        <h2>二级标题2</h2>
+                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
+                    </div>
+                </div>
+                <!-- 标签页03 -->
+                <div id="future_card_03" class="card container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(img/temp/W020180601351337931192.jpg);">
+                    <div class="text text-dark">
+                        <h2>二级标题3</h2>
+                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
+                    </div>
+                </div>
+                <!-- 标签页04 -->
+                <div id="future_card_04" class="card container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(img/temp/W020180601351337931192.jpg);">
+                    <div class="text text-dark">
+                        <h2>二级标题4</h2>
+                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
+                    </div>
+                </div>
+                <!-- 标签页05 -->
+                <div id="future_card_05" class="card container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(img/temp/W020180601351337931192.jpg);">
+                    <div class="text text-dark">
+                        <h2>二级标题5</h2>
+                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 标签栏 -->
+            <ul class="container-fluid row tab">
+                <!-- 标签01 -->
+                <li class="col-sm-4 col-xs-6 active">
+                    <a href="#future_card_01" data-toggle="tab">标题1</a>
+                </li>
+                <!-- 标签02 -->
+                <li class="col-sm-4 col-xs-6">
+                    <a href="#future_card_02" data-toggle="tab">标题2</a>
+                </li>
+                <!-- 标签03 -->
+                <li class="col-sm-4 col-xs-6">
+                    <a href="#future_card_03" data-toggle="tab">标题3</a>
+                </li>
+                <!-- 标签04 -->
+                <li class="col-sm-4 col-sm-offset-2 col-xs-6">
+                    <a href="#future_card_04" data-toggle="tab">标题4</a>
+                </li>
+                <!-- 标签05 -->
+                <li class="col-sm-4 col-xs-6">
+                    <a href="#future_card_05" data-toggle="tab">标题5</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="container">底部</footer>
+    <!-- bootcss代码库 -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/*
+    首页的样式表
+
+    作者：cyl
+    创建时间：2018-08-13 10:23:36
+ */
+
+/************ 视频标签页 ************/
+/* 标签栏 */
+#video_tab {
+    font-size: 24px;
+}
+
+/* 标签 */
+#video_tab a {
+    padding: 4px 24px 2px;
+    margin: 0;
+    color: rgba(0,0,0,0.3);
+    border: unset;
+    border-bottom: 2px transparent solid;
+    transition: all 0.3s;
+}
+#video_tab a:hover {
+    border-bottom-color: rgba(0,0,0,0.3);
+    background: unset;
+}
+
+/* 激活的标签 */
+#video_tab .active a {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+/* 标签页内容 */
+#video_tab_content {
+    margin-top: 36px;
+}
+
+/* 标签页内的视频 */
+#video_tab_content .card video {
+    width: 100%;
+}
+
+/* 标签页内的文本 */
+#video_tab_content .text {
+    padding-top: 24px;
+}
+
+/************ 手风琴 ************/
+/* 手风琴容器 */
+.c-collapse-container {
+    height: 60vh;
+    display: flex;
+}
+
+/* 手风琴 */
+.c-collapse {
+    width: 5%;
+    margin: 0 8px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    background-color: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex-grow 0.3s;
+}
+/* 手风琴-奇数 */
+.c-collapse:nth-of-type(odd) {
+    margin-bottom: 24px;
+}
+/* 手风琴-偶数 */
+.c-collapse:nth-of-type(even) {
+    margin-top: 24px;
+}
+
+/* 激活的手风琴 */
+.c-collapse-container .active {
+    flex-grow: 1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 手风琴的文本块 */
+.c-collapse .text {
+    width: 100%;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+.c-collapse-container .active:hover .text, .c-collapse-container .active:focus .text {
+    transform: unset;
+}
+
+/* 自定义手风琴 */
+#history_collapse {
+    margin: 36px 0;
+}
+
+/************* 现代轮播 *************/
+#contemporary_carousel {
+    height: 50vh;
+    margin: 36px 0 16px;
+    position: relative;
+}
+
+#contemporary_carousel .slide {
+    position: absolute;
+    background-color: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contemporary_carousel .slide-1 {
+    top: 0px;
+    right: 0px;
+    bottom: 32px;
+    left: 0px;
+    transition: transform 0.5s;
+}
+#contemporary_carousel .slide-1:hover {
+    transform: translateX(10%);
+}
+
+#contemporary_carousel .slide-2 {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    opacity: 0.66;
+}
+
+#contemporary_carousel .slide-3 {
+    top: 32px;
+    right: 32px;
+    bottom: 0px;
+    left: 32px;
+    opacity: 0.33;
+}
+
+/************* 未来标签页 *************/
+/* 未来标签页整体 */
+#future_tab {
+    margin: 52px 0 16px;
+}
+
+/* 标签页内容中的卡片 */
+#future_tab .tab-content .card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 标签页内容中卡片的文本 */
+#future_tab .tab-content .card .text {
+    width: 50%;
+    padding: 24px 0;
+    float: right;
+}
+
+/* 标签页内容中的亮色文本 */
+#future_tab .text-light {
+    color: rgba(255,255,255,0.7);
+}
+/* 标签页内容中的暗色文本 */
+#future_tab .text-dark {
+    color: rgba(0,0,0,0.7);
+}
+
+/* 标签栏 */
+#future_tab .tab {
+    padding: 0;
+    margin: 24px 0;
+}
+
+/* 标签 */
+#future_tab .tab li {
+    margin-top: 32px;
+    list-style: none;
+}
+
+/* 标签的锚 */
+#future_tab .tab li>a {
+    width: 10vw;
+    height: 10vw;
+    line-height: 10vw;
+    margin: auto;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #eee;
+    border-radius: 5vw;
+    transition: border-radius 0.3s;
+}
+
+/* 激活的标签的锚 */
+#future_tab .tab li.active>a {
+    border-radius: 1vw;
+}
