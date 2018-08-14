@@ -3,6 +3,7 @@
 
     作者：cyl
     创建日期：2018-08-11 15:09:02
+    最后修改时间：2018-08-14 16:02:42;
  */
 
 /************** 定制巨幕 **************/
@@ -10,8 +11,6 @@
     color: #fff;
     margin-bottom: 0;
     background-image: linear-gradient(to right, red, transparent), url(../img/temp/planet_10-wallpaper-1920x1080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #jumbotron .button {
@@ -41,30 +40,39 @@
 }
 
 #interpretation .tab-content {
-    position: relative;
+    display: flex;
+    align-items: flex-start;
 }
 
-#interpretation .tab-content>img {
+#interpretation .tab-content>.img {
     width: 50%;
     height: 300px;
     background-color: #eee;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex-shrink: 0;
 }
 
 #interpretation .tab-content>.card {
     width: 60%;
-    position: absolute;
-    top: 24px;
-    right: 0;
+    margin-top: 24px;
+    margin-left: -10%;
+    flex-shrink: 0;
 }
 
 /**************** 广西转变 ****************/
-#gx_transform .col-md-4 {
+#gx_transform .row {
+    margin-top: 36px;
+}
+
+#gx_transform .row>.col-md-4 {
     padding: 16px;
 }
 
 /**************** 谋新局面 ****************/
+/* 聊天 */
+#new_situation .chat {
+    margin-top: 50px;
+}
+
 /* 聊天对话 */
 .chat-dialogue {
     display: flex;
@@ -78,8 +86,6 @@
     border-radius: 50px;
     flex-shrink: 0;
     background-color: #eee; /* cyl - TODO: only dome */
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* 聊天气泡 */

@@ -3,6 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-13 21:29:08
+	最后修改时间：2018-08-14 16:03:24;
  */
 
 /************ 数据说改革 ************/
@@ -33,7 +34,7 @@
 	width: 100px;
 	height: 100px;
 	flex-shrink: 0;
-	background: #eee;  /* cyl - TODO: only texting */
+	background-color: #eee;  /* cyl - TODO: only texting */
 	border-radius: 50px;  /* cyl - TODO: only texting */
 }
 

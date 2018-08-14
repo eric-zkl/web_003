@@ -3,9 +3,23 @@
 
     作者：cyl
     创建时间：2018-08-08 11:02:59
-    最后修改时间：2018-08-11 18:15:23
+    最后修改时间：2018-08-14 16:02:50;
  */
 
+/************** 通用 **************/
+/* 产生圆角 */
+.fillet {
+    border-radius: 8px;
+}
+
+/* 背景用于显示图片 */
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/************ 页面外观 ************/
 body {
     margin: 51px 0 0 0;
     padding: 0;
@@ -16,7 +30,7 @@ body {
 body>section, footer>section {
     padding-top: 52px;
     padding-bottom: 52px;
-    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
+/*    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
 }
 
 /************** 段落 **************/
@@ -31,17 +45,21 @@ a {
 }
 
 /************** 卡片 **************/
-/* 卡片 */
+/* 普通卡片 */
 .card {
     padding: 0;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    border-radius: 8px;
     overflow: hidden;
 }
 
+/* 扁平卡片 */
+.card-flat {
+    box-shadow: none;
+}
+
 /* 卡片中的图片和视频 */
-.card img, .card video {
+.card .img, .card video {
     display: block;
 }
 
@@ -56,7 +74,7 @@ a {
 }
 
 /* 垂直卡片中的图片 */
-.card-vertical img {
+.card-vertical .img {
     height: 300px;
     background-color: #eee;
 }
