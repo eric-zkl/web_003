@@ -3,8 +3,42 @@
 
 	作者：cyl
 	创建时间：2018-08-13 21:29:08
-	最后修改时间：2018-08-14 16:03:24;
+	最后修改时间：2018-08-15 12:21:11
  */
+
+/************** 蜂巢 **************/
+/* 蜂巢 */
+.hive {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 86px;
+}
+
+/* 六边形 */
+.hive .hexagon {
+	width: 300px;
+	height: 360px;
+	margin: 0 8px -86px;
+	overflow: hidden;
+	transform:rotate(120deg);
+}
+
+/* 六边形的矩形（剪切）蒙板 */
+.hive .hexagon .mask {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transform:rotate(-60deg);
+}
+
+/* 六边形的图片 */
+.hive .hexagon .img {
+    width: 100%;
+    height: 100%;
+	background-color: #eee;  /* cyl - TODO: only testing */
+}
 
 /************ 数据说改革 ************/
 /* 数据组 */
