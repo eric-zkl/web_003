@@ -2,7 +2,7 @@
 经济栏样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-14 16:03:11 cyl
+最后修改时间：2018-08-16 16:16:39 cyl
 */
 
 /*********** 经济特区 **********/
@@ -59,6 +59,57 @@
 }
 
 /*********** 第三栏 **********/
+/* 文章列表 */
+#article_list {
+    padding: 0;
+    margin-top: 24px;
+}
+
+/* 文章列表选项 */
+#article_list li {
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+/* 列表项的链接 */
+#article_list li>a {
+    color: #000;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s;
+}
+#article_list li>a:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 列表项的图标 */
+#article_list li .icon {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+/* 列表项的文本 */
+#article_list li .text {
+    margin: 4px 0 4px 16px;
+}
+
+/* 列表项的标题 */
+#article_list li .title {
+    font-size: 16px;
+}
+
+/* 列表项的副标题 */
+#article_list li .subtitle {
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+/*********** 第四栏 **********/
 /* 轮播 */
 .swiper-container {
     width: 100%;

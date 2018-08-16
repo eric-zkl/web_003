@@ -27,7 +27,7 @@ body {
 
 /************** 栏目 **************/
 /* 基本栏目 */
-body>section, footer>section {
+section {
     padding-top: 52px;
     padding-bottom: 52px;
 /*    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
@@ -35,7 +35,7 @@ body>section, footer>section {
 
 /************** 标题 **************/
 /* 基本一级标题 */
-body>section>h1 {
+section>h1 {
     padding-bottom: 8px;
     border-bottom: #aaa solid 1px;
 }
