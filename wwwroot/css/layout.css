@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-08 11:02:59
-    最后修改时间：2018-08-14 16:02:50;
+    最后修改时间：2018-08-16 11:00:25;
  */
 
 /************** 通用 **************/
@@ -31,6 +31,13 @@ body>section, footer>section {
     padding-top: 52px;
     padding-bottom: 52px;
 /*    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
+}
+
+/************** 标题 **************/
+/* 基本一级标题 */
+body>section>h1 {
+    padding-bottom: 8px;
+    border-bottom: #aaa solid 1px;
 }
 
 /************** 段落 **************/

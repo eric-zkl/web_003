@@ -1,0 +1,130 @@
+/*
+	改革攻坚专题的样式表
+
+	作者：cyl
+	创建时间：2018-08-15 14:50:06;
+	最后修改时间：2018-08-16 11:01:36;
+ */
+
+/*********** 深化改革 **********/
+/* 标签页内容 */
+#video_reform {
+    margin-top: 36px;
+}
+
+/* 标签页内的视频 */
+#video_reform .card video {
+    width: 100%;
+}
+
+/* 标签页内的文本 */
+#video_reform .text {
+    padding-top: 24px;
+}
+
+/********** “政”在进行 *********/
+/* 图片 */
+#gov_online img {
+	width: 100%;
+}
+
+/* 第一列 */
+#gov_online>.col-md-6:first-child {
+	margin-top: 36px;
+}
+
+/*********** 扶贫攻坚 **********/
+/* 整个版块 */
+#aid_the_poor {
+	margin-top: 36px;
+}
+
+/* 版块 */
+#aid_the_poor .part {
+	margin-bottom: 30px;
+	display: block;
+}
+
+/* 图片版块 */
+#aid_the_poor .part-img {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+#aid_the_poor .part-img:hover {
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 图片版块的图片 */
+#aid_the_poor .part-img .img {
+	width: 100%;
+	height: 200px;
+	flex-shrink: 0;
+	background-color: #eee;
+	transition: transform 0.3s;
+}
+#aid_the_poor .part-img:hover .img {
+	transform: scale(1.1);
+}
+
+/* 图片版块的文本 */
+#aid_the_poor .part-img .text {
+	width: 100%;
+	padding: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+	justify-content: center;
+	align-items: center;
+	transform: translateY(100%);
+	transition: transform 0.3s;
+}
+#aid_the_poor .part-img:hover .text {
+	transform: none;
+}
+
+/* 纵向版块的包装 */
+/*#aid_the_poor .part-v .part-wrapper {
+	padding: 16px 36px;
+	background: #f6f6f6;
+}*/
+
+/* 纵向版块中的视频 */
+#aid_the_poor .part-v video {
+	width: 100%;
+}
+
+/*********** 广西生态 **********/
+/* 按钮栏 */
+#ecology_tab .button-bar {
+	margin: 36px 8px;
+	text-align: center;
+}
+
+/* 按钮 */
+#ecology_tab .button {
+	margin: 0 16px;
+	border: 1px #333 solid;
+	background: unset;
+	transition: all 0.3s;
+}
+#ecology_tab .button:hover {
+	color: #fff;
+	border-color: #FF3E00;
+	background: #FF3E00;
+}
+
+/* 二级标题 */
+#ecology_tab h2 {
+	margin: 16px 0 16px;
+	color: #444;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+/* 视频 */
+#ecology_tab video {
+	width: 100%;
+}
