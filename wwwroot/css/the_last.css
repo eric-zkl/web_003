@@ -3,16 +3,18 @@
 
     作者：cyl
     创建日期：2018-08-11 15:09:02
-    最后修改时间：2018-08-14 16:02:42;
+    最后修改时间：2018-08-16 17:51:26
  */
 
 /************** 定制巨幕 **************/
+/* 巨幕 */
 #jumbotron {
     color: #fff;
     margin-bottom: 0;
     background-image: linear-gradient(to right, red, transparent), url(../img/temp/planet_10-wallpaper-1920x1080.jpg);
 }
 
+/* 巨幕的按钮 */
 #jumbotron .button {
     background-color: #FF851C;
 }
@@ -21,12 +23,14 @@
 }
 
 /**************** 回顾解读 ****************/
+/* 标签栏 */
 #interpretation .tab-label-bar {
     margin: 60px 0;
     display: flex;
     justify-content: center;
 }
 
+/* 标签 */
 #interpretation .tab-label {
     padding: 24px 44px;
     margin: 0 16px;
@@ -39,11 +43,13 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
+/* 标签页 */
 #interpretation .tab-content {
     display: flex;
     align-items: flex-start;
 }
 
+/* 标签页中的图片 */
 #interpretation .tab-content>.img {
     width: 50%;
     height: 300px;
@@ -51,6 +57,7 @@
     flex-shrink: 0;
 }
 
+/* 标签页中的卡片 */
 #interpretation .tab-content>.card {
     width: 60%;
     margin-top: 24px;
@@ -59,10 +66,12 @@
 }
 
 /**************** 广西转变 ****************/
+/* 整体 */
 #gx_transform .row {
     margin-top: 36px;
 }
 
+/* 每列 */
 #gx_transform .row>.col-md-4 {
     padding: 16px;
 }
