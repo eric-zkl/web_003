@@ -1,0 +1,111 @@
+/*
+	八桂人物专题
+
+	作者：cyl
+	创建日期：2018-08-16 17:38:34
+ */
+
+/************ 中央综合推荐 ************/
+/* 视频 */
+#video_recommend .video-wrapper video {
+    width: 100%;
+}
+
+/* 文本 */
+#video_recommend .text {
+    padding-top: 24px;
+}
+
+/************* 热点链接 *************/
+/* 文章列表 */
+#hot_list {
+    padding: 0;
+    margin-top: 24px;
+}
+
+/* 文章列表选项 */
+#hot_list li {
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+/* 列表项的链接 */
+#hot_list li>a {
+    color: #000;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s;
+}
+#hot_list li>a:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 列表项的图标 */
+#hot_list li .icon {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+/* 列表项的文本 */
+#hot_list li .text {
+    margin: 4px 0 4px 16px;
+}
+
+/* 列表项的标题 */
+#hot_list li .title {
+    font-size: 16px;
+}
+
+/* 列表项的副标题 */
+#hot_list li .subtitle {
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+/*************** 风采 ***************/
+/* 标签栏 */
+#mien_tab .tab-label-bar {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 标签 */
+#mien_tab .tab-label {
+    padding: 24px 44px;
+    margin: 0 16px;
+    background-color: #eee;
+    transition: all 0.3s;
+}
+#mien_tab .tab-label:hover, #mien_tab .tab-label:focus {
+    color: #fff;
+    background-color: #FF5B32;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 标签页 */
+#mien_tab .tab-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 标签页中的图片 */
+#mien_tab .tab-content>.img {
+    width: 50%;
+    height: 300px;
+    background-color: #eee;
+    flex-shrink: 0;
+}
+
+/* 标签页中的卡片 */
+#mien_tab .tab-content>.card {
+    width: 60%;
+    margin-top: 24px;
+    margin-left: -10%;
+    flex-shrink: 0;
+}
