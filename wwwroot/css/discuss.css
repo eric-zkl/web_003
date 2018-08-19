@@ -3,146 +3,149 @@
 
 	作者：cyl
 	创建时间：2018-08-18 16:10:05
+	最后修改时间：2018-08-19 21:34:57
  */
 
-/************** 引用 **************/
-/* 引用 */
-.quotation {
+/******  图文展示 - 横向宽屏  ******/
+/* 横向图文展示 */
+.text-show-fh {
 	margin-top: 36px;
 }
 
-/* 引用主要部分 */
-.quotation .main {
-	padding: 72px 64px;
-	color: #eee;
-	font-size: 34px;
-	font-weight: bold;
-	background: #2D364D;
-}
-.quotation .main:before, .quotation .main:after {
-	color: #46CFF0;
-}
-.quotation .main:before {
-	padding-right: 4px;
-	content: "“";
-}
-.quotation .main:after {
-	padding-left: 4px;
-	content: "”";
+/* 文本 */
+.text-show-fh .text {
 }
 
-/* 引用详细部分 */
-.quotation .detailed {
-	margin-top: 52px;
-	padding: 36px;
+/* 图片 */
+.text-show-fh .img {
+	height: 200px;
+	background-color: #eee;
+}
+
+/******** 图文展示 - 瀑布流 ********/
+/* 瀑布流图文展示 */
+.img-show-wf {
+	margin-top: 26px;
+}
+
+/* 文本 */
+.img-show-wf .text {
+	padding-top: 15px;
+	padding-right: 6%;
+}
+
+/* 图片包装 */
+.img-show-wf .img-wrapper {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.img-show-wf .img-wrapper:nth-child(2) {
+}
+.img-show-wf .img-wrapper:nth-child(3) {
+	margin-top: 120px;
+}
+.img-show-wf .img-wrapper:nth-child(4) {
+	margin-top: -50px;
+}
+.img-show-wf .img-wrapper:nth-child(5) {
+	margin-top: -180px;
+}
+.img-show-wf .img-wrapper:nth-child(6) {
+	margin-top: -120px;
+}
+.img-show-wf .img-wrapper:nth-child(7) {
+	margin-top: -60px;
+	margin-right: 1px;
+}
+
+/* 图片 */
+.img-show-wf .img {
+	height: 240px;
+	background-color: #eee;
+}
+
+/************** 评论 **************/
+/* 评论 */
+.comment {
+	display: flex;
+}
+
+/* 时间线 */
+.comment .timeline {
+	width: 1px;
+	margin: 0 8px;
+	background: red;
+	position: relative;
+	flex-shrink: 0;
+}
+.comment .timeline:before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: 36px 0 0 -6px;
+	background: #fff;
+	border: red 2px solid;
+	border-radius: 6px;
+	display: block;
+	position: absolute;
+}
+
+/* 文本包装 */
+.comment .text-wrapper {
+	display: flex;
+}
+.comment .text-wrapper:before {
+	content: "";
+	margin-top: 34px;
+	border: transparent 8px solid;
+	border-right-color: #eee;
+	flex-shrink: 0;
+	align-self: flex-start;
+}
+
+/* 文本 */
+.comment .text {
+	padding: 16px 32px;
+	margin: 16px 0;
 	background: #eee;
 }
 
-/* 引用的标题 */
-.quotation .detailed h2 {
-	color: #2667AC;
-	margin: 24px 0;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-/* 引用的详细段落 */
-.quotation .detailed p {
-	margin-top: 30px;
-}
-
-/* 引用来源 */
-.quotation .detailed .source {
-	margin-top: 16px;
-	display: flex;
-	justify-content: flex-end;	
-	align-items: center;
-}
-
-/* 引用来源的头像 */
-.quotation .detailed .source .head {
-	width: 40px;
-	height: 40px;
-	background-color: #fff;
-	border: #f8f8f8 4px solid;
-	border-radius: 20px;
-	flex-shrink: 0;
-}
-
-/* 引用来源的姓名 */
-.quotation .detailed .source .name {
-	margin-left: 16px;
-	color: #666;
-	font-size: 16px;
-}
-
-/*********** 图文展示 - 纵向 ***********/
-/* 图文展示 */
-.text-show-v {
-	margin-top: 36px;
-}
-
-/* 图文条目 */
-.text-show-v .item {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	transition: transform 0.3s;
-}
-.text-show-v .item:hover {
-	transform: translateY(-8px);
-}
-
-/* 六边形 */
-.text-show-v .item .hexagon {
-	width: 200px;
-	height: 240px;
-	margin: 36px auto;
-	overflow: hidden;
-	transform: rotate(120deg);
-}
-
-/* 六边形的矩形（剪切）蒙板 */
-.text-show-v .item .hexagon .mask {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	transform:rotate(-60deg);
-}
-
-/* 六边形的图片 */
-.text-show-v .item .hexagon .img {
-    width: 100%;
-    height: 100%;
-	background-color: #eee;  /* cyl - TODO: only testing */
-	transition: transform 0.3s;
-}
-.text-show-v .item:hover .hexagon .img {
-	transform: scale(1.1);
-}
-
-/* 图文标题 */
-.text-show-v .item h2 {
-	margin: 16px 0;
+/* 标题 */
+.comment .text h2 {
+	margin: 8px 0;
 	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
 }
 
-/********* 图文展示 - 横向 *********/
+/* 段落 */
+.comment .text p {
+	opacity: 0.8;
+}
+
+/* 活动 */
+.comment .action {
+    color: #000;
+    float: right;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: #000 2px solid;
+}
+
+/******* 图文展示 - 横向窄的 *******/
 /* 图文展示 */
-.text-show-h {
+.text-show-sh {
 	margin-top: 36px;
 }
 
 /* 图文条目 */
-.text-show-h .item {
+.text-show-sh .item {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	display: flex;
 }
 
 /* 图片 */
-.text-show-h .item .img {
+.text-show-sh .item .img {
 	width: 160px;
 	min-height: 260px;
 	background-color: #eee;
@@ -150,43 +153,34 @@
 }
 
 /* 文本 */
-.text-show-h .item .text {
+.text-show-sh .item .text {
 	margin-left: 24px;
 }
 
 /* 文本标题 */
-.text-show-h .item h2 {
+.text-show-sh .item h2 {
 	margin: 16px 0 24px;
 }
 
-/************* 图片墙 *************/
-/* 图片墙 */
-#img_wall {
+/******* 轮播 *******/
+/* 轮播 */
+.swiper-container {
+	height: 200px;
 	margin-top: 36px;
 }
 
-/* 图片 */
-#img_wall .img {
-	height: 250px;
-	padding: 0;
-	background-color: #eee;
-	overflow: hidden;
+/* 轮播图片 */
+.swiper-container .img {
+	width: 300px;
 }
 
-/* 图片的信息 */
-#img_wall .img>.msg {
-	height: 100%;
-	padding: 16px;
+/* 轮播信息 */
+.swiper-container .msg {
 	color: #fff;
-	background-color: rgba(0,0,0,0.6);
-	font-size: 16px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform: scale(1.5);
-	transition: all 0.5s ease-out;
-}
-#img_wall .img:hover>.msg {
-	opacity: 0;
-	transform: unset;
+	padding: 8px 16px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
