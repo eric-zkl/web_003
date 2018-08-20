@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-16 11:01:36;
+	最后修改时间：2018-08-20 17:14:30
  */
 
 /*********** 深化改革 **********/
@@ -98,19 +98,26 @@
 
 /*********** 广西生态 **********/
 /* 按钮栏 */
-#ecology_tab .button-bar {
+#ecology_tab .nav-tabs {
 	margin: 36px 8px;
-	text-align: center;
+	border: none;
+	display: flex;
+	justify-content: center;
 }
 
 /* 按钮 */
-#ecology_tab .button {
+#ecology_tab .tab-button {
+    padding: 12px 24px;
 	margin: 0 16px;
-	border: 1px #333 solid;
+    color: inherit;
+    font-size: 14px;
 	background: unset;
+	border: 1px #333 solid;
+    border-radius: 9999999999999px;
+    display: inline-block;
 	transition: all 0.3s;
 }
-#ecology_tab .button:hover {
+#ecology_tab .tab-button:hover, #ecology_tab .active .tab-button {
 	color: #fff;
 	border-color: #FF3E00;
 	background: #FF3E00;

@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-15 14:50:59
-    最后修改时时间：2018-08-16 11:02:37
+    最后修改时时间：2018-08-20 17:14:42
  -->
 
 <!DOCTYPE html>
@@ -163,17 +163,44 @@
     <section class="container">
         <h1>60秒生态</h1>
         <div id="ecology_tab">
-            <div class="button-bar">
-                <a class="button button-fullradius" href="#">标签1</a>
-                <a class="button button-fullradius" href="#">标签2</a>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>看60秒广西生态</h2>
-                    <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+            <!-- 标签栏 -->
+            <ul class="nav nav-tabs">
+                <!-- 标签1 -->
+                <li class="active">
+                    <a class="tab-button" href="#tab_01" data-toggle="tab">标签1</a>
+                </li>
+                <!-- 标签2 -->
+                <li>
+                    <a class="tab-button" href="#tab_02" data-toggle="tab">标签2</a>
+                </li>
+            </ul>
+            <!-- 标签页内容 -->
+            <div class="tab-content">
+                <!-- 页面1 -->
+                <div class="row container-fluid tab-pane fade in active" id="tab_01">
+                    <!-- 文本部分 -->
+                    <div class="col-md-6">
+                        <h2>看60秒广西生态</h2>
+                        <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                    </div>
+                    <!-- 媒体部分 -->
+                    <div class="col-md-6">
+                        <!-- 视频 -->
+                        <video class="card fillet" controls="controls"></video>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <video class="card fillet" controls="controls"></video>
+                <!-- 页面2 -->
+                <div class="row container-fluid tab-pane fade" id="tab_02">
+                    <!-- 文本部分 -->
+                    <div class="col-md-6">
+                        <h2>看60秒广西生态</h2>
+                        <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                    </div>
+                    <!-- 媒体部分 -->
+                    <div class="col-md-6">
+                    <!-- 视频 -->
+                        <video class="card fillet" controls="controls"></video>
+                    </div>
                 </div>
             </div>
         </div>
