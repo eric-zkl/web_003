@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-13 10:23:36
-    最后修改时间：2018-08-14 16:03:00;
+    最后修改时间：2018-08-20 16:39:32
  */
 
 /************ 视频标签页 ************/
@@ -61,7 +61,8 @@
     overflow: hidden;
     position: relative;
     background-color: #eee;
-    transition: flex-grow 0.3s;
+    opacity: 0.3;
+    transition: all 0.3s;
 }
 /* 手风琴-奇数 */
 .c-collapse:nth-of-type(odd) {
@@ -74,15 +75,15 @@
 
 /* 激活的手风琴 */
 .c-collapse-container .active {
+    opacity: 1;
     flex-grow: 1;
-    /*box-shadow: 0 4px 20px rgba(0,0,0,0.2);  /* cyl - 去除阴影 */
 }
 
 /* 手风琴的文本块 */
 .c-collapse .text {
     width: 100%;
     padding: 8px 16px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.8);
     position: absolute;
     bottom: 0;
     left: 0;
