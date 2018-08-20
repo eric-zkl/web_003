@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-19 11:26:45
-	最后修改时间：2018-08-20 00:27:57
+	最后修改时间：2018-08-20 18:24:51
  */
 
 /************** 新闻 **************/
@@ -63,29 +63,46 @@
 }
 
 /* 标签栏 */
-.tab-timeline .tabar {
+.tab-timeline .nav-tabs {
 	margin: 24px 0;
 	padding: 16px 0;
 	display: flex;
+	border: none;
+}
+
+/* 标签栏条目 */
+.tab-timeline .nav-tabs>li {
+	display: block;
+	flex-grow: 1;
 }
 
 /* 标签 */
-.tab-timeline .tabar .tab {
-	color: #000;
+.tab-timeline .nav-tabs>li>a {
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: rgba(0,0,0,0.5);
 	text-decoration: none;
-	flex-grow: 1;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.tab-timeline .nav-tabs>li>a:hover, .tab-timeline .nav-tabs>li>a:focus {
+	background: unset;
+	border: none;
+}
+.tab-timeline .nav-tabs>li>a:hover, .tab-timeline .nav-tabs>li.active>a {
+	color: #000;
+}
+
 
 /* 时间线 */
-.tab-timeline .tabar .timeline {
+.tab-timeline .nav-tabs .timeline {
 	width: 100%;
 	padding: 18px 0;
 	position: relative;
 }
-.tab-timeline .tabar .timeline:before {
+.tab-timeline .nav-tabs .timeline:before {
 	content: "";
 	height: 1px;
 	display: block;
@@ -93,7 +110,7 @@
 }
 
 /* 时刻（指示器） */
-.tab-timeline .tabar .time {
+.tab-timeline .nav-tabs .time {
 	width: 100%;
 	position: absolute;
 	top: 7px;
@@ -101,7 +118,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.tab-timeline .tabar .time:before, .tab-timeline .tabar .time:after {
+.tab-timeline .nav-tabs .time:before, .tab-timeline .nav-tabs .time:after {
 	content: "";
 	height: 6px;
 	width: 6px;
@@ -110,7 +127,7 @@
 }
 
 /* 圆点（指示器内部） */
-.tab-timeline .tabar .time .dot {
+.tab-timeline .nav-tabs .time .dot {
 	content: "";
 	padding: 3px;
 	display: block;
@@ -118,34 +135,35 @@
 	border: 1px red solid;
 	border-radius: 999999999999px;
 }
-.tab-timeline .tabar .time .dot:after {
+.tab-timeline .nav-tabs .time .dot:after {
 	content: "";
 	display: block;
 	height: 15px;
 	width: 15px;
 	border: red 1px solid;
 	border-radius: 999999999999px;
+	transition: background 0.3s;
 }
 
 /* 激活的圆点（指示器内部） */
-.tab-timeline .tabar .active .time .dot:after {
+.tab-timeline .nav-tabs .active .time .dot:after, .tab-timeline .nav-tabs li>a:hover .time .dot:after {
 	background: red;
 }
 
 /* 标签页内容 */
-.tab-timeline .tab-content {
+.tab-timeline .tab-pane {
 	padding: 16px 36px;
 	border: #F7D4D4 1px solid;
 	overflow: hidden;
 }
 
 /* 标签页标题 */
-.tab-timeline .tab-content h2 {
+.tab-timeline .tab-pane h2 {
 	text-align: center;
 }
 
 /* 标签页的活动 */
-.tab-timeline .tab-content .action {
+.tab-timeline .tab-pane .action {
 	margin: 16px 0;
     color: #000;
     float: right;
