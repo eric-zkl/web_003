@@ -3,7 +3,7 @@
 
     作者：cyl
     创建日期：2018-08-16 18:05:47
-    最后修改时间：2018-08-17 11:59:19
+    最后修改时间：2018-08-20 17:50:13
  -->
 
 <!DOCTYPE html>
@@ -213,19 +213,54 @@
         <h1>风采</h1>
         <div id="mien_tab" class="tab">
             <!-- 标签栏 -->
-            <div class="tab-label-bar">
-                <div class="tab-label">标签1</div>
-                <div class="tab-label">标签2</div>
-                <div class="tab-label">标签3</div>
-            </div>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab_01" class="tab-label" data-toggle="tab">标签1</a>
+                </li>
+                <li>
+                    <a href="#tab_02" class="tab-label" data-toggle="tab">标签2</a>
+                </li>
+                <li>
+                    <a href="#tab_03" class="tab-label" data-toggle="tab">标签3</a>
+                </li>
+            </ul>
             <!-- 标签页内容 -->
             <div class="tab-content">
-                <!-- 图片 -->
-                <div class="img"></div>
-                <!-- 卡片 -->
-                <div class="card">
-                    <h2>二级标题</h2>
-                    <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                <!-- 标签页01 -->
+                <div class="tab-pane fade in active" id="tab_01">
+                    <div class="tab-pane-wrapper">
+                        <!-- 图片 -->
+                        <div class="img" style="background-image: url(img/temp/001.jpg);"></div>
+                        <!-- 卡片 -->
+                        <div class="card">
+                            <h2>二级标题</h2>
+                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 标签页02 -->
+                <div class="tab-pane fade" id="tab_02">
+                    <div class="tab-pane-wrapper">
+                        <!-- 图片 -->
+                        <div class="img" style="background-image: url(img/temp/231.jpg);"></div>
+                        <!-- 卡片 -->
+                        <div class="card">
+                            <h2>二级标题</h2>
+                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 标签页03 -->
+                <div class="tab-pane fade" id="tab_03">
+                    <div class="tab-pane-wrapper">
+                        <!-- 图片 -->
+                        <div class="img" style="background-image: url(img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
+                        <!-- 卡片 -->
+                        <div class="card">
+                            <h2>二级标题</h2>
+                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
