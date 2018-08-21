@@ -3,9 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-12 12:04:25
-    最后修改时间：2018-08-20 16:39:24
-
-    备注：现代栏目的轮播只是有样子，没有效果。
+    最后修改时间：2018-08-21 20:45:44
  -->
 
 <!DOCTYPE html>
@@ -160,9 +158,12 @@
     <section class="container">
         <h1>现代</h1>
         <div id="contemporary_carousel">
-            <div class="card fillet slide slide-3 img"></div>
-            <div class="card fillet slide slide-2 img"></div>
-            <div class="card fillet slide slide-1 img"></div>
+            <div class="card fillet img slide">
+                <div class="text">
+                    <h2 class="title"></h2>
+                    <p class="msg"></p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- 未来 -->
@@ -241,6 +242,40 @@
     $(".c-collapse-container .c-collapse").click(function() {
         $(this).addClass("active").siblings(".c-collapse").removeClass("active");
     });
+    </script>
+    <!-- 层叠轮播代码库 -->
+    <script type="text/javascript" src="js/stack_carousel.js"></script>
+    <!-- 初始化层叠轮播 -->
+    <script type="text/javascript">
+        stackCarousel('#contemporary_carousel', 
+            [
+                {
+                    'title': '二级标题',
+                    'msg': '这是一段描述信息',
+                    'bg': 'img/temp/001.jpg',
+                },
+                {
+                    'title': '二级标题',
+                    'msg': '这是一段描述信息',
+                    'bg': 'img/temp/231.jpg',
+                },
+                {
+                    'title': '二级标题',
+                    'msg': '这是一段描述信息',
+                    'bg': 'img/temp/planet_10-wallpaper-1920x1080.jpg',
+                },
+                {
+                    'title': '二级标题',
+                    'msg': '这是一段描述信息',
+                    'bg': 'img/temp/W020180601351337931192.jpg',
+                },
+                {
+                    'title': '二级标题',
+                    'msg': '这是一段描述信息',
+                    'bg': 'img/temp/7F94C4B85B1098370014031DA30F9F61.jpg',
+                },
+            ]
+        );
     </script>
 </body>
 </html>

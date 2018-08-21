@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-13 10:23:36
-    最后修改时间：2018-08-20 16:39:32
+    最后修改时间：2018-08-21 20:46:09
  */
 
 /************ 视频标签页 ************/
@@ -107,8 +107,35 @@
 }
 
 #contemporary_carousel .slide {
+    display: flex;
+    align-items: flex-end;
     position: absolute;
     background-color: #eee;
+    transition: all 0.5s;
+}
+
+#contemporary_carousel .slide-4 {
+    top: 48px;
+    right: 96px;
+    bottom: -16px;
+    left: 96px;
+    opacity: 0;
+}
+
+#contemporary_carousel .slide-3 {
+    top: 32px;
+    right: 64px;
+    bottom: 0px;
+    left: 64px;
+    opacity: 0.25;
+}
+
+#contemporary_carousel .slide-2 {
+    top: 16px;
+    right: 32px;
+    bottom: 16px;
+    left: 32px;
+    opacity: 0.5;
 }
 
 #contemporary_carousel .slide-1 {
@@ -116,26 +143,23 @@
     right: 0px;
     bottom: 32px;
     left: 0px;
-    transition: transform 0.5s;
-}
-#contemporary_carousel .slide-1:hover {
-    transform: translateX(10%);
+    opacity: 1;
 }
 
-#contemporary_carousel .slide-2 {
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    left: 16px;
-    opacity: 0.66;
+#contemporary_carousel .slide-out {
+    transform: translateX(33%);
+    opacity: 0;
 }
 
-#contemporary_carousel .slide-3 {
-    top: 32px;
-    right: 32px;
-    bottom: 0px;
-    left: 32px;
-    opacity: 0.33;
+#contemporary_carousel .slide-1 .text {
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    flex-grow: 1;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+#contemporary_carousel .slide-1:hover .text {
+    transform: unset;
 }
 
 /************* 未来标签页 *************/
