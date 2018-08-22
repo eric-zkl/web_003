@@ -2,12 +2,20 @@
 经济栏样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-16 16:16:39 cyl
+最后修改时间：2018-08-22 12:04:37 cyl
 */
 
 /*********** 经济特区 **********/
 #special_economic_zone .col-md-4 {
     padding: 16px;
+}
+
+/* 卡片 */
+#special_economic_zone .card{
+    transition: all 0.3s;
+}
+#special_economic_zone .card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 /*********** 第二栏 **********/
