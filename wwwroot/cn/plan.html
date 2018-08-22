@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-19 11:24:41
-    最后修改时间：2018-08-22 11:40:43
+    最后修改时间：2018-08-22 21:01:42
  -->
 
 <!DOCTYPE html>
@@ -136,9 +136,9 @@
                         </div>
                     </div>
                     <!--左箭头-->
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
                     <!--右箭头-->
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
                     <!-- 分页器 -->
                     <div class="swiper-pagination"></div>
                 </div>
@@ -409,7 +409,9 @@
     <!-- 初始化 Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
-        autoplay:true,
+        autoplay: {
+            disableOnInteraction: false,
+        },
         loop: true,
         grabCursor: true,
         navigation: {
@@ -418,6 +420,7 @@
           },
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
     });
     </script>

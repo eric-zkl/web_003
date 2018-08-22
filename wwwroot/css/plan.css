@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-19 11:26:45
-	最后修改时间：2018-08-20 18:24:51
+	最后修改时间：2018-08-22 21:01:48
  */
 
 /************** 新闻 **************/
@@ -48,7 +48,7 @@
 /* 轮播信息 */
 .swiper-container .msg {
 	color: #fff;
-	padding: 8px 16px;
+	padding: 16px 16px 38px;
 	background: rgba(0,0,0,0.5);
 	position: absolute;
 	left: 0;

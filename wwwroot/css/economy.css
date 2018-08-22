@@ -2,7 +2,7 @@
 经济栏样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-22 12:04:37 cyl
+最后修改时间：2018-08-22 21:03:21 cyl
 */
 
 /*********** 经济特区 **********/
@@ -129,4 +129,16 @@
 .swiper-slide {
     width: 40%;
     height: 200px;
+    position: relative;
+}
+
+/* 图片描述 */
+.swiper-slide .text {
+    padding: 16px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

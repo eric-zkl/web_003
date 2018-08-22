@@ -3,7 +3,7 @@
 
     作者：Hshijie
     时间：2018.8.12
-    最后修改时间：2018-08-22 12:04:29 - cyl
+    最后修改时间：2018-08-22 21:03:12 - cyl
  -->
 
 <!DOCTYPE html>
@@ -213,23 +213,31 @@
         <!-- 轮播 -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- 页面1 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
-                <!-- 页面2 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
-                <!-- 页面3 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
-                <!-- 页面4 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
-                <!-- 页面5 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
-                <!-- 页面6 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)"></div>
+                <!-- 轮播页面 -->
+                <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
+                    <div class="text">这是图片描述</div>
+                </div>
+                <!-- 轮播页面 -->
+                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
+                    <div class="text">这是图片描述</div>
+                </div>
+                <!-- 轮播页面 -->
+                <div class="swiper-slide img" style="background-image:url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg)">
+                    <div class="text">这是图片描述</div>
+                </div>
+                <!-- 轮播页面 -->
+                <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
+                    <div class="text">这是图片描述</div>
+                </div>
+                <!-- 轮播页面 -->
+                <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
+                    <div class="text">这是图片描述</div>
+                </div>
             </div>
             <!--左箭头-->
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
             <!--右箭头-->
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
             <!-- 分页器 -->
             <div class="swiper-pagination"></div>
         </div>
@@ -244,11 +252,14 @@
     <!-- 初始化 Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
-        autoplay:true,
+        autoplay: {
+            disableOnInteraction: false,
+        },
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -262,6 +273,7 @@
         },
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
     });
     </script>
