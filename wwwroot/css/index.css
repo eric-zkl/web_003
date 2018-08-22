@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-13 10:23:36
-    最后修改时间：2018-08-21 20:46:09
+    最后修改时间：2018-08-22 11:21:08
  */
 
 /************ 视频标签页 ************/
@@ -97,6 +97,82 @@
 /* 自定义手风琴 */
 #history_collapse {
     margin: 36px 0;
+}
+
+/************ 新版手风琴 ************/
+/* 手风琴容器 */
+.cn-collapse-container {
+    height: 60vh;
+    display: flex;
+}
+
+/* 手风琴 */
+.cn-collapse {
+    width: 0;
+    overflow: hidden;
+    background-color: #eee;
+    border-right: #fff 1px solid;
+    flex-grow: 1;
+    position: relative;
+    transition: all 0.5s;
+}
+.cn-collapse:hover {
+    width: 30%;
+}
+.cn-collapse:last-of-type {
+    border-right: none;
+}
+
+/* 内容 */
+.cn-collapse .content {
+    height: 20vh;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20vh;
+    transition: all 0.5s;
+}
+.cn-collapse:hover .content {
+    padding-top: 32px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, #fff);
+}
+
+/* 预览标题 */
+.cn-collapse .title {
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cn-collapse:hover .title {
+    height: 0;
+    opacity: 0;
+}
+
+/* 正文 */
+.cn-collapse .text {
+    height: 0;
+    opacity: 0;
+    text-shadow: green 0px 0px 1px;
+    overflow: hidden;
+    transition: all 1s;
+}
+.cn-collapse:hover .text {
+    height: auto;
+    opacity: 1;
+}
+
+/* 正文标题 */
+.cn-collapse .text h2 {
+    margin: 16px 0;
+    font-weight: bold;
 }
 
 /************* 现代轮播 *************/
