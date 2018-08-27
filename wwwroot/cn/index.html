@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-12 12:04:25
-    最后修改时间：2018-08-22 11:41:02
+    最后修改时间：2018-08-27 09:53:04
  -->
 
 <!DOCTYPE html>
@@ -20,12 +20,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -68,144 +62,91 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <div class="top-video">
+        <video autoplay="true" loop="true">
+            <!-- <source src="../video/top.mp4" type="video/mp4"> -->
+        </video>
+    </div>
     <!-- 视频 -->
-    <section class="container">
-        <!-- 标签栏 -->
-        <ul id="video_tab" class="nav nav-tabs">
-            <li class="active">
-                <a href="#video_01" data-toggle="tab">视频标题1</a>
-            </li>
-            <li><a href="#video_02" data-toggle="tab">视频标题2</a></li>
-        </ul>
-        <!-- 标签页内容 -->
-        <div id="video_tab_content" class="tab-content">
-            <!-- 标签页01 -->
-            <div class="container-fluid tab-pane fade in active" id="video_01">
-                <div class="row">
-                    <!-- 卡片 -->
-                    <div class="col-md-6 card fillet">
-                        <!-- 视频 -->
-                        <video src="" controls="controls"></video>
-                    </div>
-                    <!-- 简述文本 -->
-                    <div class="col-md-6 text">
-                        <!-- 段落 -->
-                        <p>两只老虎两只老虎跑得快，跑得快，一只没有眼睛一只没有耳朵真奇怪真奇怪</p>
-                    </div>
+    <section>
+        <div id="video_show" class="container">
+            <h1>视频</h1>
+            <div class="row">
+                <!-- 卡片 -->
+                <div class="col-md-6 video-wrapper">
+                    <!-- 视频 -->
+                    <video controls="controls">
+                        <source src="../video/xwlb_01.mp4" type="video/mp4">
+                    </video>
                 </div>
-            </div>
-            <!-- 标签页02 -->
-            <div class="container-fluid tab-pane fade" id="video_02">
-                <div class="row">
-                    <!-- 卡片 -->
-                    <div class="col-md-6 card fillet">
-                        <!-- 视频 -->
-                        <video src="" controls="controls"></video>
-                    </div>
-                    <!-- 简述文本 -->
-                    <div class="col-md-6 text">
-                        <!-- 段落 -->
-                        <p>两只老虎两只老虎跑得快，跑得快，一只没有眼睛一只没有耳朵真奇怪真奇怪</p>
-                    </div>
+                <!-- 简述文本 -->
+                <div class="col-md-6 text">
+                    <!-- 段落 -->
+                    <p>新华社南宁4月21日电 中共中央总书记、国家主席、中央军委主席习近平近日在广西考察时强调，全面建成小康社会任务艰巨，要统筹推进“五位一体”总体布局和协调推进“四个全面”战略布局，坚持稳中求进工作总基调，全面做好稳增长、促改革、调结构、惠民生、防风险各项工作，稳扎稳打，善作善成，扎实推动经济社会持续健康发展，以优异成绩迎接党的十九大胜利召开。</p>
+                    <p>4月的八桂大地，春风和煦，万紫千红。4月19日至21日，习近平在广西壮族自治区党委书记彭清华、自治区政府主席陈武陪同下，来到北海、南宁等地，深入港口、企业、重点项目、创新示范基地和文化单位，考察调研经济社会发展情况，实地了解基层干部群众对党的十九大的建议和期待。</p>
+                    <p>习近平指出，保持经济持续健康发展，要在推动产业优化升级上下功夫，在转变发展方式上下功夫，在提高创新能力上下功夫，在深化改革开放上下功夫。</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- 历史 -->
-    <section class="container">
-        <h1>历史</h1>
-        <div id="history_collapse" class="c-collapse-container">
-            <div class="c-collapse card fillet img" style="background-image: url(../img/temp/001.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
-            <div class="c-collapse card fillet img active" style="background-image: url(../img/temp/231.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
-            <div class="c-collapse card fillet img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
-            <div class="c-collapse card fillet img" style="background-image: url(../img/temp/W020180601351337931192.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
-            <div class="c-collapse card fillet img" style="background-image: url(../img/temp/001.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
-            <div class="c-collapse card fillet img" style="background-image: url(../img/temp/231.jpg);">
-                <div class="text">
-                    <h2>二级标题</h2>
-                    <p>一些文字简述</p>
-                </div>
-            </div>
+    <section>
+        <div class="container">
+            <h1>改革印记——回顾篇</h1>            
         </div>
-        <!-- 新版手风琴 -->
+         <!-- 新版手风琴 -->
         <div class="cn-collapse-container">
-            <div class="cn-collapse img" style="background-image: url(../img/temp/001.jpg);">
+            <div class="cn-collapse img" style="background-image: url(../img/img/1250966393490_mthumb.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">南宁</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述</p>
+                        <h2>南宁</h2>
+                        <p>回顾老南宁的前世记忆。</p>
                     </div>
                 </div>
             </div>
-            <div class="cn-collapse img" style="background-image: url(../img/temp/231.jpg);">
+            <div class="cn-collapse img" style="background-image: url(../img/liuzhouyinji.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">柳州</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述</p>
+                        <h2>柳州</h2>
+                        <p>柳江大桥是横跨柳江两岸的第一座公路大桥，是名符其实的柳州第一桥。它连接了柳州两岸人口最密集的区域，从1968年12月26日柳江大桥通车至今已有近50年的历史。</p>
                     </div>
                 </div>
             </div>
             <div class="cn-collapse img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">贵港</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述</p>
+                        <h2>贵港</h2>
+                        <p>贵港工业“老五祥”之一电力产业：1994年贵港小江变电站。</p>
                     </div>
                 </div>
             </div>
-            <div class="cn-collapse img" style="background-image: url(../img/temp/W020180601351337931192.jpg);">
+            <div class="cn-collapse img" style="background-image: url(../img/img/桂林还没有建设立交的上海路.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">桂林</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述一些文字简述</p>
+                        <h2>桂林</h2>
+                        <p>1978年，漓江上来往的木船和整齐排列的汽车形成鲜明对比，桂林还没有建设立交的上海路。</p>
                     </div>
                 </div>
             </div>
-            <div class="cn-collapse img" style="background-image: url(../img/temp/001.jpg);">
+            <div class="cn-collapse img" style="background-image: url(../img/beihailaojie.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">北海</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述</p>
+                        <h2>北海</h2>
+                        <p>北海市珠海路“北海老街”始建于19世纪末，长约1.44公里，店铺鳞次栉比，曾是北海市最繁华的商业街区。历经百岁沧桑，沿街建筑日渐老化，许多店铺成为民居，但中西合璧的骑楼式简直依然保存完整，被建筑学家誉为“近现代建筑年鉴”。</p>
                     </div>
                 </div>
             </div>
             <div class="cn-collapse img" style="background-image: url(../img/temp/231.jpg);">
                 <div class="content">
-                    <div class="title">标题</div>
+                    <div class="title">百色</div>
                     <div class="text">
-                        <h2>标题</h2>
-                        <p>一些文字简述</p>
+                        <h2>百色</h2>
+                        <p>百色人民政府的前世今生，1981年到2017年。</p>
                     </div>
                 </div>
             </div>
@@ -213,80 +154,143 @@
     </section>
     <!-- 现代 -->
     <section class="container">
-        <h1>现代</h1>
-        <div id="contemporary_carousel">
-            <div class="card fillet img slide">
-                <div class="text">
-                    <h2 class="title"></h2>
-                    <p class="msg"></p>
+        <h1>今朝风华——当代篇</h1>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/img/东盟.jpg);">东盟经济贸易区</div>
+                    <!-- 背面 -->
+                    <div class="fillet back">南宁作为广西的首府、是面向东盟开放合作的区域性国际城市、“一带一路”有机衔接的重要门户城市。</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/img/北海港区“打造向海经济”的重要思想.jpg);">古代"海上丝绸之路"重要始发港新崛起</div>
+                    <!-- 背面 -->
+                    <div class="fillet back">繁忙的广西北海市侨港镇电建渔港和北海国际客运港。</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/img/广西柳州.jpg);">平地而起的新城  40年见证柳州巨变的沧海桑田</div>
+                    <!-- 背面 -->
+                    <div class="fillet back">柳州是广西的工业重镇，同时也是环境保护的模范城市，是成功转型宜居宜业城市的典范。</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/index/longtan_shuidianzhan.jpg);">广西龙滩水电站</div>
+                    <!-- 背面 -->
+                    <div class="fillet back">龙滩电站是国家“西部大开发”的十大标志性工程和“西电东送”战略性项目之一。</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/dongche.jpg);">动车</div>
+                    <!-- 背面 -->
+                    <div class="fillet back">目前广西境内共计7条高铁投入运营，里程达到1751公里，位居全国前列。</div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <!-- 翻转卡片 -->
+                <div class="flip-v">
+                    <!-- 前面 -->
+                    <div class="img fillet front" style="background-image: url(../img/minz.jpg);">广西各族同胞欢庆“三月三”</div>
+                    <!-- 背面 -->
+                    <div class="fillet back"></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- 未来 -->
     <section class="container">
-        <h1>未来</h1>
-        <div id="future_tab">
-            <div class="tab-content">
-                <!-- 标签页01 -->
-                <div id="future_card_01" class="card img container-fluid tab-pane fade in active " style="background-image: linear-gradient(to left, #fff 40%, transparent), url(../img/temp/W020180601351337931192.jpg);">
-                    <div class="text text-dark">
-                        <h2>二级标题1</h2>
-                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
-                    </div>
-                </div>
-                <!-- 标签页02 -->
-                <div id="future_card_02" class="card img container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(../img/temp/W020180601351337931192.jpg);">
-                    <div class="text text-dark">
-                        <h2>二级标题2</h2>
-                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
-                    </div>
-                </div>
-                <!-- 标签页03 -->
-                <div id="future_card_03" class="card img container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(../img/temp/W020180601351337931192.jpg);">
-                    <div class="text text-dark">
-                        <h2>二级标题3</h2>
-                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
-                    </div>
-                </div>
-                <!-- 标签页04 -->
-                <div id="future_card_04" class="card img container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(../img/temp/W020180601351337931192.jpg);">
-                    <div class="text text-dark">
-                        <h2>二级标题4</h2>
-                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
-                    </div>
-                </div>
-                <!-- 标签页05 -->
-                <div id="future_card_05" class="card img container-fluid tab-pane fade" style="background-image: linear-gradient(to left, #fff 40%, transparent), url(../img/temp/W020180601351337931192.jpg);">
-                    <div class="text text-dark">
-                        <h2>二级标题5</h2>
-                        <p>这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述这里是图片简述</p>
-                    </div>
+        <h1>砥砺前行——发展篇</h1>
+        <div class="row">
+            <!-- 条目 -->
+            <div class="col-sm-6 base-item">
+                <!-- 图标 -->
+                <div class="img icon"></div>
+                <!-- 文本 -->
+                <div class="text">
+                    <!-- 标题 -->
+                    <h2>创新</h2>
+                    <!-- 段落 -->
+                    <p>创新是历史进步的动力、时代发展的关键，位居今日中国“五大发展理念”之首。</p>
+                    <p>- 创新发展居于国家发展全局的核心位置。</p>
+                    <p>- 创新是引领发展的第一动力。</p>
+                    <p>- 让创新发展在全社会蔚然成风。</p>
                 </div>
             </div>
-            <!-- 标签栏 -->
-            <ul class="container-fluid row tab">
-                <!-- 标签01 -->
-                <li class="col-sm-4 col-xs-6 active">
-                    <a href="#future_card_01" data-toggle="tab">标题1</a>
-                </li>
-                <!-- 标签02 -->
-                <li class="col-sm-4 col-xs-6">
-                    <a href="#future_card_02" data-toggle="tab">标题2</a>
-                </li>
-                <!-- 标签03 -->
-                <li class="col-sm-4 col-xs-6">
-                    <a href="#future_card_03" data-toggle="tab">标题3</a>
-                </li>
-                <!-- 标签04 -->
-                <li class="col-sm-4 col-sm-offset-2 col-xs-6">
-                    <a href="#future_card_04" data-toggle="tab">标题4</a>
-                </li>
-                <!-- 标签05 -->
-                <li class="col-sm-4 col-xs-6">
-                    <a href="#future_card_05" data-toggle="tab">标题5</a>
-                </li>
-            </ul>
+            <!-- 条目 -->
+            <div class="col-sm-6 base-item">
+                <!-- 图标 -->
+                <div class="img icon"></div>
+                <!-- 文本 -->
+                <div class="text">
+                    <!-- 标题 -->
+                    <h2>协调</h2>
+                    <!-- 段落 -->
+                    <p>- 协调发展促进我国经济社会行稳致远。</p>
+                    <p>- 促进区域、领域、两个文明平衡发展。</p>
+                    <p>- 将协调发展贯穿于发展各方面全过程。</p>
+                </div>
+            </div>
+            <!-- 列重置 -->
+            <div class="clearfix"></div>
+            <!-- 条目 -->
+            <div class="col-sm-6 base-item">
+                <!-- 图标 -->
+                <div class="img icon"></div>
+                <!-- 文本 -->
+                <div class="text">
+                    <!-- 标题 -->
+                    <h2>绿色</h2>
+                    <!-- 段落 -->
+                    <p>- 关系我国发展全局的科学发展理念。</p>
+                    <p>- 推进绿色发展，建设美丽中国。</p>
+                    <p>- 绿色发展人人有责、人人共享。</p>
+                </div>
+            </div>
+            <!-- 条目 -->
+            <div class="col-sm-6 base-item">
+                <!-- 图标 -->
+                <div class="img icon"></div>
+                <!-- 文本 -->
+                <div class="text">
+                    <!-- 标题 -->
+                    <h2>开放</h2>
+                    <!-- 段落 -->
+                    <p>- 引领我国对外开放领域深刻变革的科学理念。</p>
+                    <p>- 以解决发展内外联动问题为核心，全方位升级开放型经济。</p>
+                    <p>- 贯彻开放发展理念，推动互利共赢的国际发展合作。</p>
+                </div>
+            </div>
+            <!-- 列重置 -->
+            <div class="clearfix"></div>
+            <!-- 条目 -->
+            <div class="col-sm-6 base-item">
+                <!-- 图标 -->
+                <div class="img icon"></div>
+                <!-- 文本 -->
+                <div class="text">
+                    <!-- 标题 -->
+                    <h2>共享</h2>
+                    <!-- 段落 -->
+                    <p>- 关系13亿多人福祉的科学发展理念。</p>
+                    <p>- 建设公正社会，促进共享发展。</p>
+                    <p>- 人人参与，人人尽力，人人享有。</p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- 底部 -->
@@ -294,45 +298,10 @@
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- 初始化手风琴 -->
     <script type="text/javascript">
-    $(".c-collapse-container .c-collapse").click(function() {
-        $(this).addClass("active").siblings(".c-collapse").removeClass("active");
-    });
-    </script>
-    <!-- 层叠轮播代码库 -->
-    <script type="text/javascript" src="../js/stack_carousel.js"></script>
-    <!-- 初始化层叠轮播 -->
-    <script type="text/javascript">
-        stackCarousel('#contemporary_carousel', 
-            [
-                {
-                    'title': '二级标题',
-                    'msg': '这是一段描述信息',
-                    'bg': '../img/temp/001.jpg',
-                },
-                {
-                    'title': '二级标题',
-                    'msg': '这是一段描述信息',
-                    'bg': '../img/temp/231.jpg',
-                },
-                {
-                    'title': '二级标题',
-                    'msg': '这是一段描述信息',
-                    'bg': '../img/temp/planet_10-wallpaper-1920x1080.jpg',
-                },
-                {
-                    'title': '二级标题',
-                    'msg': '这是一段描述信息',
-                    'bg': '../img/temp/W020180601351337931192.jpg',
-                },
-                {
-                    'title': '二级标题',
-                    'msg': '这是一段描述信息',
-                    'bg': '../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg',
-                },
-            ]
-        );
+        $('.cn-collapse').on('mouseover', function() {
+            $(this).addClass('active').siblings('.cn-collapse').removeClass('active');
+        })
     </script>
 </body>
 </html>

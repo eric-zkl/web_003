@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-08 11:02:59
-    最后修改时间：2018-08-16 11:00:25;
+    最后修改时间：2018-08-27 09:53:11
  */
 
 /************** 通用 **************/
@@ -23,6 +23,7 @@
 body {
     margin: 51px 0 0 0;
     padding: 0;
+    font-size: 16px;
 }
 
 /************** 栏目 **************/
@@ -33,10 +34,17 @@ section {
 /*    border: 1px solid #aaa;  /* cyl - TODO: only testing; */
 }
 
+/* 头图 */
+.top-pic {
+    height: 700px;
+    background-color: #eee;
+}
+
 /************** 标题 **************/
 /* 基本一级标题 */
-section>h1 {
+section h1 {
     padding-bottom: 8px;
+    margin-bottom: 36px;
     border-bottom: #aaa solid 1px;
 }
 

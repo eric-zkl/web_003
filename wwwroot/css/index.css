@@ -3,106 +3,37 @@
 
     作者：cyl
     创建时间：2018-08-13 10:23:36
-    最后修改时间：2018-08-22 11:21:08
+    最后修改时间：2018-08-27 09:52:58
  */
 
+/* 视频 */
+.top-video>video {
+    width: 100%;
+}
+
 /************ 视频标签页 ************/
-/* 标签栏 */
-#video_tab {
-    font-size: 24px;
+/* 视频包装 */
+#video_show .video-wrapper {
+    padding-right: 30px;
+    padding-bottom: 15px;
 }
 
-/* 标签 */
-#video_tab a {
-    padding: 4px 24px 2px;
-    margin: 0;
-    color: rgba(0,0,0,0.3);
-    border: unset;
-    border-bottom: 2px transparent solid;
-    transition: all 0.3s;
-}
-#video_tab a:hover {
-    border-bottom-color: rgba(0,0,0,0.3);
-    background: unset;
-}
-
-/* 激活的标签 */
-#video_tab .active a {
-    color: #000;
-    border-bottom-color: #000;
-}
-
-/* 标签页内容 */
-#video_tab_content {
-    margin-top: 36px;
-}
-
-/* 标签页内的视频 */
-#video_tab_content .card video {
+/* 视频 */
+#video_show .video-wrapper video {
     width: 100%;
+    display: block;
+    box-shadow: #DBDAEE 15px 15px;
 }
 
-/* 标签页内的文本 */
-#video_tab_content .text {
-    padding-top: 24px;
-}
-
-/************ 手风琴 ************/
-/* 手风琴容器 */
-.c-collapse-container {
-    height: 60vh;
-    display: flex;
-}
-
-/* 手风琴 */
-.c-collapse {
-    width: 5%;
-    margin: 0 8px;
-    overflow: hidden;
-    position: relative;
-    background-color: #eee;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-/* 手风琴-奇数 */
-.c-collapse:nth-of-type(odd) {
-    margin-bottom: 24px;
-}
-/* 手风琴-偶数 */
-.c-collapse:nth-of-type(even) {
-    margin-top: 24px;
-}
-
-/* 激活的手风琴 */
-.c-collapse-container .active {
-    opacity: 1;
-    flex-grow: 1;
-}
-
-/* 手风琴的文本块 */
-.c-collapse .text {
-    width: 100%;
-    padding: 8px 16px;
-    background: rgba(255,255,255,0.8);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-.c-collapse-container .active:hover .text, .c-collapse-container .active:focus .text {
-    transform: unset;
-}
-
-/* 自定义手风琴 */
-#history_collapse {
-    margin: 36px 0;
+/* 文本 */
+#video_show .text {
+    padding-top: 15px;
 }
 
 /************ 新版手风琴 ************/
 /* 手风琴容器 */
 .cn-collapse-container {
-    height: 60vh;
+    height: 400px;
     display: flex;
 }
 
@@ -114,45 +45,54 @@
     border-right: #fff 1px solid;
     flex-grow: 1;
     position: relative;
-    transition: all 0.5s;
+    transition: all 1s;
 }
-.cn-collapse:hover {
-    width: 30%;
-}
+
 .cn-collapse:last-of-type {
     border-right: none;
 }
 
+/* 激活的手风琴 */
+.cn-collapse-container .active {
+    width: 40%;
+}
+
 /* 内容 */
 .cn-collapse .content {
-    height: 20vh;
+    height: 200px;
     padding: 8px 16px;
     background: rgba(255,255,255,0.8);
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 20vh;
-    transition: all 0.5s;
+    bottom: 100px;
+    transition: inherit;
 }
-.cn-collapse:hover .content {
-    padding-top: 32px;
+
+/* 激活的手风琴的内容 */
+.cn-collapse-container .active .content {
     height: auto;
     bottom: 0;
-    background: linear-gradient(transparent, #fff);
 }
 
 /* 预览标题 */
 .cn-collapse .title {
     height: 100%;
+    padding: 16px;
     font-size: 24px;
     font-weight: bold;
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
-.cn-collapse:hover .title {
+
+/* 激活的手风琴的标题 */
+.cn-collapse-container .active .title {
     height: 0;
+    padding: 0;
     opacity: 0;
 }
 
@@ -160,11 +100,12 @@
 .cn-collapse .text {
     height: 0;
     opacity: 0;
-    text-shadow: green 0px 0px 1px;
     overflow: hidden;
-    transition: all 1s;
+    transition: all 1s 0.3s;
 }
-.cn-collapse:hover .text {
+
+/* 激活的手风琴的正文 */
+.cn-collapse-container .active .text {
     height: auto;
     opacity: 1;
 }
@@ -175,119 +116,98 @@
     font-weight: bold;
 }
 
-/************* 现代轮播 *************/
-#contemporary_carousel {
-    height: 50vh;
-    margin: 36px 0 16px;
+/********* 现代翻转卡片 *********/
+/* 垂直翻转 */
+.flip-v {
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     position: relative;
+    perspective: 1000px;
 }
-
-#contemporary_carousel .slide {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    background-color: #eee;
-    transition: all 0.5s;
-}
-
-#contemporary_carousel .slide-4 {
-    top: 48px;
-    right: 96px;
-    bottom: -16px;
-    left: 96px;
-    opacity: 0;
-}
-
-#contemporary_carousel .slide-3 {
-    top: 32px;
-    right: 64px;
-    bottom: 0px;
-    left: 64px;
-    opacity: 0.25;
-}
-
-#contemporary_carousel .slide-2 {
-    top: 16px;
-    right: 32px;
-    bottom: 16px;
-    left: 32px;
-    opacity: 0.5;
-}
-
-#contemporary_carousel .slide-1 {
-    top: 0px;
-    right: 0px;
-    bottom: 32px;
-    left: 0px;
-    opacity: 1;
-}
-
-#contemporary_carousel .slide-out {
-    transform: translateX(33%);
-    opacity: 0;
-}
-
-#contemporary_carousel .slide-1 .text {
-    color: #fff;
-    background: rgba(0,0,0,0.5);
-    flex-grow: 1;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-#contemporary_carousel .slide-1:hover .text {
-    transform: unset;
-}
-
-/************* 未来标签页 *************/
-/* 未来标签页整体 */
-#future_tab {
-    margin: 52px 0 16px;
-}
-
-/* 标签页内容中卡片的文本 */
-#future_tab .tab-content .card .text {
-    width: 50%;
-    padding: 24px 0;
-    float: right;
-}
-
-/* 标签页内容中的亮色文本 */
-#future_tab .text-light {
-    color: rgba(255,255,255,0.7);
-}
-/* 标签页内容中的暗色文本 */
-#future_tab .text-dark {
-    color: rgba(0,0,0,0.7);
-}
-
-/* 标签栏 */
-#future_tab .tab {
-    padding: 0;
-    margin: 24px 0;
-}
-
-/* 标签 */
-#future_tab .tab li {
-    margin-top: 32px;
-    list-style: none;
-}
-
-/* 标签的锚 */
-#future_tab .tab li>a {
-    width: 10vw;
-    height: 10vw;
-    line-height: 10vw;
-    margin: auto;
-    color: #000;
+/* 底版 */
+.flip-v:before {
+    content: "";
+    width: 100%;
+    height: 100%;
     display: block;
-    text-decoration: none;
-    text-align: center;
-    background: #eee;
-    border-radius: 5vw;
-    transition: border-radius 0.3s;
+    background: #C6D7EC;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-/* 激活的标签的锚 */
-#future_tab .tab li.active>a {
-    border-radius: 1vw;
+/* 前面和背面 */
+.flip-v>.front, .flip-v>.back {
+    width: 100%;
+    height: 100%;
+    padding: 36px 52px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.8s;
+}
+/* 前面 */
+.flip-v>.front {
+    color: #fff;
+    font-size: 28px;
+    line-height: 40px;
+    text-shadow: rgba(0,0,0,0.7) 0 0 8px;
+}
+.flip-v:hover>.front {
+    transform: rotateY(180deg);
+}
+/* 背面 */
+.flip-v>.back {
+    color: #666;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: #eee;
+    transform: rotateY(-180deg);
+}
+.flip-v:hover>.back {
+    transform: rotateY(0deg);
+}
+
+/************* 未来列表 *************/
+/* 列表条目 */
+.base-item {
+    padding: 32px 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 条目图标 */
+.base-item .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #eee;
+    flex-shrink: 0;
+}
+
+/* 条目文本 */
+.base-item .text {
+    margin: 0 32px;
+    flex-grow: 1;
+}
+
+/* 条目标题 */
+.base-item h2 {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 条目段落 */
+.base-item p {
+    text-indent: unset;
 }
