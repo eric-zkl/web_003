@@ -1,9 +1,9 @@
 <!-- 
-    经济专题
+    五彩八桂专题
 
     作者：Hshijie
     时间：2018.8.12
-    最后修改时间：2018-08-27 10:33:07 - cyl
+    最后修改时间：2018-08-27 21:29:27 - cyl
  -->
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>经济</title>
+    <title>五彩八桂</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../css/layout.css">
@@ -22,12 +22,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-    .top-pic-col {
-        height: 500px;
-        background: #F6622D;
-    }
-    </style>
 </head>
 
 <body>
@@ -50,8 +44,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li class="active"><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li class="active"><a href="economy.html">五彩八桂</a></li>
                     <li><a href="difficulty.html">改革攻坚</a></li>
                     <li><a href="humanity.html">八桂人物</a></li>
                     <li><a href="discuss.html">共话改革</a></li>
@@ -62,8 +55,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -73,7 +66,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 经济特区 -->
     <section id="special_economic_zone" class="container">
         <h1>经济特区</h1>
@@ -81,8 +74,11 @@
             <div class="col-md-4">
                 <!-- 卡片 -->
                 <div class="card card-vertical card-flat">
-                    <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
+                    </div>
                     <h2>二级标题</h2>
+                    <hr>
                     <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
                     <a class="button button-fullradius" href="#">了解更多</a>
                 </div>
@@ -90,8 +86,11 @@
             <div class="col-md-4">
                 <!-- 卡片 -->
                 <div class="card card-vertical card-flat">
-                    <div class="img" style="background-image: url(../img/temp/231.jpg);"></div>
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(../img/temp/231.jpg);"></div>
+                    </div>
                     <h2>二级标题</h2>
+                    <hr>
                     <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
                     <a class="button button-fullradius" href="#">了解更多</a>
                 </div>
@@ -99,156 +98,153 @@
             <div class="col-md-4">
                 <!-- 卡片 -->
                 <div class="card card-vertical card-flat">
-                    <div class="img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
+                    </div>
                     <h2>二级标题</h2>
+                    <hr>
                     <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
                     <a class="button button-fullradius" href="#">了解更多</a>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <!-- 栏目（2） -->
-            <section id="second_part" class="col-md-8">
-                <h1>一级标题</h1>
-                <!-- 第一块 -->
-                <div class="pane">
-                    <!-- 卡片 -->
-                    <a class="card">
-                        <!-- 图片 -->
-                        <img src="../img/temp/231.jpg">
-                    </a>
-                    <!-- 描述 -->
-                    <div class="text">
-                        <h2>二级标题</h2>
-                        <p>产业高质量发展产业高质量发展产业高质量发展产业高质量发展产业高质量产业高质量发展产业高质量发展发展产业高质量发展</p>
-                    </div>
-                </div>
-                <!-- 第二块 -->
-                <div class="pane">
-                    <!-- 卡片 -->
-                    <a class="card">
-                        <!-- 图片 -->
-                        <img src="../img/temp/001.jpg">
-                    </a>
-                    <!-- 描述 -->
-                    <div class="text">
-                        <h2>二级标题</h2>
-                        <p>产业高质量发展产业高质量发展产业高质量发展产业高质量发展产业高质量产业高质量发展产业高质量发展发展产业高质量发展</p>
-                    </div>
-                </div>
-                <!-- 第三块 -->
-                <div class="pane">
-                    <!-- 卡片 -->
-                    <a class="card">
-                        <!-- 图片 -->
-                        <img src="../img/temp/W020180601351337931192.jpg">
-                    </a>
-                    <!-- 描述 -->
-                    <div class="text">
-                        <h2>二级标题</h2>
-                        <p>产业高质量发展产业高质量发展产业高质量发展产业高质量发展产业高质量产业高质量发展产业高质量发展发展产业高质量发展</p>
-                    </div>
-                </div>
-            </section>
-            <!-- 栏目（3） -->
-            <section class="col-md-4">
-                <h1>一级标题</h1>
-                <!-- 文章列表 -->
-                <ul id="article_list">
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 图标 -->
-                        <div class="img icon"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            <!-- 标题 -->
-                            <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                            <!-- 副标题 -->
-                            <div class="subtitle">2018-08-08 16:25</div>
-                        </div>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 图标 -->
-                        <div class="img icon"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            <!-- 标题 -->
-                            <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                            <!-- 副标题 -->
-                            <div class="subtitle">2018-08-08 16:25</div>
-                        </div>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 图标 -->
-                        <div class="img icon"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            <!-- 标题 -->
-                            <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                            <!-- 副标题 -->
-                            <div class="subtitle">2018-08-08 16:25</div>
-                        </div>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 图标 -->
-                        <div class="img icon"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            <!-- 标题 -->
-                            <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                            <!-- 副标题 -->
-                            <div class="subtitle">2018-08-08 16:25</div>
-                        </div>
-                    </a></li>
-                </ul>
-            </section>
+    <!-- 交通类 -->
+    <section class="container-fluid">
+        <div class="container">
+            <h1>四通八达</h1>
         </div>
-    </div>
-    <!-- 栏目（4）轮播图片 -->
-    <section class="container">
-        <h1>一级标题</h1>
-        <!-- 轮播 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- 轮播页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
-                    <div class="text">这是图片描述</div>
-                </div>
-                <!-- 轮播页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
-                    <div class="text">这是图片描述</div>
-                </div>
-                <!-- 轮播页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg)">
-                    <div class="text">这是图片描述</div>
-                </div>
-                <!-- 轮播页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
-                    <div class="text">这是图片描述</div>
-                </div>
-                <!-- 轮播页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
-                    <div class="text">这是图片描述</div>
+        <div class="row pic-wall">
+            <!-- 版块（大） -->
+            <div class="img col-md-8" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
                 </div>
             </div>
-            <!--左箭头-->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <!--右箭头-->
-            <div class="swiper-button-next swiper-button-white"></div>
-            <!-- 分页器 -->
-            <div class="swiper-pagination"></div>
+            <!-- 版块（小） -->
+            <div class="img col-md-4" style="background-image: url(../img/temp/001.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+                </div>
+            </div>
+            <!-- 版块（小） -->
+            <div class="img col-md-4" style="background-image: url(../img/temp/231.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+                </div>
+            </div>
+            <!-- 版块（小） -->
+            <div class="img col-md-4" style="background-image: url(../img/temp/W020180601351337931192.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+                </div>
+            </div>
+            <!-- 版块（小） -->
+            <div class="img col-md-4" style="background-image: url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+                </div>
+            </div>
+            <!-- 版块（小） -->
+            <div class="img col-md-4" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);">
+                <div class="text">
+                    <h2>二级标题</h2>
+                    <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 文化类 -->
+    <section id="culture" class="container">
+        <h1>锦绣壮乡</h1>
+        <!-- 分块1 -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>二级标题</h2>
+                <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+            </div>
+            <div class="col-md-6">
+                <!-- 轮播 -->
+                <div class="swiper-container card fillet">
+                    <div class="swiper-wrapper">
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                    </div>
+                    <!--左箭头-->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <!--右箭头-->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 分块2 -->
+        <div class="row">
+            <div class="col-md-6 col-md-push-6">
+                <h2>二级标题</h2>
+                <p>贺州至巴马高速公路是广西"县县通"高速公路的重要组成部。全长480公里，途经6市10县，贯穿桂东、桂中、桂西三个经济区，是广西未来东西向的重要公路通道。</p>
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+                <!-- 轮播 -->
+                <div class="swiper-container card fillet">
+                    <div class="swiper-wrapper">
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                        <!-- 轮播页面 -->
+                        <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
+                            <div class="text">这是图片描述</div>
+                        </div>
+                    </div>
+                    <!--左箭头-->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <!--右箭头-->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- 底部 -->
-    <footer class="container">底部</footer>
+    <footer>底部</footer>
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
     <!-- Swiper JS -->
     <script src="../js/swiper.min.js"></script>
     <!-- 初始化 Swiper -->
@@ -257,26 +253,12 @@
         autoplay: {
             disableOnInteraction: false,
         },
-        effect: 'coverflow',
         grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
     });
     </script>
 </body>

@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-08 11:02:59
-    最后修改时间：2018-08-27 09:53:11
+    最后修改时间：2018-08-27 21:29:53
  */
 
 /************** 通用 **************/
@@ -88,9 +88,15 @@ a {
     font-weight: normal;
 }
 
+/* 垂直卡片中的图片包装 */
+.card-vertical .img-wrapper {
+    height: 300px;
+    overflow: hidden;
+}
+
 /* 垂直卡片中的图片 */
 .card-vertical .img {
-    height: 300px;
+    height: 100%;
     background-color: #eee;
 }
 
@@ -124,7 +130,7 @@ a {
 
 /* 带阴影的按钮 */
 .button-shadow {
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 /**************** 巨幕 ****************/

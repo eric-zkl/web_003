@@ -3,8 +3,21 @@
 
     作者：cyl
     创建时间：2018-08-13 10:23:36
-    最后修改时间：2018-08-27 09:52:58
+    最后修改时间：2018-08-27 21:29:21
  */
+
+.top-video {
+    position: relative;
+}
+.top-video:after {
+    content: "";
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 /* 视频 */
 .top-video>video {

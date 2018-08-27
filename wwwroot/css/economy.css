@@ -1,8 +1,8 @@
 /*
-经济栏样式
+五彩八桂样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-22 21:03:21 cyl
+最后修改时间：2018-08-27 21:29:38 cyl
 */
 
 /*********** 经济特区 **********/
@@ -12,10 +12,86 @@
 
 /* 卡片 */
 #special_economic_zone .card{
-    transition: all 0.3s;
+    transition: box-shadow 0.3s;
 }
 #special_economic_zone .card:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 卡片的图片 */
+#special_economic_zone .card .img {
+    transition: transform 0.3s;
+}
+#special_economic_zone .card:hover .img {
+    transform: scale(1.1);
+}
+
+/* 分割线 */
+#special_economic_zone .card hr {
+    height: 1px;
+    margin: 32px;
+    border: none;
+    background: #ddd;
+}
+#special_economic_zone .card hr:after {
+    width: 0;
+    height: 100%;
+    content: "";
+    background: #aaa;
+    display: block;
+    transition: width 0.3s;
+}
+#special_economic_zone .card:hover hr:after {
+    width: 100%;
+}
+
+/*********** 图片墙 **********/
+/* 图片 */
+.pic-wall .img {
+    position: relative;
+}
+
+/* 宽的方块 */
+.pic-wall .col-md-8 {
+    height: 700px;
+}
+
+/* 窄的方块 */
+.pic-wall .col-md-4 {
+    height: 350px;
+}
+
+/* 文本 */
+.pic-wall .img .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 36px;
+    padding-right: 30%;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: opacity 1s, color 0.8s;
+}
+.pic-wall .img:hover .text {
+    color: transparent;
+    opacity: 0;
+}
+
+/* 文本标题 */
+.pic-wall .img .text h2 {
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+/* 文本段落 */
+.pic-wall .img .text p {
+    text-indent: unset;
 }
 
 /*********** 第二栏 **********/
@@ -66,69 +142,20 @@
     border-bottom: #000 2px solid;
 }
 
-/*********** 第三栏 **********/
-/* 文章列表 */
-#article_list {
-    padding: 0;
-    margin-top: 24px;
+/*********** 文化类 **********/
+/* 行 */
+#culture>.row {
+    margin-top: 60px;
 }
 
-/* 文章列表选项 */
-#article_list li {
-    margin-bottom: 16px;
-    list-style: none;
-}
-
-/* 列表项的链接 */
-#article_list li>a {
-    color: #000;
-    padding: 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    transition: all 0.3s;
-}
-#article_list li>a:hover {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-/* 列表项的图标 */
-#article_list li .icon {
-    width: 100px;
-    height: 100px;
-    background: #eee;
-    border-radius: 50px;
-    flex-shrink: 0;
-}
-
-/* 列表项的文本 */
-#article_list li .text {
-    margin: 4px 0 4px 16px;
-}
-
-/* 列表项的标题 */
-#article_list li .title {
-    font-size: 16px;
-}
-
-/* 列表项的副标题 */
-#article_list li .subtitle {
-    margin-top: 8px;
-    opacity: 0.7;
-}
-
-/*********** 第四栏 **********/
-/* 轮播 */
-.swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+/* 标题 */
+#culture>.row h2 {
+    margin: 24px 0;
 }
 
 /* 轮播页面 */
 .swiper-slide {
-    width: 40%;
-    height: 200px;
+    height: 400px;
     position: relative;
 }
 
