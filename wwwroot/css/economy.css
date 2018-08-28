@@ -2,47 +2,72 @@
 五彩八桂样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-27 21:29:38 cyl
+最后修改时间：2018-08-28 11:54:28 cyl
 */
 
 /*********** 经济特区 **********/
-#special_economic_zone .col-md-4 {
+/* 每个部分 */
+#special_economic_zone .part {
     padding: 16px;
 }
 
-/* 卡片 */
-#special_economic_zone .card{
-    transition: box-shadow 0.3s;
-}
-#special_economic_zone .card:hover {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+/* 图片包装 */
+#special_economic_zone .part .img-wrapper {
+    height: 200px;
+    overflow: hidden;
 }
 
-/* 卡片的图片 */
-#special_economic_zone .card .img {
-    transition: transform 0.3s;
+/* 图片 */
+#special_economic_zone .part .img {
+    height: 100%;
+    transition: transform 0.8s;
 }
-#special_economic_zone .card:hover .img {
+#special_economic_zone .part:hover .img {
     transform: scale(1.1);
 }
 
-/* 分割线 */
-#special_economic_zone .card hr {
-    height: 1px;
-    margin: 32px;
-    border: none;
-    background: #ddd;
+/* 标题 */
+#special_economic_zone .part h2 {
+    margin: 28px 0;
+    font-size: 24px;
 }
-#special_economic_zone .card hr:after {
+
+/* 分割线 */
+#special_economic_zone .part hr {
+    height: 1px;
+    margin: 24px 0;
+    border: none;
+    background: #dfdfdf;
+}
+#special_economic_zone .part hr:after {
     width: 0;
     height: 100%;
     content: "";
-    background: #aaa;
+    background: #999;
     display: block;
-    transition: width 0.3s;
+    transition: width 0.8s;
 }
-#special_economic_zone .card:hover hr:after {
+#special_economic_zone .part:hover hr:after {
     width: 100%;
+}
+
+/* 段落 */
+#special_economic_zone .part p {
+    opacity: 0.86;
+    transition: all 0.3s;
+}
+#special_economic_zone .part:hover p {
+    opacity: 1;
+}
+
+/* 按钮 */
+#special_economic_zone .part .button {
+    margin: 16px 0;
+    opacity: 0.5;
+    transition: all 0.8s;
+}
+#special_economic_zone .part:hover .button {
+    opacity: 1;
 }
 
 /*********** 图片墙 **********/
@@ -70,8 +95,8 @@
     left: 0;
     padding: 36px;
     padding-right: 30%;
-    color: rgba(255,255,255,0.9);
-    background: rgba(0,0,0,0.7);
+    color: rgba(255,255,255,0.86);
+    background: rgba(0,0,0,0.5);
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
