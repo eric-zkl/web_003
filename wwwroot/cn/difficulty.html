@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-15 14:50:59
-    最后修改时时间：2018-08-27 10:33:07
+    最后修改时时间：2018-08-28 22:29:55
  -->
 
 <!DOCTYPE html>
@@ -20,12 +20,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -47,8 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
                     <li class="active"><a href="difficulty.html">改革攻坚</a></li>
                     <li><a href="humanity.html">八桂人物</a></li>
                     <li><a href="discuss.html">共话改革</a></li>
@@ -59,8 +52,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,7 +63,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 深化改革 -->
     <section class="container">
         <h1>人民网</h1>
@@ -105,58 +98,39 @@
         </div>
     </section>
     <!-- 扶贫 -->
-    <section class="container">
-        <h1>扶贫</h1>
-        <div id="aid_the_poor" class="row">
-            <div class="col-md-6 row">
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
+    <section>
+        <div class="container">
+            <h1>扶贫</h1>
+        </div>
+        <div id="aid_the_poor">
+            <div class="row part part-1">
+                <div class="col-sm-6">
+                    <div class="text">
+                        <h2>二级标题</h2>
+                        <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
+                <!-- 视频版块（纵向） -->
+                <div class="col-sm-6 col-xs-12 video-wrapper">
+                    <video controls="controls">
+                        <source src="../video/xwlb_01.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-            <!-- 视频版块（纵向） -->
-            <div class="col-md-6 part part-v">
-                <div class="part-wrapper">
-                    <!-- 视频 -->
-                    <video controls="controls"></video>
-                    <h2>二级标题</h2>
-                    <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+            <div class="row part part-2">
+                <div>
+                    <div class="col-md-3 col-sm-6 col-sm-push-6 col-md-push-0  text">
+                        <h2>二级标题</h2>
+                        <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-sm-pull-6 col-md-pull-0 img" style="background-image: url(../img/temp/231.jpg);"></div>
+                </div>
+                <div>
+                    <div class="col-md-3 col-sm-6 text">
+                        <h2>二级标题</h2>
+                        <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 img" style="background-image: url(../img/temp/001.jpg);"></div>
                 </div>
             </div>
         </div>
@@ -169,11 +143,11 @@
             <ul class="nav nav-tabs">
                 <!-- 标签1 -->
                 <li class="active">
-                    <a class="tab-button" href="#tab_01" data-toggle="tab">标签1</a>
+                    <a class="tab-button tab-fast-switch" href="#tab_01" data-toggle="tab">标签1</a>
                 </li>
                 <!-- 标签2 -->
                 <li>
-                    <a class="tab-button" href="#tab_02" data-toggle="tab">标签2</a>
+                    <a class="tab-button tab-fast-switch" href="#tab_02" data-toggle="tab">标签2</a>
                 </li>
             </ul>
             <!-- 标签页内容 -->
@@ -184,11 +158,11 @@
                     <div class="col-md-6">
                         <h2>看60秒广西生态</h2>
                         <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        <a class="button" href="#">了解更多<span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <!-- 媒体部分 -->
                     <div class="col-md-6">
-                        <!-- 视频 -->
-                        <video class="card fillet" controls="controls"></video>
+                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
                     </div>
                 </div>
                 <!-- 页面2 -->
@@ -197,11 +171,11 @@
                     <div class="col-md-6">
                         <h2>看60秒广西生态</h2>
                         <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        <a class="button" href="#">了解更多<span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <!-- 媒体部分 -->
                     <div class="col-md-6">
-                    <!-- 视频 -->
-                        <video class="card fillet" controls="controls"></video>
+                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
                     </div>
                 </div>
             </div>
@@ -212,5 +186,7 @@
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
 </body>
 </html>

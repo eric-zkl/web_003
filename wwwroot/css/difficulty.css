@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-20 17:14:30
+	最后修改时间：2018-08-28 22:29:59
  */
 
 /*********** 深化改革 **********/
@@ -34,70 +34,54 @@
 }
 
 /*********** 扶贫攻坚 **********/
-/* 整个版块 */
-#aid_the_poor {
-	margin-top: 36px;
+/* 行 */
+#aid_the_poor .row {
+	margin: 0;
 }
 
-/* 版块 */
-#aid_the_poor .part {
-	margin-bottom: 30px;
+/* 版块01 */
+#aid_the_poor .part-1 {
+	background-color: #DFE2F0;
+}
+
+/* 版块02 */
+#aid_the_poor .part-2 {
+	background-color: #EEEED8;
+}
+
+/* 视频包装 */
+#aid_the_poor .part .video-wrapper {
+	padding: 0;
+}
+
+/* 视频 */
+#aid_the_poor .part video {
+	width: 100%;
 	display: block;
 }
 
-/* 图片版块 */
-#aid_the_poor .part-img {
-	position: relative;
-	overflow: hidden;
-	transition: all 0.3s;
-}
-#aid_the_poor .part-img:hover {
-	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+/* 图片 */
+#aid_the_poor .part .img {
+	height: 300px;
 }
 
-/* 图片版块的图片 */
-#aid_the_poor .part-img .img {
-	width: 100%;
-	height: 200px;
-	flex-shrink: 0;
-	background-color: #eee;
-	transition: transform 0.3s;
-}
-#aid_the_poor .part-img:hover .img {
-	transform: scale(1.1);
+/* 正文 */
+#aid_the_poor .part .text {
+	padding: 24px;
 }
 
-/* 图片版块的文本 */
-#aid_the_poor .part-img .text {
-	width: 100%;
-	padding: 16px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-	background: rgba(0,0,0,0.7);
-	justify-content: center;
-	align-items: center;
-	transform: translateY(100%);
-	transition: transform 0.3s;
-}
-#aid_the_poor .part-img:hover .text {
-	transform: none;
+/* 标题 */
+#aid_the_poor .part h2 {
+	margin: 36px 0;
 }
 
-/* 纵向版块的包装 */
-/*#aid_the_poor .part-v .part-wrapper {
-	padding: 16px 36px;
-	background: #f6f6f6;
-}*/
-
-/* 纵向版块中的视频 */
-#aid_the_poor .part-v video {
-	width: 100%;
+/* 段落 */
+#aid_the_poor .part p {
+	opacity: 0.86;
 }
 
 /*********** 广西生态 **********/
-/* 按钮栏 */
+/* 标签按钮栏 */
 #ecology_tab .nav-tabs {
 	margin: 36px 8px;
 	border: none;
@@ -105,9 +89,9 @@
 	justify-content: center;
 }
 
-/* 按钮 */
+/* 标签按钮 */
 #ecology_tab .tab-button {
-    padding: 12px 24px;
+    padding: 12px 40px;
 	margin: 0 16px;
     color: inherit;
     font-size: 14px;
@@ -125,13 +109,36 @@
 
 /* 二级标题 */
 #ecology_tab h2 {
-	margin: 16px 0 16px;
+	margin: 16px 0 40px 1v;
 	color: #444;
 	font-size: 50px;
 	font-weight: 900;
 }
 
+/* 了解更多按钮 */
+#ecology_tab .button {
+	padding: 18px 36px;	
+	margin: 36px 0;
+	border-radius: 0;
+	color: #fff;
+	background: #9FCB28;
+	transition: all 0.3s;
+}
+#ecology_tab .button:hover {
+	padding-right: 28px;
+	background: #B2D74D;
+}
+
+/* 了解更多按钮的图标 */
+#ecology_tab .button .glyphicon {
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+#ecology_tab .button:hover .glyphicon {
+	margin-left: 16px;
+}
+
 /* 视频 */
-#ecology_tab video {
-	width: 100%;
+#ecology_tab .img {
+	height: 500px;
 }
