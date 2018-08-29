@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-15 14:50:59
-    最后修改时时间：2018-08-27 10:33:07
+    最后修改时时间：2018-08-29 14:04:23
  -->
 
 <!DOCTYPE html>
@@ -20,12 +20,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -47,8 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
                     <li class="active"><a href="difficulty.html">改革攻坚</a></li>
                     <li><a href="humanity.html">八桂人物</a></li>
                     <li><a href="discuss.html">共话改革</a></li>
@@ -59,8 +52,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,7 +63,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 深化改革 -->
     <section class="container">
         <h1>人民网</h1>
@@ -93,70 +86,184 @@
     <section class="container">
         <h1>网上政府</h1>
         <div id="gov_online" class="row">
-            <div class="col-md-6">
-                <img src="../img/24h_gov_online/1.jpg">
+            <!-- 部分01 -->
+            <div class="col-md-4">
+                <!-- 编号 -->
+                <div class="number">1</div>
+                <!-- 主要内容 -->
+                <div class="main">
+                    <!-- 标题 -->
+                    <h2>推行审批智能化</h2>
+                    <ul>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>开发审批智能化信息系统</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>推行企业和群众办事网上申办、智能审批、结果电子化的新型网上办事模式</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>政府“7×24小时”不间断服务</h3>
+                                <p>白天夜晚都能办，24小时“不打烊”身在外地也能办。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>行政审批模式的重大改变</h3>
+                                <p>人工审批改为电脑智能审批，即报即批，即批即得，结果电子化，企业和群众办事“零跑腿”。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="../img/24h_gov_online/2.jpg">
+            <!-- 部分02 -->
+            <div class="col-md-4">
+                <!-- 编号 -->
+                <div class="number">2</div>
+                <!-- 主要内容 -->
+                <div class="main">
+                    <!-- 标题 -->
+                    <h2>审管信息一体化</h2>
+                    <div class="resume">解决及提升审批和监管分离之后的业务协同及信息共享，使监管更强，保障审批更简。</div>
+                    <ul>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>审批结果同步进入事中事后监管信息系统</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>监管结果同步反馈审批智能化信息系统</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>相关事项申请人的诚信结果同步反馈政务诚信系统</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="../img/24h_gov_online/3.jpg">
+            <!-- 部分03 -->
+            <div class="col-md-4">
+                <!-- 编号 -->
+                <div class="number">3</div>
+                <!-- 主要内容 -->
+                <div class="main">
+                    <!-- 标题 -->
+                    <h2>时间和试点</h2>
+                    <ul>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>先行试点和范围</h3>
+                                <p>在自治区本级和南宁市、贵港市、南宁市横县、贵港市覃塘区先行试点。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 图标 -->
+                            <div class="img icon"></div>
+                            <!-- 文本 -->
+                            <div class="text">
+                                <h3>从2018年起</h3>
+                                <p>全面推进审批智能化和审管一体化改革，实现智慧审批、智慧审管全覆盖。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     <!-- 扶贫 -->
-    <section class="container">
-        <h1>扶贫</h1>
-        <div id="aid_the_poor" class="row">
-            <div class="col-md-6 row">
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
+    <section>
+        <div class="container">
+            <h1>扶贫</h1>
+        </div>
+        <div id="aid_the_poor">
+            <!-- 版块01 -->
+            <div class="row nomargin part part-1">
+                <!-- 文本 -->
+                <div class="col-sm-6 text">
+                    <!-- 标题 -->
+                    <h2>二级标题</h2>
+                    <!-- 段落 -->
+                    <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
                 </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a class="part part-img" href="#">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 文本 -->
-                        <div class="text">
-                            田阳举办芒果电商启动仪式促进脱贫攻坚工作
-                        </div>
-                    </a>
+                <!-- 视频包装 -->
+                <div class="col-sm-6 col-xs-12 video-wrapper">
+                    <!-- 视频 -->
+                    <video controls="controls">
+                        <source src="../video/xwlb_01.mp4" type="video/mp4">
+                    </video>
+                    <!-- 三角形（指示器） -->
+                    <div class="hidden-xs delta delta-left"></div>
+                    <div class="visible-xs-block delta delta-top"></div>
                 </div>
             </div>
-            <!-- 视频版块（纵向） -->
-            <div class="col-md-6 part part-v">
-                <div class="part-wrapper">
-                    <!-- 视频 -->
-                    <video controls="controls"></video>
-                    <h2>二级标题</h2>
-                    <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+            <div class="row nomargin">
+                <!-- 版块02 -->
+                <div class="col-md-6 col-sm-12 part part-2">
+                    <div class="row">
+                        <!-- 文本 -->
+                        <div class="col-sm-6 col-sm-push-6 col-md-push-0  text">
+                            <!-- 标题 -->
+                            <h2>二级标题</h2>
+                           <!-- 文本 -->
+                            <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        </div>
+                        <!-- 图片 -->
+                        <div class="col-sm-6 col-sm-pull-6 col-md-pull-0 img" style="background-image: url(../img/temp/231.jpg);">
+                            <!-- 三角形（指示器） -->
+                            <div class="hidden-xs delta delta-left"></div>
+                            <div class="visible-xs-block delta delta-top"></div>
+                            <div class="visible-sm-block delta delta-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 版块03 -->
+                <div class="col-md-6 col-sm-12 part part-3">
+                    <div class="row">
+                        <!-- 文本 -->
+                        <div class="col-sm-6 text">
+                            <!-- 标题 -->
+                            <h2>二级标题</h2>
+                            <!-- 标题 -->
+                            <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        </div>
+                        <!-- 图片 -->
+                        <div class="col-sm-6 img" style="background-image: url(../img/temp/001.jpg);">
+                            <!-- 三角形（指示器） -->
+                            <div class="hidden-xs delta delta-left"></div>
+                            <div class="visible-xs-block delta delta-top"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,11 +276,11 @@
             <ul class="nav nav-tabs">
                 <!-- 标签1 -->
                 <li class="active">
-                    <a class="tab-button" href="#tab_01" data-toggle="tab">标签1</a>
+                    <a class="tab-button tab-fast-switch" href="#tab_01" data-toggle="tab">标签1</a>
                 </li>
                 <!-- 标签2 -->
                 <li>
-                    <a class="tab-button" href="#tab_02" data-toggle="tab">标签2</a>
+                    <a class="tab-button tab-fast-switch" href="#tab_02" data-toggle="tab">标签2</a>
                 </li>
             </ul>
             <!-- 标签页内容 -->
@@ -184,11 +291,11 @@
                     <div class="col-md-6">
                         <h2>看60秒广西生态</h2>
                         <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        <a class="button" href="#">了解更多<span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <!-- 媒体部分 -->
                     <div class="col-md-6">
-                        <!-- 视频 -->
-                        <video class="card fillet" controls="controls"></video>
+                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
                     </div>
                 </div>
                 <!-- 页面2 -->
@@ -197,11 +304,11 @@
                     <div class="col-md-6">
                         <h2>看60秒广西生态</h2>
                         <p>闯深水、涉险滩、抓要害，一系列动真格的改革举措相继推出、精准落地，激发经济社会发展活力。放眼八桂大地，一个个令人瞩目的改革亮点，一个个振奋人心的改革故事，展现着壮乡铿锵前进的独特风采。</p>
+                        <a class="button" href="#">了解更多<span class="glyphicon glyphicon-arrow-right"></span></a>
                     </div>
                     <!-- 媒体部分 -->
                     <div class="col-md-6">
-                    <!-- 视频 -->
-                        <video class="card fillet" controls="controls"></video>
+                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
                     </div>
                 </div>
             </div>
@@ -212,5 +319,7 @@
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
 </body>
 </html>

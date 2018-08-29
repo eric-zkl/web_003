@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-20 17:14:30
+	最后修改时间：2018-08-29 14:04:13
  */
 
 /*********** 深化改革 **********/
@@ -23,81 +23,209 @@
 }
 
 /********** “政”在进行 *********/
-/* 图片 */
-#gov_online img {
-	width: 100%;
+/* 编码 */
+#gov_online .number {
+	color: #D9451F;
+	font-size: 130px;
+	font-style: italic;
+	text-align: center;
 }
 
-/* 第一列 */
-#gov_online>.col-md-6:first-child {
-	margin-top: 36px;
+/* 主要内容 */
+#gov_online .main {
+	margin-top: -90px;
+	padding: 24px;
+	padding-top: 50px;
+	background: #FFF6F6;
+}
+
+/* 标题 */
+#gov_online h2 {
+	margin-bottom: 40px;
+	color: #D9451F;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* 简述 */
+#gov_online .resume {
+	padding: 16px;
+	border: #ECB6A8 1px solid;
+	background: #FFFDFD;
+}
+
+/* 列表 */
+#gov_online ul {
+	padding: 0;
+	margin: 24px -24px;
+	list-style: none;
+}
+
+/* 列表条目 */
+#gov_online li {
+	padding: 24px;
+	display: flex;
+	transition: background 0.5s;
+}
+#gov_online li:hover {
+	background: #FFE8E8;
+}
+
+/* 图标 */
+#gov_online .icon {
+	width: 60px;
+	height: 60px;
+	background-color: #eee;
+	flex-shrink: 0;
+}
+
+/* 文本 */
+#gov_online .text {
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	transition: opacity 0.3s;
+}
+
+/* 小标题 */
+#gov_online h3 {
+	width: 100%;
+	margin: 8px 0;
+	color: #D9451F;
+	font-size: 18px;
+}
+
+/* 段落 */
+#gov_online p {
+	opacity: 0.86;
+	text-indent: unset;
 }
 
 /*********** 扶贫攻坚 **********/
-/* 整个版块 */
-#aid_the_poor {
-	margin-top: 36px;
+/* 行 */
+#aid_the_poor .nomargin {
+	margin: 0;
 }
 
 /* 版块 */
 #aid_the_poor .part {
-	margin-bottom: 30px;
+	transition: background 0.5s;
+}
+
+/* 版块01 */
+#aid_the_poor .part-1 {
+	background-color: #DFE2F0;
+}
+#aid_the_poor .part-1:hover {
+	background-color: #CDD1E4;
+}
+
+/* 版块02 */
+#aid_the_poor .part-2 {
+	background-color: #EEEED8;
+}
+#aid_the_poor .part-2:hover {
+	background-color: #E4E4CB;
+}
+
+/* 版块03 */
+#aid_the_poor .part-3 {
+	background-color: #EEDED8;
+}
+#aid_the_poor .part-3:hover {
+	background-color: #E5D4CD;
+}
+
+/* 视频包装 */
+#aid_the_poor .part .video-wrapper {
+	padding: 0;
+	position: relative;
+}
+
+/* 视频 */
+#aid_the_poor .part video {
+	width: 100%;
 	display: block;
 }
 
-/* 图片版块 */
-#aid_the_poor .part-img {
+/* 图片 */
+#aid_the_poor .part .img {
+	height: 400px;
+	padding: 0;
+	opacity: 0.7;
 	position: relative;
-	overflow: hidden;
-	transition: all 0.3s;
+	transition: opacity 0.5s;
 }
-#aid_the_poor .part-img:hover {
-	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-/* 图片版块的图片 */
-#aid_the_poor .part-img .img {
-	width: 100%;
-	height: 200px;
-	flex-shrink: 0;
-	background-color: #eee;
-	transition: transform 0.3s;
-}
-#aid_the_poor .part-img:hover .img {
-	transform: scale(1.1);
+#aid_the_poor .part:hover .img {
+	opacity: 1;
 }
 
-/* 图片版块的文本 */
-#aid_the_poor .part-img .text {
-	width: 100%;
-	padding: 16px;
+/* 三角形（指示器） */
+#aid_the_poor .part .delta {
+	width: 0;
+	height: 0;
+	border: 24px solid;
 	position: absolute;
+	transition: border-color 0.5s;
+}
+#aid_the_poor .part .delta-left {
+	top: 50px;
+	left: 0;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+#aid_the_poor .part .delta-right {
+	top: 50px;
 	right: 0;
-	bottom: 0;
-	color: #fff;
-	background: rgba(0,0,0,0.7);
-	justify-content: center;
-	align-items: center;
-	transform: translateY(100%);
-	transition: transform 0.3s;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-left-color: transparent !important;
 }
-#aid_the_poor .part-img:hover .text {
-	transform: none;
+#aid_the_poor .part .delta-top {
+	top: 0;
+	left: 50px;
+	border-left-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+#aid_the_poor .part-1 .delta {
+	border-color: #DFE2F0;
+}
+#aid_the_poor .part-1:hover .delta {
+	border-color: #CDD1E4;
+}
+#aid_the_poor .part-2 .delta {
+	border-color: #EEEED8;
+}
+#aid_the_poor .part-2:hover .delta {
+	border-color: #E4E4CB;
+}
+#aid_the_poor .part-3 .delta {
+	border-color: #EEDED8;
+}
+#aid_the_poor .part-3:hover .delta {
+	border-color: #E5D4CD;
 }
 
-/* 纵向版块的包装 */
-/*#aid_the_poor .part-v .part-wrapper {
-	padding: 16px 36px;
-	background: #f6f6f6;
-}*/
+/* 正文 */
+#aid_the_poor .part .text {
+	padding: 24px;
+}
 
-/* 纵向版块中的视频 */
-#aid_the_poor .part-v video {
-	width: 100%;
+/* 标题 */
+#aid_the_poor .part h2 {
+	margin: 36px 0;
+}
+
+/* 段落 */
+#aid_the_poor .part p {
+	opacity: 0.86;
 }
 
 /*********** 广西生态 **********/
-/* 按钮栏 */
+/* 标签按钮栏 */
 #ecology_tab .nav-tabs {
 	margin: 36px 8px;
 	border: none;
@@ -105,9 +233,9 @@
 	justify-content: center;
 }
 
-/* 按钮 */
+/* 标签按钮 */
 #ecology_tab .tab-button {
-    padding: 12px 24px;
+    padding: 12px 40px;
 	margin: 0 16px;
     color: inherit;
     font-size: 14px;
@@ -125,13 +253,36 @@
 
 /* 二级标题 */
 #ecology_tab h2 {
-	margin: 16px 0 16px;
+	margin: 16px 0 40px;
 	color: #444;
 	font-size: 50px;
 	font-weight: 900;
 }
 
+/* 了解更多按钮 */
+#ecology_tab .button {
+	padding: 18px 36px;	
+	margin: 36px 0;
+	border-radius: 0;
+	color: #fff;
+	background: #9FCB28;
+	transition: all 0.3s;
+}
+#ecology_tab .button:hover {
+	padding-right: 28px;
+	background: #B2D74D;
+}
+
+/* 了解更多按钮的图标 */
+#ecology_tab .button .glyphicon {
+	margin-left: 8px;
+	transition: all 0.3s;
+}
+#ecology_tab .button:hover .glyphicon {
+	margin-left: 16px;
+}
+
 /* 视频 */
-#ecology_tab video {
-	width: 100%;
+#ecology_tab .img {
+	height: 500px;
 }
