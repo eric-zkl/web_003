@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-29 11:35:35
+	最后修改时间：2018-08-29 14:04:13
  */
 
 /*********** 深化改革 **********/
@@ -23,14 +23,83 @@
 }
 
 /********** “政”在进行 *********/
-/* 图片 */
-#gov_online img {
-	width: 100%;
+/* 编码 */
+#gov_online .number {
+	color: #D9451F;
+	font-size: 130px;
+	font-style: italic;
+	text-align: center;
 }
 
-/* 第一列 */
-#gov_online>.col-md-6:first-child {
-	margin-top: 36px;
+/* 主要内容 */
+#gov_online .main {
+	margin-top: -90px;
+	padding: 24px;
+	padding-top: 50px;
+	background: #FFF6F6;
+}
+
+/* 标题 */
+#gov_online h2 {
+	margin-bottom: 40px;
+	color: #D9451F;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* 简述 */
+#gov_online .resume {
+	padding: 16px;
+	border: #ECB6A8 1px solid;
+	background: #FFFDFD;
+}
+
+/* 列表 */
+#gov_online ul {
+	padding: 0;
+	margin: 24px -24px;
+	list-style: none;
+}
+
+/* 列表条目 */
+#gov_online li {
+	padding: 24px;
+	display: flex;
+	transition: background 0.5s;
+}
+#gov_online li:hover {
+	background: #FFE8E8;
+}
+
+/* 图标 */
+#gov_online .icon {
+	width: 60px;
+	height: 60px;
+	background-color: #eee;
+	flex-shrink: 0;
+}
+
+/* 文本 */
+#gov_online .text {
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	transition: opacity 0.3s;
+}
+
+/* 小标题 */
+#gov_online h3 {
+	width: 100%;
+	margin: 8px 0;
+	color: #D9451F;
+	font-size: 18px;
+}
+
+/* 段落 */
+#gov_online p {
+	opacity: 0.86;
+	text-indent: unset;
 }
 
 /*********** 扶贫攻坚 **********/
