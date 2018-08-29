@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建日期：2018-08-16 17:38:34
-	最后修改时间：2018-08-20 17:50:28
+	最后修改时间：2018-08-29 20:36:22
  */
 
 /************ 中央综合推荐 ************/
@@ -17,123 +17,34 @@
     padding-top: 24px;
 }
 
-/************ 栏目（2） ************/
-/* 文章列表 */
-#swiper_list {
-    padding: 0;
-    margin-top: 24px;
+/*************** 时代 ***************/
+
+#human .row {
+    margin: 32px 0;
 }
 
-/* 列表包装 */
-#swiper_list .swiper-wrapper {
-	height: 510px;
+#human img {
+    width: 100%;
 }
 
-/* 翻页按钮 */
-#swiper_list .button-next, #swiper_list .button-prev {
-	padding: 16px;
-	display: block;
-	text-align: center;
-	background: #fff;
-	z-index: 2;
-	outline: none;
-	transition: color 0.3s;
-}
-#swiper_list .button-next:hover, #swiper_list .button-prev:hover {
-	color: #888;
+#human h2 {
+    color: #444;
+    margin: 16px 0 40px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-/* 列表项的链接 */
-#swiper_list .swiper-slide {
-	width: auto;
-    padding: 24px 16px;
-    color: #000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
-}
-#swiper_list .swiper-slide:hover {
-    color: #1D81FF;
-}
-
-/* 列表项的图标 */
-#swiper_list .swiper-slide .icon {
-    width: 120px;
-    height: 120px;
-    background: #eee;
-    border-radius: 60px;
-    border: 10px rgba(0,0,0,0.1) solid;
-    flex-shrink: 0;
-}
-
-/* 列表项的文本 */
-#swiper_list .swiper-slide .text {
-    margin: 4px 0 4px 36px;
-    flex-grow: 1;
-}
-
-/* 列表项的标题 */
-#swiper_list .swiper-slide .title {
-    font-size: 16px;
-}
-
-/* 列表项的副标题 */
-#swiper_list .swiper-slide .subtitle {
-    margin-top: 8px;
-    opacity: 0.7;
-}
-
-/* 列表项的指示器（一般是箭头） */
-#swiper_list .swiper-slide .indicator {
-	margin-right: 16px;
-	color: #1D81FF;
-	opacity: 0;
-	transition: all 0.3s;
-}
-#swiper_list .swiper-slide:hover .indicator {
-	opacity: 1;
-	margin-left: 16px;
-	margin-right: 0;
-}
-
-/************* 热点链接 **************/
-/* 列表 */
-#hot_list {
-	padding: 0;
-}
-
-/* 列表项 */
-#hot_list li {
-	list-style: none;
-}
-
-/* 列表项的链接 */
-#hot_list li>a {
-	padding: 24px 16px;
-	color: unset;
-	display: block;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-#hot_list li>a:hover {
-	color: #1D81FF;
-	background: #eee;
-}
-
-/* 列表项的标题 */
-#hot_list li>a h2 {
-	margin: 0;
-	font-size: 20px;
-}
-
-/* 列表项的简述 */
-#hot_list li>a p {
-	margin: 16px 0 0 0;
-	font-size: 12px;
+#human .button {
+    margin: 24px 0;
 }
 
 /*************** 风采 ***************/
+/* 栏目 */
+#mien_tab {
+    color: #fff;
+    position: relative;
+}
+
 /* 标签栏 */
 #mien_tab .nav-tabs {
     margin: 60px 0;
@@ -144,19 +55,26 @@
 
 /* 标签 */
 #mien_tab .tab-label {
-    padding: 24px 44px;
-    margin: 0 16px;
+    margin: 0;
+    padding: 18px 44px;
     color: inherit;
-    background-color: #eee;
+    border: none;
+    border-radius: 0;
+    background-color: #665094;
+    opacity: 0.6;
     transition: all 0.3s;
 }
 #mien_tab .tab-label:hover, #mien_tab .active .tab-label {
-    color: #fff;
-    background-color: #FF5B32;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    opacity: 1;
+    background-color: #665094;
 }
 
 /* 标签页 */
+#mien_tab .tab-pane {
+    transition: all 1s;
+}
+
+/* 标签页包装 */
 #mien_tab .tab-pane-wrapper {
     display: flex;
     align-items: flex-start;
@@ -173,7 +91,26 @@
 /* 标签页中的卡片 */
 #mien_tab .tab-pane-wrapper>.card {
     width: 60%;
-    margin-top: 24px;
+    margin-top: 36px;
     margin-left: -10%;
     flex-shrink: 0;
+    background: #665094;
+}
+
+/* 背景层 */
+#mien_tab .bg, #mien_tab .bg:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#mien_tab .bg {
+    z-index: -1;
+    transition: background 0.5s;
+}
+#mien_tab .bg:after {
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
 }

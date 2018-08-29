@@ -3,7 +3,7 @@
 
     作者：cyl
     创建日期：2018-08-16 18:05:47
-    最后修改时间：2018-08-27 10:33:07
+    最后修改时间：2018-08-29 20:36:17
  -->
 
 <!DOCTYPE html>
@@ -21,12 +21,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -48,10 +42,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
                     <li><a href="difficulty.html">改革攻坚</a></li>
-                    <li class="active"><a href="humanity.html">八桂人物</a></li>
+                    <li class="active"><a href="humanity.html">时代先锋</a></li>
                     <li><a href="discuss.html">共话改革</a></li>
                     <li><a href="plan.html">布局广西</a></li>
                     <li><a href="#">关于我们</a></li>
@@ -60,8 +53,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -71,7 +64,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 中央综合推荐 -->
     <section class="container">
         <h1>中央综合推荐</h1>
@@ -88,178 +81,103 @@
             </div>
         </div>
     </section>
-    <div class="container">
+    <section class="container" id="human">
+        <h1>时代</h1>
         <div class="row">
-            <!-- 栏目（2） -->
-            <section class="col-md-8">
-                <h1>栏目（2）</h1>
-                <div id="swiper_list" class="swiper-container">
-                    <div class="glyphicon glyphicon-chevron-up button-prev"></div>
-                    <div class="swiper-wrapper">
-                        <a href="#" class="swiper-slide">
-                            <!-- 图标 -->
-                            <div class="img icon"></div>
-                            <!-- 文本 -->
-                            <div class="text">
-                                <!-- 标题 -->
-                                <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                                <!-- 副标题 -->
-                                <div class="subtitle">2018-08-08 16:25</div>
-                            </div>
-                            <!-- 指示器 -->
-                            <div class="glyphicon glyphicon-arrow-right indicator"></div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <!-- 图标 -->
-                            <div class="img icon"></div>
-                            <!-- 文本 -->
-                            <div class="text">
-                                <!-- 标题 -->
-                                <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                                <!-- 副标题 -->
-                                <div class="subtitle">2018-08-08 16:25</div>
-                            </div>
-                            <!-- 指示器 -->
-                            <div class="glyphicon glyphicon-arrow-right indicator"></div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <!-- 图标 -->
-                            <div class="img icon"></div>
-                            <!-- 文本 -->
-                            <div class="text">
-                                <!-- 标题 -->
-                                <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                                <!-- 副标题 -->
-                                <div class="subtitle">2018-08-08 16:25</div>
-                            </div>
-                            <!-- 指示器 -->
-                            <div class="glyphicon glyphicon-arrow-right indicator"></div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <!-- 图标 -->
-                            <div class="img icon"></div>
-                            <!-- 文本 -->
-                            <div class="text">
-                                <!-- 标题 -->
-                                <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                                <!-- 副标题 -->
-                                <div class="subtitle">2018-08-08 16:25</div>
-                            </div>
-                            <!-- 指示器 -->
-                            <div class="glyphicon glyphicon-arrow-right indicator"></div>
-                        </a>
-                        <a href="#" class="swiper-slide">
-                            <!-- 图标 -->
-                            <div class="img icon"></div>
-                            <!-- 文本 -->
-                            <div class="text">
-                                <!-- 标题 -->
-                                <div class="title">2018年上半年广西新建（投产）“规上”企业少</div>
-                                <!-- 副标题 -->
-                                <div class="subtitle">2018-08-08 16:25</div>
-                            </div>
-                            <!-- 指示器 -->
-                            <div class="glyphicon glyphicon-arrow-right indicator"></div>
-                        </a>
-                    </div>
-                    <div class="glyphicon glyphicon-chevron-down button-next"></div>
-                </div>
-            </section>
-            <!-- 热点链接 -->
-            <section class="col-md-4">
-                <h1>热点链接</h1>
-                <!-- 热点列表 -->
-                <ul id="hot_list">
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 标题 -->
-                        <h2>8月6日24时起广西成品油价格按机制上调</h2>
-                        <!-- 简述 -->
-                        <p>根据国家成品油价格形成机制，结合近一段时期国际市场油价变化情况，国家发展改革委决定...</p>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 标题 -->
-                        <h2>8月6日24时起广西成品油价格按机制上调</h2>
-                        <!-- 简述 -->
-                        <p>根据国家成品油价格形成机制，结合近一段时期国际市场油价变化情况，国家发展改革委决定..</p>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 标题 -->
-                        <h2>8月6日24时起广西成品油价格按机制上调</h2>
-                        <!-- 简述 -->
-                        <p>根据国家成品油价格形成机制，结合近一段时期国际市场油价变化情况，国家发展改革委决定..</p>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 标题 -->
-                        <h2>8月6日24时起广西成品油价格按机制上调</h2>
-                        <!-- 简述 -->
-                        <p>根据国家成品油价格形成机制，结合近一段时期国际市场油价变化情况，国家发展改革委决定..</p>
-                    </a></li>
-                    <!-- 列表项 -->
-                    <li><a href="#">
-                        <!-- 标题 -->
-                        <h2>8月6日24时起广西成品油价格按机制上调</h2>
-                        <!-- 简述 -->
-                        <p>根据国家成品油价格形成机制，结合近一段时期国际市场油价变化情况，国家发展改革委决定..</p>
-                    </a></li>
-                </ul>
-            </section>
+            <div class="col-sm-6 col-sm-push-6">
+                <h2>二级标题</h2>
+                <p>他带领药园走出困境，打造成吉尼斯总部认证的世界“最大的药用植物园”。他致力于与东盟国家开展合作，让广西优秀的中医药资源与种植技术“走出去”。</p>
+                <a class="button button-fullradius">了解更多</a>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <img src="../img/temp/1534902591735112.png">
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>二级标题</h2>
+                <p>他带领药园走出困境，打造成吉尼斯总部认证的世界“最大的药用植物园”。他致力于与东盟国家开展合作，让广西优秀的中医药资源与种植技术“走出去”。</p>
+                <a class="button button-fullradius">了解更多</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="../img/temp/1534902591735112.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                <h2>二级标题</h2>
+                <p>他带领药园走出困境，打造成吉尼斯总部认证的世界“最大的药用植物园”。他致力于与东盟国家开展合作，让广西优秀的中医药资源与种植技术“走出去”。</p>
+                <a class="button button-fullradius">了解更多</a>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <img src="../img/temp/1534902591735112.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>二级标题</h2>
+                <p>他带领药园走出困境，打造成吉尼斯总部认证的世界“最大的药用植物园”。他致力于与东盟国家开展合作，让广西优秀的中医药资源与种植技术“走出去”。</p>
+                <a class="button button-fullradius">了解更多</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="../img/temp/1534902591735112.png">
+            </div>
+        </div>
+    </section>
     <!-- 风采 -->
-    <section class="container">
-        <h1>风采</h1>
-        <div id="mien_tab" class="tab">
-            <!-- 标签栏 -->
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a href="#tab_01" class="tab-label" data-toggle="tab">标签1</a>
-                </li>
-                <li>
-                    <a href="#tab_02" class="tab-label" data-toggle="tab">标签2</a>
-                </li>
-                <li>
-                    <a href="#tab_03" class="tab-label" data-toggle="tab">标签3</a>
-                </li>
-            </ul>
-            <!-- 标签页内容 -->
-            <div class="tab-content">
-                <!-- 标签页01 -->
-                <div class="tab-pane fade in active" id="tab_01">
-                    <div class="tab-pane-wrapper">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
-                        <!-- 卡片 -->
-                        <div class="card">
-                            <h2>二级标题</h2>
-                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+    <section id="mien_tab">
+        <div class="img bg" style="background-image: url(../img/humanity/dong.jpg);"></div>
+        <div class="container">
+            <h1>风采</h1>
+            <div class="tab">
+                <!-- 标签栏 -->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab_01" class="tab-label tab-fast-switch" data-toggle="tab">标签1</a>
+                    </li>
+                    <li>
+                        <a href="#tab_02" class="tab-label tab-fast-switch" data-toggle="tab">标签2</a>
+                    </li>
+                    <li>
+                        <a href="#tab_03" class="tab-label tab-fast-switch" data-toggle="tab">标签3</a>
+                    </li>
+                </ul>
+                <!-- 标签页内容 -->
+                <div class="tab-content">
+                    <!-- 标签页01 -->
+                    <div class="tab-pane fade in active" id="tab_01">
+                        <div class="tab-pane-wrapper">
+                            <!-- 图片 -->
+                            <div class="img" style="background-image: url(../img/humanity/dong.jpg);"></div>
+                            <!-- 卡片 -->
+                            <div class="card">
+                                <h2>二级标题</h2>
+                                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- 标签页02 -->
-                <div class="tab-pane fade" id="tab_02">
-                    <div class="tab-pane-wrapper">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/231.jpg);"></div>
-                        <!-- 卡片 -->
-                        <div class="card">
-                            <h2>二级标题</h2>
-                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                    <!-- 标签页02 -->
+                    <div class="tab-pane fade" id="tab_02">
+                        <div class="tab-pane-wrapper">
+                            <!-- 图片 -->
+                            <div class="img" style="background-image: url(../img/humanity/bailian.jpg);"></div>
+                            <!-- 卡片 -->
+                            <div class="card">
+                                <h2>二级标题</h2>
+                                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- 标签页03 -->
-                <div class="tab-pane fade" id="tab_03">
-                    <div class="tab-pane-wrapper">
-                        <!-- 图片 -->
-                        <div class="img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
-                        <!-- 卡片 -->
-                        <div class="card">
-                            <h2>二级标题</h2>
-                            <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                    <!-- 标签页03 -->
+                    <div class="tab-pane fade" id="tab_03">
+                        <div class="tab-pane-wrapper">
+                            <!-- 图片 -->
+                            <div class="img" style="background-image: url(../img/humanity/baguidage.jpg);"></div>
+                            <!-- 卡片 -->
+                            <div class="card">
+                                <h2>二级标题</h2>
+                                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -267,10 +185,13 @@
         </div>
     </section>
     <!-- 底部 -->
-    <footer class="container">底部</footer>
+    <footer>底部</footer>
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/humanity.js"></script>
       <!-- Swiper JS -->
     <script src="../js/swiper.min.js"></script>
     <!-- 初始化列表轮播 -->
