@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-28 22:29:59
+	最后修改时间：2018-08-29 11:35:35
  */
 
 /*********** 深化改革 **********/
@@ -35,23 +35,43 @@
 
 /*********** 扶贫攻坚 **********/
 /* 行 */
-#aid_the_poor .row {
+#aid_the_poor .nomargin {
 	margin: 0;
+}
+
+/* 版块 */
+#aid_the_poor .part {
+	transition: background 0.5s;
 }
 
 /* 版块01 */
 #aid_the_poor .part-1 {
 	background-color: #DFE2F0;
 }
+#aid_the_poor .part-1:hover {
+	background-color: #CDD1E4;
+}
 
 /* 版块02 */
 #aid_the_poor .part-2 {
 	background-color: #EEEED8;
 }
+#aid_the_poor .part-2:hover {
+	background-color: #E4E4CB;
+}
+
+/* 版块03 */
+#aid_the_poor .part-3 {
+	background-color: #EEDED8;
+}
+#aid_the_poor .part-3:hover {
+	background-color: #E5D4CD;
+}
 
 /* 视频包装 */
 #aid_the_poor .part .video-wrapper {
 	padding: 0;
+	position: relative;
 }
 
 /* 视频 */
@@ -62,7 +82,62 @@
 
 /* 图片 */
 #aid_the_poor .part .img {
-	height: 300px;
+	height: 400px;
+	padding: 0;
+	opacity: 0.7;
+	position: relative;
+	transition: opacity 0.5s;
+}
+#aid_the_poor .part:hover .img {
+	opacity: 1;
+}
+
+/* 三角形（指示器） */
+#aid_the_poor .part .delta {
+	width: 0;
+	height: 0;
+	border: 24px solid;
+	position: absolute;
+	transition: border-color 0.5s;
+}
+#aid_the_poor .part .delta-left {
+	top: 50px;
+	left: 0;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+#aid_the_poor .part .delta-right {
+	top: 50px;
+	right: 0;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-left-color: transparent !important;
+}
+#aid_the_poor .part .delta-top {
+	top: 0;
+	left: 50px;
+	border-left-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+#aid_the_poor .part-1 .delta {
+	border-color: #DFE2F0;
+}
+#aid_the_poor .part-1:hover .delta {
+	border-color: #CDD1E4;
+}
+#aid_the_poor .part-2 .delta {
+	border-color: #EEEED8;
+}
+#aid_the_poor .part-2:hover .delta {
+	border-color: #E4E4CB;
+}
+#aid_the_poor .part-3 .delta {
+	border-color: #EEDED8;
+}
+#aid_the_poor .part-3:hover .delta {
+	border-color: #E5D4CD;
 }
 
 /* 正文 */
@@ -109,7 +184,7 @@
 
 /* 二级标题 */
 #ecology_tab h2 {
-	margin: 16px 0 40px 1v;
+	margin: 16px 0 40px;
 	color: #444;
 	font-size: 50px;
 	font-weight: 900;
