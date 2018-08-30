@@ -13,11 +13,15 @@ article {
 /* 文章的标题 */
 article h1 {
 }
+article h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 /* 文章的来源 */
 article .source {
-	margin: 8px 0;
-	font-size: 12px;
+	margin: 16px 0;
+	font-size: 14px;
 }
 
 /* 文章来源中的分割符 */
@@ -39,7 +43,7 @@ article blockquote {
 
 /* 文章的正文 */
 article .text {
-	margin: 50px 0;
+	margin: 40px 0;
 }
 
 /* 文章的段落 */
@@ -78,6 +82,11 @@ article figure figcaption {
 }
 article figure:hover figcaption {
 	transform: translateY(100%);
+}
+
+/* 版块 */
+.part {
+	margin-bottom: 40px;
 }
 
 /* 文章翻页器 */
