@@ -3,7 +3,7 @@
 
     作者：cyl
     创建时间：2018-08-18 15:05:40
-    最后修改时间： 2018-08-27 10:33:07
+    最后修改时间： 2018-08-30 18:50:28
  -->
 
 <!DOCTYPE html>
@@ -21,12 +21,6 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -48,10 +42,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
                     <li><a href="difficulty.html">改革攻坚</a></li>
-                    <li><a href="humanity.html">八桂人物</a></li>
+                    <li><a href="humanity.html">时代先锋</a></li>
                     <li class="active"><a href="discuss.html">共话改革</a></li>
                     <li><a href="plan.html">布局广西</a></li>
                     <li><a href="#">关于我们</a></li>
@@ -60,8 +53,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -71,23 +64,29 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 共话改革开发40年 齐颂壮乡发展60载 -->
     <section class="container">
         <h1>共话改革开发40年 齐颂壮乡发展60载</h1>
         <!-- 图文展示 - 横向宽屏 -->
-        <div class="row text-show-fh">
-            <!-- 文本部分 -->
-            <div class="col-md-6 text">
-                <!-- 段落 -->
-                <p>“习近平总书记系列重要讲话，创造性地坚持和发展了科学社会主义，开辟了21世纪中国马克思主义发展的新境界。”中央文献研究室主任冷溶指出，党的十八大以来，我们能够取得新成就、开创新局面，根本就在于习近平总书记系列重要讲话精神的科学指导。</p>
-                <p>理性思考国家前途命运，深刻把握世情国情党情；从人民群众中汲取智慧，在全新实践中总结归纳；继承发展传统文化，学习借鉴人类文明……5年来，中国特色社会主义理论植根于更加深厚的土壤，生长在更加宽广的空间，焕发出勃勃生机。</p>
-                <p>从确立“两个一百年”奋斗目标到提出中国梦，从统筹推进“五位一体”总体布局到协调推进“四个全面”战略布局，从把握中国经济发展新常态到牢固树立新发展理念，从“三个自信”拓展为“四个自信”。</p>
+        <div class="row pic-text-show">
+            <div class="col-md-6 part">
+                <div class="img-wrapper">
+                    <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
+                </div>
+                <h2>二级标题</h2>
+                <hr>
+                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                <a class="button button-fullradius" href="#">了解更多</a>
             </div>
-            <!-- 图片部分 -->
-            <div class="col-md-6">
-                <!-- 图片 -->
-                <div class="img fillet" style="background-image: url(../img/temp/001.jpg);"></div>
+            <div class="col-md-6 part">
+                <div class="img-wrapper">
+                    <div class="img" style="background-image: url(../img/temp/231.jpg);"></div>
+                </div>
+                <h2>二级标题</h2>
+                <hr>
+                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
+                <a class="button button-fullradius" href="#">了解更多</a>
             </div>
         </div>
     </section>
@@ -100,66 +99,43 @@
             <div class="col-sm-6 text">
                 <p>商务部对外投资和经济合作司负责人17日介绍，1—7月，我国境内投资者共对全球152个国家和地区的3999家境外企业进行了非金融类直接投资，累计实现投资652.7亿美元，同比增长14.1%。对外承包工程完成营业额838.3亿美元，同比增长8.1%;新签合同额1252.4亿美元，同比下降7.4%。对外劳务合作派出各类劳务人员26.6万人，7月末在外各类劳务人员99.6万人，较去年同期增加4万人。</p>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/001.jpg);"></div>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/231.jpg);"></div>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/7F94C4B85B1098370014031DA30F9F61.jpg);"></div>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/AB6495F2833CF497CAB0867397FF81DB.jpg);"></div>
             </div>
-            <div class="col-xs-3 img-wrapper">
+            <div class="col-sm-3 img-wrapper">
                 <!-- 图片 -->
-                <div class="img"></div>
+                <div class="img" style="background-image: url(../img/temp/W020180601351337931192.jpg);"></div>
             </div>
         </div>
     </section>
     <!-- 老干部畅谈发展硕果 -->
-    <section class="container">
-        <h1>老干部畅谈发展硕果</h1>
-        <!-- 图文展示 - 横向 -->
-        <div class="row text-show-sh">
-            <div class="col-md-6">
-                <!-- 图文条目 -->
-                <div class="item">
-                    <!-- 图片 -->
-                    <div class="img fillet" style="background-image: url(../img/temp/001.jpg);"></div>
-                    <!-- 文本 -->
-                    <div class="text">
-                        <!-- 标题 -->
-                        <h2>二级标题</h2>
-                        <!-- 段落 -->
-                        <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- 图文条目 -->
-                <div class="item">
-                    <!-- 图片 -->
-                    <div class="img fillet" style="background-image: url(../img/temp/231.jpg);"></div>
-                    <!-- 文本 -->
-                    <div class="text">
-                        <!-- 标题 -->
-                        <h2>二级标题</h2>
-                        <!-- 段落 -->
-                        <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。” 并从八个方面提出了“不忘初心、继续前进”的行动指南...</p>
-                    </div>
-                </div>
+    <section id="laoganbu" class="img" style="background-image: url(../img/discuss/laoganbu.jpg);">
+        <div class="card-wrapper">
+            <!-- 卡片 -->
+            <div class="container card">
+                <h1>老干部畅谈发展硕果</h1>
+                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
+                <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
             </div>
         </div>
+        <!-- 图文展示 - 横向 -->
     </section>
     <!-- 评论 -->
     <section class="container">
@@ -177,8 +153,6 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
@@ -194,8 +168,6 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
@@ -211,8 +183,6 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
@@ -228,8 +198,6 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
@@ -245,8 +213,6 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
@@ -262,78 +228,17 @@
                         <h2>二级标题</h2>
                         <!-- 段落 -->
                         <p>2016年7月1日，习近平总书记在庆祝中国共产党成立95周年大会上发表重要讲话，提出“面向未来，面对挑战，全党同志一定要不忘初心、继续前进。</p>
-                        <!-- 活动 -->
-                        <a class="action" href="#">详细</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- 图说改革 -->
-    <section class="container">
-        <h1>图说改革</h1>
-        <!-- 轮播 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-                <!-- 页面 -->
-                <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
-                    <!-- 描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-            </div>
-            <!--左箭头-->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <!--右箭头-->
-            <div class="swiper-button-next swiper-button-white"></div>
         </div>
     </section>
     <!-- 底部 -->
-    <footer class="container">底部</footer>
+    <footer>底部</footer>
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="../js/swiper.min.js"></script>
-    <!-- 初始化 Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: {
-            disableOnInteraction: false,
-        },
-        loop: true,
-        grabCursor: true,
-        slidesPerView: 'auto',
-        spaceBetween: 8,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-    });
-    </script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
 </body>
 </html>

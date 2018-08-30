@@ -3,23 +3,72 @@
 
 	作者：cyl
 	创建时间：2018-08-18 16:10:05
-	最后修改时间：2018-08-19 21:34:57
+	最后修改时间：2018-08-30 18:50:35
  */
 
 /******  图文展示 - 横向宽屏  ******/
-/* 横向图文展示 */
-.text-show-fh {
-	margin-top: 36px;
+/* 每个部分 */
+.pic-text-show .part {
+    padding: 16px;
 }
 
-/* 文本 */
-.text-show-fh .text {
+/* 图片包装 */
+.pic-text-show .part .img-wrapper {
+    height: 200px;
+    overflow: hidden;
 }
 
 /* 图片 */
-.text-show-fh .img {
-	height: 200px;
-	background-color: #eee;
+.pic-text-show .part .img {
+    height: 100%;
+    transition: transform 0.8s;
+}
+.pic-text-show .part:hover .img {
+    transform: scale(1.1);
+}
+
+/* 标题 */
+.pic-text-show .part h2 {
+    margin: 28px 0;
+    font-size: 24px;
+}
+
+/* 分割线 */
+.pic-text-show .part hr {
+    height: 1px;
+    margin: 24px 0;
+    border: none;
+    background: #dfdfdf;
+}
+.pic-text-show .part hr:after {
+    width: 0;
+    height: 100%;
+    content: "";
+    background: #999;
+    display: block;
+    transition: width 0.8s;
+}
+.pic-text-show .part:hover hr:after {
+    width: 100%;
+}
+
+/* 段落 */
+.pic-text-show .part p {
+    opacity: 0.86;
+    transition: all 0.3s;
+}
+.pic-text-show .part:hover p {
+    opacity: 1;
+}
+
+/* 按钮 */
+.pic-text-show .part .button {
+    margin: 16px 0;
+    opacity: 0.5;
+    transition: all 0.8s;
+}
+.pic-text-show .part:hover .button {
+    opacity: 1;
 }
 
 /******** 图文展示 - 瀑布流 ********/
@@ -62,12 +111,53 @@
 .img-show-wf .img {
 	height: 240px;
 	background-color: #eee;
+	transition: all 0.5s;
+}
+.img-show-wf .img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 40px rgba(0,0,0,0.3);
+}
+
+/* 适配最小屏幕 */
+@media (max-width: 768px) {
+	.img-show-wf .img-wrapper {
+		margin: 0 !important;
+	}
+}
+
+/************* 老干部 *************/
+/* 栏目 */
+#laoganbu {
+	padding: 0;
+}
+
+/* 卡片包装 */
+#laoganbu .card-wrapper {
+	padding: 200px 16px;
+	background: rgba(0,0,0,0.6);
+}
+
+/* 卡片 */
+#laoganbu .card {
+	padding: 40px 0;
+	color: #fff;
+	background-color: #EA5E3AD0;
+	transition: background 0.5s;
+}
+#laoganbu .card:hover {
+	background-color: #EA5E3A;
+}
+
+/* 标题 */
+#laoganbu .card h1 {
+	margin: 24px 32px 40px;
 }
 
 /************** 评论 **************/
 /* 评论 */
 .comment {
 	display: flex;
+	perspective: 1000px;
 }
 
 /* 时间线 */
@@ -85,14 +175,21 @@
 	margin: 36px 0 0 -6px;
 	background: #fff;
 	border: red 2px solid;
-	border-radius: 6px;
+	border-radius: 99999999999px;
 	display: block;
 	position: absolute;
+	transition: all 0.5s;
+}
+.comment:hover .timeline:before {
+	background: red;
+	transform: scale(1.5);
 }
 
 /* 文本包装 */
 .comment .text-wrapper {
 	display: flex;
+	transform-origin: 0 42px;
+	transition: transform 0.5s;
 }
 .comment .text-wrapper:before {
 	content: "";
@@ -101,6 +198,9 @@
 	border-right-color: #eee;
 	flex-shrink: 0;
 	align-self: flex-start;
+}
+.comment:hover .text-wrapper {
+	transform: rotate3d(15,15,0,10deg);
 }
 
 /* 文本 */
@@ -129,58 +229,4 @@
     font-weight: bold;
     text-decoration: none;
     border-bottom: #000 2px solid;
-}
-
-/******* 图文展示 - 横向窄的 *******/
-/* 图文展示 */
-.text-show-sh {
-	margin-top: 36px;
-}
-
-/* 图文条目 */
-.text-show-sh .item {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	display: flex;
-}
-
-/* 图片 */
-.text-show-sh .item .img {
-	width: 160px;
-	min-height: 260px;
-	background-color: #eee;
-	flex-shrink: 0;
-}
-
-/* 文本 */
-.text-show-sh .item .text {
-	margin-left: 24px;
-}
-
-/* 文本标题 */
-.text-show-sh .item h2 {
-	margin: 16px 0 24px;
-}
-
-/******* 轮播 *******/
-/* 轮播 */
-.swiper-container {
-	height: 200px;
-	margin-top: 36px;
-}
-
-/* 轮播图片 */
-.swiper-container .img {
-	width: 300px;
-}
-
-/* 轮播信息 */
-.swiper-container .msg {
-	color: #fff;
-	padding: 8px 16px;
-	background: rgba(0,0,0,0.5);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
 }
