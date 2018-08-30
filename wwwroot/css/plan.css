@@ -1,59 +1,52 @@
 /*
-	布局广西专题的样式表
+	发展新篇专题的样式表
 
 	作者：cyl
 	创建时间：2018-08-19 11:26:45
-	最后修改时间：2018-08-22 21:01:48
+	最后修改时间：2018-08-30 22:06:57;
  */
 
 /************** 新闻 **************/
-/* 新闻条目 */
-.news-item {
-	padding: 24px 16px;
-	color: unset;
-	display: block;
-	transition: all 0.3s;
-}
-.news-item:hover, .news-item:focus {
-	color: #1D81FF;
-	background: #eee;
-	text-decoration: none;
+/* 版块 */
+#news_wall .part {
+	padding: 8px;
 }
 
-/* 新闻的标题 */
-.news-item h2 {
-	margin: 0;
-	font-size: 20px;
-	text-align: center;
+/* 版块包装 */
+#news_wall .part-wrapper {
+	overflow: hidden;
 }
 
-/* 新闻的简述 */
-.news-item p {
-	margin: 16px 0 0 0;
-	font-size: 12px;
+/* 大板块的包装 */
+#news_wall .part-big .part-wrapper {
+	background: #C6C2FA;
 }
 
-/******* 轮播 *******/
-/* 轮播 */
-.swiper-container {
-	height: 360px;
-	margin-top: 36px;
+/* 小版块的包装 */
+#news_wall .part-sm .part-wrapper {
+	padding: 24px;
+	background: #f8f8f8;
 }
 
-/* 轮播图片 */
-.swiper-container .img {
-	width: 300px;
+/* 大板块的图片 */
+#news_wall .part-big .img {
+	height: 500px;
+	padding: 0;
 }
 
-/* 轮播信息 */
-.swiper-container .msg {
-	color: #fff;
-	padding: 16px 16px 38px;
-	background: rgba(0,0,0,0.5);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
+/* 大板块的文本 */
+#news_wall .part-big .text {
+	padding: 24px;
+}
+
+/* 版块的标题 */
+#news_wall .part h2 {
+	margin-bottom: 24px;
+}
+
+/* 版块的按钮 */
+#news_wall .part .button {
+	margin: 16px 0;
 }
 
 /********** 时间线标签页 **********/
@@ -174,27 +167,61 @@
 }
 
 /********** 栏目（3） **********/
-/* 通用 */
-.base-img, .news-item {
-	margin-top: 15px;
-	margin-bottom: 15px;
+/* 简述 */
+#traffic .resume {
+	margin: 50px 0;
 }
 
-/* 基本图片 */
-.base-img {
-	height: 240px;
-	position: relative;
+/* 列表 */
+#traffic ul {
+	margin: 0;
+	padding: 0;
 }
 
-/* 基本图片的描述 */
-.base-img .msg {
+/* 列表条目 */
+#traffic li {
+	padding: 24px;
+	list-style: none;
+	transition: all 0.2s;
+}
+#traffic li:hover {
 	color: #fff;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 8px 16px;
-	background: rgba(0,0,0,0.5);
+	background: #266083;
+	transform: translateY(-8px);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* 标题 */
+#traffic li h2 {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+/* 段落 */
+#traffic li p {
+	opacity: 0.86;
+}
+
+/* 列表条目 - 查看更多 */
+#traffic .see-more {
+	padding: 0;
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 链接 */
+#traffic .see-more a {
+	padding: 70px 0;
+	color: #337ab7;
+	opacity: 0.7;
+	text-decoration: none;
+	flex-grow: 1;
+	transition: color 0.3s;
+}
+#traffic .see-more a:hover {
+	color: #fff;
 }
 
 /**************** 聊天界面 ****************/
@@ -220,7 +247,7 @@
 
 /* 聊天气泡 */
 .chat-bubble {
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 8px;
     display: flex;
 }

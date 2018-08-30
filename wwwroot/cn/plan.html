@@ -1,9 +1,9 @@
 <!-- 
-    布局广西专题
+    发展新篇专题
 
     作者：cyl
     创建时间：2018-08-19 11:24:41
-    最后修改时间：2018-08-27 10:33:07
+    最后修改时间：2018-08-30 22:06:48
  -->
 
 <!DOCTYPE html>
@@ -12,21 +12,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>布局广西</title>
+    <title>发展新篇</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link rel="stylesheet" type="text/css" href="../css/plan.css">
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        .top-pic-col {
-            height: 500px;
-            background: #F6622D;
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -48,20 +41,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="economy.html">经济</a></li>
-                    <li><a href="characteristic.html">特色发展</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
                     <li><a href="difficulty.html">改革攻坚</a></li>
-                    <li><a href="humanity.html">八桂人物</a></li>
+                    <li><a href="humanity.html">时代先锋</a></li>
                     <li><a href="discuss.html">共话改革</a></li>
-                    <li class="active"><a href="plan.html">布局广西</a></li>
+                    <li class="active"><a href="plan.html">发展新篇</a></li>
                     <li><a href="#">关于我们</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">English</a></li>
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -71,89 +63,57 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="container top-pic-col">头版大图</section>
+    <section class="top-pic">头版大图</section>
     <!-- 规划篇 -->
-    <section class="container">
+    <section class="container" id="news_wall">
         <h1>规划篇</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <!-- 新闻 -->
-                <a class="news-item" href="#">
-                    <!-- 标题 -->
-                    <h2>习近平：布局XXXX</h2>
-                    <!-- 简述 -->
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-                <!-- 新闻 -->
-                <a class="news-item" href="#">
-                    <!-- 标题 -->
-                    <h2>习近平：布局XXXX</h2>
-                    <!-- 简述 -->
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-                <!-- 新闻 -->
-                <a class="news-item" href="#">
-                    <!-- 标题 -->
-                    <h2>习近平：布局XXXX</h2>
-                    <!-- 简述 -->
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
+        <!-- 大板块 -->
+        <div class="row part part-big">
+            <div class="part-wrapper">
+                <!-- 版块文本 -->
+                <div class="col-md-4 col-md-push-8 text">
+                    <h2>二级标题</h2>
+                    <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。今年来，联合市口岸办等部门积极对上争取，持续跟进临沂机场航空口岸正式开放工作，内部科学谋划国际航线的开辟及优化，压茬推进各相关基础设施的规划建设，积极搭建临沂对外开放的新载体。在下一步工作中，将进一步加快新国际航线的开辟工作，加大机场基础设施建设力度，力争早日实现临沂机场航空口岸正式开放，为我市产业转型升级增添可靠助力。</p>
+                    <!-- 按钮 -->
+                    <a href="#" class="button button-fullradius">了解更多</a>
+                </div>
+                <!-- 版块图片 -->
+                <div class="col-md-8 col-md-pull-4 img" style="background-image: url(../img/temp/planet_10-wallpaper-1920x1080.jpg);"></div>
             </div>
-            <div class="col-md-6">
-                <!-- 轮播 -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/planet_10-wallpaper-1920x1080.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/W020180601351337931192.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/231.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                        <!-- 页面 -->
-                        <div class="swiper-slide img" style="background-image:url(../img/temp/001.jpg)">
-                            <!-- 描述 -->
-                            <div class="msg">图片描述信息</div>
-                        </div>
-                    </div>
-                    <!--左箭头-->
-                    <div class="swiper-button-prev swiper-button-white"></div>
-                    <!--右箭头-->
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <!-- 分页器 -->
-                    <div class="swiper-pagination"></div>
+        </div>
+        <div class="row">
+            <!-- 小版块 -->
+            <div class="col-md-6 part part-sm">
+                <div class="part-wrapper">
+                    <h2>二级标题</h2>
+                    <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+                    <!-- 按钮 -->
+                    <a href="#" class="button button-fullradius">了解更多</a>
+                </div>
+            </div>
+            <!-- 小版块 -->
+            <div class="col-md-6 part part-sm">
+                <div class="part-wrapper">
+                    <h2>二级标题</h2>
+                    <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+                    <!-- 按钮 -->
+                    <a href="#" class="button button-fullradius">了解更多</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- “改革”前进之路 -->
     <section class="container">
-        <h1>“改革”前进之路</h1>
+        <div>
+            <h1>“改革”前进之路</h1>
+        </div>
         <!-- 时间轴标签页 -->
         <div class="tab-timeline">
             <!-- 标签栏 -->
             <ul class="nav nav-tabs">
                 <!-- 标签01 -->
                 <li class="active">
-                    <a href="#tab_01" data-toggle="tab">
+                    <a href="#tab_01" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -165,7 +125,7 @@
                 </li>
                 <!-- 标签02 -->
                 <li>
-                    <a href="#tab_02" data-toggle="tab">
+                    <a href="#tab_02" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -177,7 +137,7 @@
                 </li>
                 <!-- 标签03 -->
                 <li>
-                    <a href="#tab_03" data-toggle="tab">
+                    <a href="#tab_03" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -189,7 +149,7 @@
                 </li>
                 <!-- 标签04 -->
                 <li>
-                    <a href="#tab_04" data-toggle="tab">
+                    <a href="#tab_04" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -201,7 +161,7 @@
                 </li>
                 <!-- 标签05 -->
                 <li>
-                    <a href="#tab_05" data-toggle="tab">
+                    <a href="#tab_05" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -213,7 +173,7 @@
                 </li>
                 <!-- 标签06 -->
                 <li>
-                    <a href="#tab_06" data-toggle="tab">
+                    <a href="#tab_06" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -225,7 +185,7 @@
                 </li>
                 <!-- 标签07 -->
                 <li>
-                    <a href="#tab_07" data-toggle="tab">
+                    <a href="#tab_07" data-toggle="tab" class="tab-fast-switch">
                         <div class="timeline">
                             <div class="time">
                                 <div class="dot"></div>
@@ -305,50 +265,46 @@
         </div>
     </section>
     <!-- 栏目（3） -->
-    <section class="container">
+    <section class="container" id="traffic">
         <h1>栏目（3）</h1>
-        <div class="row">
-            <div class="col-sm-4">
-                <!-- 图片 -->
-                <div class="img base-img" style="background-image: url(../img/temp/001.jpg);">
-                    <!-- 图片描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <!-- 新闻条目 -->
-                <a class="news-item" href="#">
-                    <h2>二级标题</h2>
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-                <!-- 新闻条目 -->
-                <a class="news-item" href="#">
-                    <h2>二级标题</h2>
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <!-- 图片 -->
-                <div class="img base-img" style="background-image: url(../img/temp/231.jpg);">
-                    <!-- 图片描述 -->
-                    <div class="msg">图片描述信息</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <!-- 新闻条目 -->
-                <a class="news-item" href="#">
-                    <h2>二级标题</h2>
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <!-- 新闻条目 -->
-                <a class="news-item" href="#">
-                    <h2>二级标题</h2>
-                    <p>近日，经国务院同意，海关总署印发了《国家口岸发展“十三五”规划》，经积极争取，临沂机场航空口岸正式开放已列入《国家口岸发展“十三五”规划》，标志着临沂机场航空口...</p>
-                </a>
-            </div>
+        <!-- 简述 -->
+        <div class="resume">
+            <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。今年来，联合市口岸办等部门积极对上争取，持续跟进临沂机场航空口岸正式开放工作，内部科学谋划国际航线的开辟及优化，压茬推进各相关基础设施的规划建设，积极搭建临沂对外开放的新载体。</p>
         </div>
+        <!-- 列表 -->
+        <ul class="row">
+            <!-- 条目 -->
+            <li class="col-md-4">
+                <h2>二级标题</h2>
+                <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+            </li>
+            <!-- 条目 -->
+            <li class="col-md-4">
+                <h2>二级标题</h2>
+                <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+            </li>
+            <!-- 条目 -->
+            <li class="col-md-4">
+                <h2>二级标题</h2>
+                <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+            </li>
+            <!-- 条目 -->
+            <li class="col-md-4">
+                <h2>二级标题</h2>
+                <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+            </li>
+            <!-- 条目 -->
+            <li class="col-md-4">
+                <h2>二级标题</h2>
+                <p>为认真贯彻落实市委市政府关于“统筹实施立体大交通战略”的决策部署，疏通“大美新”临沂的“大脉络”，打通临沂通往国际、国内的“大通道”。</p>
+            </li>
+            <!-- 条目 -->
+            <li class="col-md-4 see-more">
+                <a href="#">
+                    <h2>了解更多 <span class="glyphicon glyphicon-chevron-right"></span></h2>
+                </a>
+            </li>
+        </ul>
     </section>
     <!-- 栏目（4） -->
     <section class="container">
@@ -399,29 +355,11 @@
         </div>
     </section>
     <!-- 底部 -->
-    <footer class="container">底部</footer>
+    <footer>底部</footer>
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="../js/swiper.min.js"></script>
-    <!-- 初始化 Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: {
-            disableOnInteraction: false,
-        },
-        loop: true,
-        grabCursor: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    </script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
 </body>
 </html>
