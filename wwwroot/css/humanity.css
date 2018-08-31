@@ -45,6 +45,10 @@
     position: relative;
 }
 
+#mien_tab .tab {
+    margin: 50px 0;
+}
+
 /* 标签栏 */
 #mien_tab .nav-tabs {
     margin: 60px 0;
