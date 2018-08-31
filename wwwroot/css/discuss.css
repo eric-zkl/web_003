@@ -148,9 +148,8 @@
 /* 背面 */
 .flip-v>.back {
     color: #666;
-    padding: 36px 52px;
-    font-size: 18px;
-    line-height: 28px;
+    padding: 16px;
+    line-height: 24px;
     background-color: #eee;
     overflow: hidden;
     text-align: center;
@@ -165,7 +164,7 @@
 
 /* 适配最小屏幕 */
 @media (max-width: 991px) {
-	.img-show-wf .img-wrapper {
+	.img-show-wf .flip-wrapper {
 		margin: 0 !important;
 	}
 }
