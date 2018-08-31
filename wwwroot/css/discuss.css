@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-18 16:10:05
-	最后修改时间：2018-08-30 18:50:35
+	最后修改时间：2018-08-31 16:14:45
  */
 
 /******  图文展示 - 横向宽屏  ******/
@@ -83,43 +83,88 @@
 	padding-right: 6%;
 }
 
-/* 图片包装 */
-.img-show-wf .img-wrapper {
+/* 翻转包装 */
+.img-show-wf .flip-wrapper {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.img-show-wf .img-wrapper:nth-child(2) {
+.img-show-wf .flip-wrapper:nth-child(2) {
 }
-.img-show-wf .img-wrapper:nth-child(3) {
+.img-show-wf .flip-wrapper:nth-child(3) {
 	margin-top: 120px;
 }
-.img-show-wf .img-wrapper:nth-child(4) {
+.img-show-wf .flip-wrapper:nth-child(4) {
 	margin-top: -50px;
 }
-.img-show-wf .img-wrapper:nth-child(5) {
+.img-show-wf .flip-wrapper:nth-child(5) {
 	margin-top: -180px;
 }
-.img-show-wf .img-wrapper:nth-child(6) {
+.img-show-wf .flip-wrapper:nth-child(6) {
 	margin-top: -120px;
 }
-.img-show-wf .img-wrapper:nth-child(7) {
+.img-show-wf .flip-wrapper:nth-child(7) {
 	margin-top: -60px;
 	margin-right: 1px;
 }
 
-/* 图片 */
-.img-show-wf .img {
+/* 垂直翻转 */
+.flip-v {
 	height: 240px;
-	background-color: #eee;
-	transition: all 0.5s;
+    position: relative;
+    perspective: 1000px;
 }
-.img-show-wf .img:hover {
-	transform: scale(1.1);
-	box-shadow: 0 0 40px rgba(0,0,0,0.3);
+/* 底版 */
+.flip-v:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #C6D7EC;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 前面和背面 */
+.flip-v>.front, .flip-v>.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.8s;
+}
+
+/* 前面 */
+.flip-v>.front {
+}
+.flip-v:hover>.front {
+    transform: rotateY(180deg);
+}
+
+/* 背面 */
+.flip-v>.back {
+    color: #666;
+    padding: 36px 52px;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: #eee;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+}
+.flip-v:hover>.back {
+    transform: rotateY(0deg);
 }
 
 /* 适配最小屏幕 */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.img-show-wf .img-wrapper {
 		margin: 0 !important;
 	}
@@ -133,7 +178,7 @@
 
 /* 卡片包装 */
 #laoganbu .card-wrapper {
-	padding: 200px 16px;
+	padding: 200px 0;
 	background: rgba(0,0,0,0.6);
 }
 
@@ -141,7 +186,7 @@
 #laoganbu .card {
 	padding: 40px 0;
 	color: #fff;
-	background-color: #EA5E3AD0;
+	background-color: rgba(234, 94, 58, 0.8);
 	transition: background 0.5s;
 }
 #laoganbu .card:hover {
