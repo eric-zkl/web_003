@@ -2,8 +2,8 @@
 	改革攻坚专题的样式表
 
 	作者：cyl
-	创建时间：2018-08-15 14:50:06;
-	最后修改时间：2018-08-29 14:04:13
+	创建时间：2018-08-15 14:50:06
+	最后修改时间：2018-09-01 23:24:31
  */
 
 /*********** 深化改革 **********/
@@ -251,18 +251,40 @@
 	background: #FF3E00;
 }
 
+/* 标签内容 */
+#ecology_tab .tab-content {
+	perspective: 1000px;
+}
+
+/* 版块 */
+#ecology_tab .fade{
+	background: #f8f8f8;
+	transform-style: preserve-3d;
+	transform: rotateY(5deg);
+	transition: all 0.5s ;
+}
+
+/* 版块进入 */
+#ecology_tab .fade.in{
+	transform: rotateY(0deg);
+}
+
+/*  */
+#ecology_tab .fade>.col-md-6{
+	padding: 15px;
+}
+
 /* 二级标题 */
 #ecology_tab h2 {
-	margin: 16px 0 40px;
+	margin: 24px 0;
 	color: #444;
-	font-size: 50px;
-	font-weight: 900;
+	font-weight: bold;
 }
 
 /* 了解更多按钮 */
 #ecology_tab .button {
 	padding: 18px 36px;	
-	margin: 36px 0;
+	margin: 24px 0;
 	border-radius: 0;
 	color: #fff;
 	background: #9FCB28;
@@ -282,7 +304,7 @@
 	margin-left: 16px;
 }
 
-/* 视频 */
+/* 图片 */
 #ecology_tab .img {
-	height: 500px;
+	height: 300px;
 }
