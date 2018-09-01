@@ -2,7 +2,7 @@
 五彩八桂样式
 作者：Hshijie
 时间：2018.8.12
-最后修改时间：2018-08-28 11:54:28 cyl
+最后修改时间：2018-09-01 22:45:47 cyl
 */
 
 /*********** 经济特区 **********/
@@ -13,7 +13,7 @@
 
 /* 图片包装 */
 #special_economic_zone .part .img-wrapper {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -96,7 +96,8 @@
     padding: 36px;
     padding-right: 30%;
     color: rgba(255,255,255,0.86);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
@@ -110,8 +111,8 @@
 
 /* 文本标题 */
 .pic-wall .img .text h2 {
-    margin: 40px 0;
-    font-size: 40px;
+    margin: 20px 0;
+    font-size: 30px;
 }
 
 /* 文本段落 */
