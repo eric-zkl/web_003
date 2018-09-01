@@ -51,6 +51,7 @@ video {
 /************* 导航栏 *************/
 .navbar-default {
     border: none;
+    background-color: rgba(248, 248, 248, 0.95);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color: unset;
@@ -64,22 +65,12 @@ video {
     content: "";
     display: block;
     position: absolute;
-    top: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.1);
-}
-.navbar-default .navbar-nav>li>a:before {
-    content: "";
-    display: block;
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 100%;
     left: 0;
     opacity: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.05);
     transition: all 0.5s;
 }
 .navbar-default .navbar-nav>li>a:hover:before, .navbar-default .navbar-nav>.active>a:before, .navbar-default .navbar-nav>.active>a:focus:before, .navbar-default .navbar-nav>.active>a:hover:before  {
