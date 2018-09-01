@@ -16,6 +16,7 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="icon" href="../img/logo.png">
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -64,7 +65,7 @@
     </nav>
     <!-- 头版大图 -->
     <div class="top-video">
-        <video autoplay="true" loop="true">
+        <video autoplay="autoplay" loop="loop">
             <source src="../video/top.mp4" type="video/mp4">
         </video>
     </div>
@@ -91,11 +92,9 @@
         </div>
     </section>
     <!-- 历史 -->
-    <section>
-        <div class="container">
-            <h1>改革印记——回顾篇</h1>            
-        </div>
-         <!-- 新版手风琴 -->
+    <section class="container">
+        <h1>改革印记——回顾篇</h1>            
+        <!-- 新版手风琴 -->
         <div class="cn-collapse-container">
             <div class="cn-collapse img active" style="background-image: url(../img/img/1250966393490_mthumb.jpg);">
                 <div class="content">
@@ -139,15 +138,6 @@
                     <div class="text">
                         <h2>北海</h2>
                         <p>北海市珠海路“北海老街”始建于19世纪末，长约1.44公里，店铺鳞次栉比，曾是北海市最繁华的商业街区。历经百岁沧桑，沿街建筑日渐老化，许多店铺成为民居，但中西合璧的骑楼式简直依然保存完整，被建筑学家誉为“近现代建筑年鉴”。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cn-collapse img" style="background-image: url(../img/temp/231.jpg);">
-                <div class="content">
-                    <div class="title">百色</div>
-                    <div class="text">
-                        <h2>百色</h2>
-                        <p>百色人民政府的前世今生，1981年到2017年。</p>
                     </div>
                 </div>
             </div>
@@ -296,93 +286,21 @@
     </section>
     <!-- 底部 -->
     <footer>
-        <!-- 网站地图 -->
-        <div class="container sitemap">
-            <dl class="col-md-2">
-                <dt><a href="#">首页</a></dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">欢迎</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
-            <dl class="col-md-2">
-                <dt>
-                    <a href="#">经济</a>
-                </dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
-            <dl class="col-md-2">
-                <dt>
-                    <a href="#">特色发展</a>
-                </dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
-            <dl class="col-md-2">
-                <dt>
-                    <a href="#">困难</a>
-                </dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
-            <dl class="col-md-2">
-                <dt>
-                    <a href="#">末专题</a>
-                </dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
-            <dl class="col-md-2">
-                <dt>
-                    <a href="#">关于我们</a>
-                </dt>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-                <dd class="visible-md visible-lg">
-                    <a href="#">XXXX</a>
-                </dd>
-            </dl>
+        <div class="container">
+            <!-- 网站地图 -->
+            <ul class="sitemap">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="economy.html">五彩八桂</a></li>
+                <li><a href="difficulty.html">改革攻坚</a></li>
+                <li><a href="humanity.html">时代先锋</a></li>
+                <li><a href="discuss.html">共话改革</a></li>
+                <li><a href="plan.html">发展新篇</a></li>
+            </ul>
+            <!-- 版权声明 -->
+            <div class="copyright">
+                <a href="#">© 广西民族大学相思湖学院 · XXXX队</a>
+            </div>
         </div>
-        <!-- 版权声明 -->
-        <div class="copyright">© 广西民族大学相思湖学院 · XXXX队</div>
     </footer>
     <!-- bootcss代码库 -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
