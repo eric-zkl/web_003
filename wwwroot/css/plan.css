@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-19 11:26:45
-	最后修改时间：2018-08-31 19:37:58
+	最后修改时间：2018-09-02 13:13:48
  */
 
 /************* 全景图 *************/
@@ -25,28 +25,60 @@
 /* 版块包装 */
 #news_wall .part-wrapper {
 	overflow: hidden;
-}
-
-/* 大板块的包装 */
-#news_wall .part-big .part-wrapper {
-	background: #C6C2FA;
-}
-
-/* 小版块的包装 */
-#news_wall .part-sm .part-wrapper {
-	padding: 24px;
 	background: #f8f8f8;
+	position: relative;
+}
+
+/* 版块包装和图片包装 */
+#news_wall .part-sm .part-wrapper, #news_wall .part-big .img-wrapper {
+	padding: 30px;
+}
+
+/* 背景 */
+#news_wall .part-wrapper>.bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+#news_wall .part-wrapper>.bg-to-right {
+    right: 100%;
+}
+#news_wall .part-wrapper>.bg-to-left {
+    left: 100%;
+}
+#news_wall .part-wrapper:hover>.bg {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/* 大板块的背景 */
+#news_wall .part-big .part-wrapper>.bg {
+	background: #E6ECF6;
+}
+
+/* 小板块的背景 */
+#news_wall .part-sm .part-wrapper>.bg {
+	background: #EAF5EA;
 }
 
 /* 大板块的图片 */
 #news_wall .part-big .img {
 	height: 500px;
-	padding: 0;
 }
 
 /* 大板块的文本 */
 #news_wall .part-big .text {
-	padding: 24px;
+	padding: 30px;
+}
+
+/* 大板块的文本 */
+#news_wall .part-sm .text {
+	position: relative;
 }
 
 /* 版块的标题 */

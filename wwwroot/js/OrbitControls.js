@@ -688,12 +688,14 @@ THREE.OrbitControls = function ( object, domElement ) {
 
     this.domElement.addEventListener( 'contextmenu', function ( event ) { event.preventDefault(); }, false );
     this.domElement.addEventListener( 'mousedown', onMouseDown, false );
-    this.domElement.addEventListener( 'mousewheel', onMouseWheel, false );
-    this.domElement.addEventListener( 'DOMMouseScroll', onMouseWheel, false ); // firefox
+    // 取消鼠标滚动事件监听 - cyl
+    // this.domElement.addEventListener( 'mousewheel', onMouseWheel, false );
+    // this.domElement.addEventListener( 'DOMMouseScroll', onMouseWheel, false ); // firefox
 
-    this.domElement.addEventListener( 'touchstart', touchstart, false );
-    this.domElement.addEventListener( 'touchend', touchend, false );
-    this.domElement.addEventListener( 'touchmove', touchmove, false );
+    // 取消屏幕滑动事件监听 - cyl
+    // this.domElement.addEventListener( 'touchstart', touchstart, false );
+    // this.domElement.addEventListener( 'touchend', touchend, false );
+    // this.domElement.addEventListener( 'touchmove', touchmove, false );
 
     window.addEventListener( 'keydown', onKeyDown, false );
 

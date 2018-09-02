@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建日期：2018-08-16 17:38:34
-	最后修改时间：2018-09-02 11:52:51
+	最后修改时间：2018-09-02 13:13:38
  */
 
 /************ 中央综合推荐 ************/
@@ -31,13 +31,20 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
+    top: 0;
     bottom: 0;
     opacity: 0;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
+}
+#human .row>.bg-to-right {
+    right: 100%;
+}
+#human .row>.bg-to-left {
+    left: 100%;
 }
 #human .row:hover>.bg {
-    top: 0;
+    left: 0;
+    right: 0;
     opacity: 1;
 }
 
