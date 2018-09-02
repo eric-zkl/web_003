@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-18 16:10:05
-	最后修改时间：2018-08-31 16:14:45
+	最后修改时间：2018-09-02 17:39:07
  */
 
 /******  图文展示 - 横向宽屏  ******/
@@ -71,102 +71,80 @@
     opacity: 1;
 }
 
-/******** 图文展示 - 瀑布流 ********/
-/* 瀑布流图文展示 */
-.img-show-wf {
-	margin-top: 26px;
+/************ 图文展示 - 网格 ************/
+p {
+	column-count: 2;
+    margin: 30px 0 60px;
 }
 
-/* 文本 */
-.img-show-wf .text {
-	padding-top: 15px;
-	padding-right: 6%;
+/* 行 */
+#img_wall .nomargin {
+	margin: 0;
 }
 
-/* 翻转包装 */
-.img-show-wf .flip-wrapper {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.img-show-wf .flip-wrapper:nth-child(2) {
-}
-.img-show-wf .flip-wrapper:nth-child(3) {
-	margin-top: 120px;
-}
-.img-show-wf .flip-wrapper:nth-child(4) {
-	margin-top: -50px;
-}
-.img-show-wf .flip-wrapper:nth-child(5) {
-	margin-top: -180px;
-}
-.img-show-wf .flip-wrapper:nth-child(6) {
-	margin-top: -120px;
-}
-.img-show-wf .flip-wrapper:nth-child(7) {
-	margin-top: -60px;
-	margin-right: 1px;
+/* 版块 */
+#img_wall .part {
+	transition: background 0.5s;
+	display: flex;
+	flex-grow: 1;
 }
 
-/* 垂直翻转 */
-.flip-v {
-	height: 240px;
-    position: relative;
-    perspective: 1000px;
-}
-/* 底版 */
-.flip-v:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: #C6D7EC;
-    border-radius: 8px;
-    position: absolute;
-    left: 0;
-    top: 0;
+/* 版块内嵌行 */
+#img_wall .part>.row {
+	flex-grow: 1;
 }
 
-/* 前面和背面 */
-.flip-v>.front, .flip-v>.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transition: all 0.8s;
+/* 图片 */
+#img_wall .part .img {
+	min-height: 200px;
+	padding: 0;
+	opacity: 0.8;
+	position: relative;
+	transition: opacity 0.5s;
+}
+#img_wall .part:hover .img {
+	opacity: 1;
 }
 
-/* 前面 */
-.flip-v>.front {
+/* 三角形（指示器） */
+#img_wall .part .delta {
+	width: 0;
+	height: 0;
+	border: 12px solid;
+	position: absolute;
+	border-color: #fff;
+	transition: border-color 0.5s;
 }
-.flip-v:hover>.front {
-    transform: rotateY(180deg);
+#img_wall .part .delta-left {
+	top: 50px;
+	left: 0;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+#img_wall .part .delta-right {
+	top: 50px;
+	right: 0;
+	border-top-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-left-color: transparent !important;
+}
+#img_wall .part .delta-top {
+	top: 0;
+	left: 50px;
+	border-left-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
 }
 
-/* 背面 */
-.flip-v>.back {
-    color: #666;
-    padding: 16px;
-    line-height: 24px;
-    background-color: #eee;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(-180deg);
-}
-.flip-v:hover>.back {
-    transform: rotateY(0deg);
+/* 正文 */
+#img_wall .part .text {
+	padding: 24px;
 }
 
-/* 适配最小屏幕 */
-@media (max-width: 991px) {
-	.img-show-wf .flip-wrapper {
-		margin: 0 !important;
-	}
+/* 段落 */
+#img_wall .part p {
+	opacity: 0.86;
 }
 
 /************* 老干部 *************/
