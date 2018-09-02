@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建日期：2018-08-16 17:38:34
-	最后修改时间：2018-08-29 20:36:22
+	最后修改时间：2018-09-02 11:52:51
  */
 
 /************ 中央综合推荐 ************/
@@ -18,22 +18,63 @@
 }
 
 /*************** 时代 ***************/
-
+/* 版块 */
 #human .row {
     margin: 32px 0;
+    padding: 30px 15px;
+    background: #f8f8f8;
+    position: relative;
 }
 
+/* 背景 */
+#human .row>.bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+#human .row:hover>.bg {
+    top: 0;
+    opacity: 1;
+}
+
+/* 图片 */
 #human img {
     width: 100%;
 }
 
+/* 标题 */
 #human h2 {
     color: #444;
-    margin: 16px 0 40px;
-    font-size: 40px;
-    font-weight: 900;
+    margin: 16px 0 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+/* 姓名 */
+#human h2 .name {
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* 标签 */
+#human h2 .tag {
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: normal;
+    background: rgba(0,0,0,0.3);
+}
+
+/* 按钮 */
 #human .button {
     margin: 24px 0;
 }
