@@ -64,9 +64,10 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="top-pic">
-        <img src="../img/dminfo.jpg">
-    </section>
+    <section class="top-pic" id="scene"></section>
+    <!--<section class="top-pic">-->
+        <!--<img src="../img/dminfo.jpg">-->
+    <!--</section>-->
     <!-- 深化改革 -->
     <section class="container">
         <h1>人民网</h1>
@@ -342,6 +343,16 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- 基本脚本库 -->
     <script type="text/javascript" src="../js/base.js"></script>
+
+    <!-- 全景图 -->
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/dest.js"></script>
+    <script>
+      panoMain(3)
+    </script>
+
+
 </body>
 </html>
 

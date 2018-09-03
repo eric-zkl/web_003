@@ -67,9 +67,11 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="top-pic">
-        <img src="../img/dminfo.jpg">
-    </section>
+    <section class="top-pic" id="scene"></section>
+    <!--<section class="top-pic">-->
+        <!--<img src="../img/dminfo.jpg">-->
+    <!--</section>-->
+
     <!-- 经济特区 -->
     <section id="special_economic_zone" class="container">
         <h1>经济成果——看广西</h1>
@@ -286,6 +288,15 @@
           },
     });
     </script>
+
+    <!-- 全景图 -->
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/dest.js"></script>
+    <script>
+      panoMain(2)
+    </script>
+
 </body>
 
 </html>
