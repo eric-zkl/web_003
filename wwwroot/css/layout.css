@@ -49,6 +49,7 @@ video {
 }
 
 /************* 导航栏 *************/
+/* 导航栏默认样式 */
 .navbar-default {
     border: none;
     background-color: rgba(248, 248, 248, 0.75);
@@ -57,6 +58,7 @@ video {
     background-color: unset;
 }
 
+/* 选项默认样式 */
 .navbar-default .navbar-nav>li>a {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -76,6 +78,21 @@ video {
 .navbar-default .navbar-nav>li>a:hover:before, .navbar-default .navbar-nav>.active>a:before, .navbar-default .navbar-nav>.active>a:focus:before, .navbar-default .navbar-nav>.active>a:hover:before  {
     bottom: 0;
     opacity: 1;
+}
+
+/* 导航栏标志 */
+.navbar-brand {
+    height: auto;
+}
+
+/* 导航栏logo */
+.navbar-brand img.logo {
+    height: 38px;
+}
+
+/* 导航栏切换按钮 */
+.navbar-default .navbar-toggle {
+    margin-top: 15px;
 }
 
 /************** 栏目 **************/

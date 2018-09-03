@@ -178,6 +178,20 @@
 }
 
 /************* 未来列表 *************/
+/* 未来 */
+#future {
+    position: relative;
+}
+
+/* 背景 */
+#future>.bg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+
 /* 列表条目 */
 .base-item {
     padding: 32px 15px;
@@ -189,9 +203,11 @@
 .base-item .icon {
     width: 100px;
     height: 100px;
-    border-radius: 50px;
-    background: #eee;
+    /*border-radius: 50px;*/
+    /*background: #eee;*/
     flex-shrink: 0;
+}
+.base-item:hover .icon {
 }
 
 /* 条目文本 */
