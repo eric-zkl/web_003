@@ -3,7 +3,7 @@
 
 	作者：cyl
 	创建时间：2018-08-19 11:26:45
-	最后修改时间：2018-09-03 17:36:39
+	最后修改时间：2018-09-04 00:20:08
  */
 
 /************** 新闻 **************/
@@ -85,6 +85,7 @@
 /* 时间线标签页 */
 .tab-timeline {
 	margin-top: 36px;
+	position: relative;
 }
 
 /* 标签栏 */
@@ -118,6 +119,7 @@
 }
 .tab-timeline .nav-tabs>li>a:hover, .tab-timeline .nav-tabs>li.active>a {
 	color: #000;
+	background: unset;
 }
 
 
@@ -196,6 +198,15 @@
     font-weight: bold;
     text-decoration: none;
     border-bottom: #000 2px solid;
+}
+
+.tab-timeline .bg {
+	width: 100%;
+	display: block;
+	position: absolute;
+	right: 0;
+	left: 0;
+	opacity: 0.15;
 }
 
 /********** 栏目（3） **********/
@@ -302,10 +313,10 @@
     flex-direction: row-reverse;
 }
 .chat-dialogue-left .chat-bubble {
-	transform-origin: 0 42px;
+	transform-origin: 0;
 }
 .chat-dialogue-right .chat-bubble {
-	transform-origin: 100% 42px;
+	transform-origin: 100% 0;
 }
 .chat-dialogue-left .chat-bubble:hover {
 	transform: rotate3d(15,15,0,10deg);	
@@ -341,7 +352,7 @@
 	box-shadow: 0 6px 0 #3279AF;
 }
 .chat-dialogue-right .chat-msg {
-    background-color: #EAC129;
+    background-color: #f3cb43;
     border-top-right-radius: 0;
-	box-shadow: 0 6px 0 #C9AD44;
+	box-shadow: 0 6px 0 #e0bb3c;
 }
