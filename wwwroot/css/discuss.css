@@ -7,6 +7,10 @@
  */
 
 /******  图文展示 - 横向宽屏  ******/
+.top-pic, .container{
+    position: relative;
+}
+
 /* 每个部分 */
 .pic-text-show .part {
     padding: 16px;

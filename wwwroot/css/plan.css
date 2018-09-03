@@ -9,7 +9,7 @@
 /************* 全景图 *************/
 /* 屏幕 */
 #scene {
-	height: 700px;
+	height: 750px;
     overflow: hidden;
     display: flex;
     justify-content: center;
