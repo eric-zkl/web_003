@@ -72,8 +72,14 @@
 }
 
 /************ 图文展示 - 网格 ************/
-p {
-	column-count: 2;
+
+/*  */
+#img_wall {
+	background: #F8F6F0;
+}
+
+/* 简述 */
+#img_wall .resume {
     margin: 30px 0 60px;
 }
 
@@ -85,6 +91,7 @@ p {
 /* 版块 */
 #img_wall .part {
 	transition: background 0.5s;
+	background: #fff;
 	display: flex;
 	flex-grow: 1;
 }
