@@ -5,6 +5,10 @@
 	创建时间：2018-08-11 18:15:54
  */
 
+body {
+	padding-top: 68px;
+}
+
 /* 文章 */
 article {
 	margin: 24px 0;
