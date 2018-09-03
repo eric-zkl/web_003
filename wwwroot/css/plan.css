@@ -6,16 +6,6 @@
 	最后修改时间：2018-09-03 17:36:39
  */
 
-/************* 全景图 *************/
-/* 屏幕 */
-#scene {
-	height: 750px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /************** 新闻 **************/
 /* 版块 */
 #news_wall .part {
@@ -273,7 +263,7 @@
 
 /**************** 聊天界面 ****************/
 #chat {
-	background: #F8F8F8;
+	background-image: url(../img/plan/chat_bg.png);
 }
 
 /* 聊天 */
@@ -284,7 +274,7 @@
 /* 聊天对话 */
 .chat-dialogue {
     display: flex;
-    margin: 36px 0;
+    margin: 18px 0;
 	perspective: 5000px;
 }
 
