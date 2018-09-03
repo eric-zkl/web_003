@@ -28,9 +28,14 @@ function gotoCN() {
  * 标签页快速切换
  */
 function tabFastSwitch() {
-	$('.tab-fast-switch').on('mouseover', function() {
-		$(this).tab('show');
-	})
+  $('.tab-fast-switch').hover(function () {
+    console.log('this.', $(this))
+    // $('.tab-fast-switch').tab('hide')
+    $( this ).tab('show')
+  })
+	// $('.tab-fast-switch').on('mouseover', function() {
+	// 	$(this).tab('show');
+	// })
 }
 
 $(function() {
