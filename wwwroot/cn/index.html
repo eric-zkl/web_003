@@ -309,15 +309,15 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- 基本脚本库 -->
     <script type="text/javascript" src="../js/base.js"></script>
+    <!-- 滚动动画 -->
     <script src="../js/jquery.smoove.min.js"></script>
-
     <script type="text/javascript">
         $('.cn-collapse').on('mouseover', function() {
             $(this).addClass('active').siblings('.cn-collapse').removeClass('active');
         })
 
 
-        $(".cn-collapse, .flip-v").smoove({
+        $(".cn-collapse, .flip-v, .base-item").smoove({
           offset  : '10%',
           // moveX is overridden to -200px for ".bar" object
           // moveX   : '100px',
@@ -325,11 +325,6 @@
           rotate : '90deg',
           scale : '1, 0.1',
         });
-
     </script>
-
-
-
-
 </body>
 </html>
