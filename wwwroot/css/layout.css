@@ -52,15 +52,20 @@ video {
 /* 导航栏默认样式 */
 .navbar-default {
     border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     background-color: rgba(248, 248, 248, 0.86);
     text-shadow: 0 0 8px #fff;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
     background-color: unset;
 }
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover{
+    color: #fff;
+    background-color: #ff7600 !important;
+}
 
-/* 选项默认样式 */
+      /* 选项默认样式 */
 .navbar-default .navbar-nav>li>a {
     padding-top: 24px;
     padding-bottom: 24px;
