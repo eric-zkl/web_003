@@ -351,8 +351,38 @@
     <script>
       panoMain(3)
     </script>
+    <!-- 滚动动画 -->
+    <script src="../js/jquery.smoove.min.js"></script>
+    <script type="text/javascript">
+        $("#video_reform .card").smoove({
+          offset  : '10%',
+          // scale : '0.7',
+          moveX  : '-100px',
+        });
 
+        $("#video_reform .text").smoove({
+          offset  : '10%',
+          // scale : '0.7',
+          moveX  : '100px',
+        });
 
+        $("#ecology_tab .tab-button, #ecology_tab .tab-pane .col-md-6").smoove({
+          offset  : '10%',
+          scale : '0.5',
+          moveY : '80px',
+        });
+
+        $("#gov_online .number").smoove({
+          offset  : '10%',
+          moveY   : '-100px',
+          scale : '0.3',
+        });
+        $("#gov_online .main").smoove({
+          offset  : '10%',
+          transformOrigin : '50% 0',
+          scale : '1, 0',
+        });
+    </script>
 </body>
 </html>
 
