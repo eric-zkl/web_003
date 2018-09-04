@@ -267,5 +267,32 @@
         },
     });
     </script>
+    <!-- 滚动动画 -->
+    <script src="../js/jquery.smoove.min.js"></script>
+    <script type="text/javascript">
+        $("#video_recommend .video-wrapper, #mien_tab .tab-pane-wrapper .card").smoove({
+          offset  : '10%',
+          moveX  : '-100px',
+        });
+
+        $("#video_recommend .text, #mien_tab .tab-pane-wrapper .img").smoove({
+          offset  : '10%',
+          moveX  : '100px',
+        });
+
+        $("#mien_tab .nav-tabs").smoove({
+          offset  : '10%',
+          scale : '0.5',
+          moveY : '80px',
+        });
+
+        $("#human .img").smoove({
+          offset  : '10%',
+          moveY   : '300px',
+          rotate : '90deg',
+          scale : '1, 0.1',
+        });
+
+    </script>
 </body>
 </html>

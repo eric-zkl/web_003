@@ -7,72 +7,9 @@
  */
 
 /******  图文展示 - 横向宽屏  ******/
-.top-pic, .container{
-    position: relative;
-}
-
-/* 每个部分 */
-.pic-text-show .part {
-    padding: 16px;
-}
-
-/* 图片包装 */
-.pic-text-show .part .img-wrapper {
-    height: 200px;
-    overflow: hidden;
-}
-
-/* 图片 */
-.pic-text-show .part .img {
-    height: 100%;
-    transition: transform 0.8s;
-}
-.pic-text-show .part:hover .img {
-    transform: scale(1.1);
-}
-
-/* 标题 */
-.pic-text-show .part h2 {
-    margin: 28px 0;
-    font-size: 24px;
-}
-
-/* 分割线 */
-.pic-text-show .part hr {
-    height: 1px;
-    margin: 24px 0;
-    border: none;
-    background: #dfdfdf;
-}
-.pic-text-show .part hr:after {
-    width: 0;
-    height: 100%;
-    content: "";
-    background: #999;
-    display: block;
-    transition: width 0.8s;
-}
-.pic-text-show .part:hover hr:after {
-    width: 100%;
-}
-
-/* 段落 */
-.pic-text-show .part p {
-    opacity: 0.86;
-    transition: all 0.3s;
-}
-.pic-text-show .part:hover p {
-    opacity: 1;
-}
-
-/* 按钮 */
-.pic-text-show .part .button {
-    margin: 16px 0;
-    opacity: 0.5;
-    transition: all 0.8s;
-}
-.pic-text-show .part:hover .button {
-    opacity: 1;
+#menuDiv {
+	height: 500px;
+	width: 100%;
 }
 
 /************ 图文展示 - 网格 ************/
