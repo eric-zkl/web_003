@@ -197,6 +197,10 @@
     padding: 32px 15px;
     display: flex;
     align-items: flex-start;
+    transition: background 0.5s;
+}
+.base-item:hover {
+    background: rgba(0,0,0,0.2);
 }
 
 /* 条目图标 */
