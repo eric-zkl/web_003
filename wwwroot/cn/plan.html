@@ -68,7 +68,7 @@
         <div class="mask">
             <div class="container text">
                 <img class="border" src="../img/title_border_left.png">
-                <span class="title">壮乡发展</span>
+                <span class="title">继续前进</span>
                 <img class="border" src="../img/title_border_right.png">
             </div>
         </div>
@@ -412,6 +412,45 @@
     <script src="../js/dest.js"></script>
     <script>
       panoMain(6)
+    </script>
+    <!-- 滚动动画 -->
+    <script src="../js/jquery.smoove.min.js"></script>
+    <script type="text/javascript">
+        $("#news_wall .img, #news_wall .text").smoove({
+          offset  : '10%',
+          moveY   : '300px',
+          rotate : '60deg',
+          scale : '1, 0.1',
+        });
+
+        $(".tab-timeline .nav-tabs").smoove({
+          offset  : '10%',
+          scale : '0, 1',
+          transformOrigin : '0 50%',
+        });
+
+        $(".tab-timeline .tab-content").smoove({
+          offset  : '10%',
+          moveY   : '300px',
+        });
+
+        $("#traffic ul").smoove({
+          offset  : '10%',
+          moveY   : '100px',
+        });
+
+        $("#chat .chat-dialogue-left").smoove({
+          offset  : '10%',
+          scale : '0',
+          transformOrigin : '0',
+        });
+
+        $("#chat .chat-dialogue-right").smoove({
+          offset  : '10%',
+          scale : '0',
+          transformOrigin : '100% 0',
+        });
+
     </script>
 </body>
 </html>

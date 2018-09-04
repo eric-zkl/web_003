@@ -349,5 +349,30 @@
         ];
     </script>
     <script type="text/javascript" src="../js/menu3d.js"></script>
+    <!-- 滚动动画 -->
+    <script src="../js/jquery.smoove.min.js"></script>
+    <script type="text/javascript">
+        $("#menuDiv, #laoganbu .card").smoove({
+          offset  : '10%',
+          scale : '0.3',
+        });
+
+        $("#img_wall .resume").smoove({
+          offset  : '10%',
+        });
+        
+        $("#img_wall .part").smoove({
+          offset  : '10%',
+          moveX  : '-100px',
+          scale : '0.5',
+        });
+        
+        $(".comment .text-wrapper").smoove({
+          offset  : '10%',
+          moveX  : '-50px',
+          scale : '0.5',
+        });
+        
+    </script>
 </body>
 </html>
