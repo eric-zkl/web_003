@@ -183,12 +183,11 @@
     background-size: cover;
     background-position: center;
 }
-
+/* 小可爱 */
 #culture .part-1:before {
     right: 100%;
     background-image: url(../img/economy/b.png);
 }
-
 #culture .part-2:before {
     left: 100%;
     background-image: url(../img/economy/g.png);
