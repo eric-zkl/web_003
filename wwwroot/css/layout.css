@@ -53,7 +53,7 @@ video {
 .navbar-default {
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: rgba(248, 248, 248, 0.86);
+    background-color: rgba(248, 248, 248, 0.9);
     text-shadow: 0 0 8px #fff;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
@@ -61,11 +61,10 @@ video {
     background-color: unset;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover{
-    color: #fff;
-    background-color: #ff7600 !important;
+    background-color: unset;
 }
 
-      /* 选项默认样式 */
+/* 选项默认样式 */
 .navbar-default .navbar-nav>li>a {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -79,7 +78,7 @@ video {
     bottom: 100%;
     left: 0;
     opacity: 0;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0,0,0,0.08);
     transition: all 0.5s;
 }
 .navbar-default .navbar-nav>li>a:hover:before, .navbar-default .navbar-nav>.active>a:before, .navbar-default .navbar-nav>.active>a:focus:before, .navbar-default .navbar-nav>.active>a:hover:before  {
@@ -105,11 +104,44 @@ video {
 /************* 全景图 *************/
 /* 屏幕 */
 #scene {
-    height: 750px;
+    height: 650px;
     overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 蒙板 */
+#scene .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* 文本 */
+#scene .text {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+/* 标题 */
+#scene .text .title {
+    margin: 0 -30px;
+    padding: 0;
+    color: #4767a9;
+    font-size: 80px;
+    border: unset;
+    text-shadow: 4px 4px #84c7dc;
+}
+
+/* 边框 */
+#scene .text .border {
+    height: 200px;
 }
 
 /************** 栏目 **************/

@@ -65,16 +65,19 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-
     <!-- 头版大图 -->
-    <section class="top-pic">
-        <img src="../img/dminfo.jpg">
+    <section class="top-pic" id="scene">
+        <div class="mask">
+            <div class="container text">
+                <img class="border" src="../img/title_border_left.png">
+                <span class="title">共话改革</span>
+                <img class="border" src="../img/title_border_right.png">
+            </div>
+        </div>
     </section>
-    <!--头版大图end-->
     <!-- 共话改革开放40年 齐颂壮乡发展60载 -->
     <section class="container">
-        <h1>共话改革开放40年 齐颂壮乡发展60载</h1>
+        <h1>多维度·话改革</h1>
         <div id="menuDiv"></div>
     </section>
     <!-- 共话时代担当与使命 -->
@@ -325,7 +328,14 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- 基本脚本库 -->
     <script type="text/javascript" src="../js/base.js"></script>
-    <script type="text/javascript" src="../js/three.min.js"></script>
+    <!-- 全景图 -->
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/dest.js"></script>
+    <script>
+      panoMain(1)
+    </script>
+    <!-- 3d轮播 -->
     <script type="text/javascript">
         var sum = 6  //总共图片数量
         var img_path = '../img/discuss/menu_cn/';
@@ -335,6 +345,7 @@
             'article/gonghuafupin.html',
             'article/gonghuafazhi.html',
             'article/gonghuashangji.html',
+            'article/duoguochengshi.html',
         ];
     </script>
     <script type="text/javascript" src="../js/menu3d.js"></script>
