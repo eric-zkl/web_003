@@ -169,9 +169,29 @@
 }
 
 /*********** 文化类 **********/
-/* 行 */
-#culture>.row {
+/* 部分 */
+#culture .part {
     margin-top: 60px;
+    position: relative;
+}
+#culture .part:before {
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#culture .part-1:before {
+    right: 100%;
+    background-image: url(../img/economy/b.png);
+}
+
+#culture .part-2:before {
+    left: 100%;
+    background-image: url(../img/economy/g.png);
 }
 
 /* 标题 */
