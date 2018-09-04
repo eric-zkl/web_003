@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">
+                <a class="navbar-brand" href="landing.html">
                     <!-- Logo -->
                     <img class="logo" alt="Logo" src="../img/logo.png">
                 </a>
@@ -76,7 +76,7 @@
     <section id="special_economic_zone" class="container">
         <h1>经济成果——看广西</h1>
         <div class="row">
-            <div class="col-md-4 part">
+            <div class="col-md-4 part part-1">
                 <div class="img-wrapper">
                     <div class="img" style="background-image: url(../img/difficulty/beibuwan.gif);"></div>
                 </div>
@@ -85,7 +85,7 @@
                 <p>国家批准实施《广西北部湾经济区发展规划》，规划期为2006—2020年。广西北部湾经济区是我国西部大开发和面向东盟开放合作的重点地区。设立广西北部湾经济区，是国家实施西部大开发战略、促进广西开放发展、推动区域协调发展的重大决策部署。北部湾经济区上升为国家战略，为北部湾经济区带来重大历史性机遇，是广西改革开放历史进程的一件大事。</p>
                 <a class="button button-fullradius" href="article/beibuwan.html">了解更多</a>
             </div>
-            <div class="col-md-4 part">
+            <div class="col-md-4 part part-2">
                 <div class="img-wrapper">
                     <div class="img" style="background-image: url(../img/economy/dongmeng.gif);"></div>
                 </div>
@@ -94,7 +94,7 @@
                 <p>“东盟”是“东南亚国家联盟”,到2002年止，东盟共有十个成员国。自由贸易区的建成，将会创造一个拥有18亿消费者、近2万亿美元国内生产总值、1.2万亿美元贸易总量的经济区。按人口算，这将是世界上最大的自由贸易区；从经济规模上看，将是仅次于欧盟和北美自由贸易区的全球第三大自由贸易区，由中国和东盟10国共创的世界第三大自由贸易区，是发展中国家组成的最大的自由贸易区。</p>
                 <a class="button button-fullradius" href="article/dongmeng.html">了解更多</a>
             </div>
-            <div class="col-md-4 part">
+            <div class="col-md-4 part part-3">
                 <div class="img-wrapper">
                     <div class="img" style="background-image: url(../img/economy/zhujiang.jpg);"></div>
                 </div>
@@ -296,7 +296,37 @@
     <script>
       panoMain(2)
     </script>
-
+    <!-- 滚动动画 -->
+    <script src="../js/jquery.smoove.min.js"></script>
+    <script type="text/javascript">
+        $("#special_economic_zone .part-1").smoove({
+          offset  : '10%',
+          scale : '0.5',
+          moveX  : '-100px',
+        });
+        
+        $("#special_economic_zone .part-2").smoove({
+          offset  : '10%',
+          scale : '0.5',
+        });
+        
+        $("#special_economic_zone .part-3").smoove({
+          offset  : '10%',
+          scale : '0.5',
+          moveX  : '100px',
+        });
+        
+        $(".pic-wall .img").smoove({
+          offset  : '10%',
+          rotateX : '45deg',
+          scale : '0.3',
+        });
+        
+        $("#culture>.row>.col-md-6").smoove({
+          moveY  : '50px',
+          scale : '0.7',
+        });
+    </script>
 </body>
 
 </html>
