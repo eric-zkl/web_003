@@ -1,0 +1,142 @@
+<!-- 
+    关于我们
+
+    作者：cyl
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>关于我们</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+    <link rel="icon" href="../img/logo.png">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="landing.html">
+                    <img class="logo" alt="Logo" src="../img/logo.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="economy.html">五彩八桂</a></li>
+                    <li><a href="difficulty.html">改革攻坚</a></li>
+                    <li><a href="humanity.html">时代先锋</a></li>
+                    <li><a href="discuss.html">共话改革</a></li>
+                    <li><a href="plan.html">继续前进</a></li>
+                    <li class="active"><a href="about.html">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a id="goto_cn" href="#">中文</a></li>
+                            <li><a id="goto_en" href="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 轮播页面 -->
+            <div class="swiper-slide img" style="background-image:url(../img/about/1.jpg)">
+                <div class="text">
+                    <div class="name">方文涛，周治</div>
+                    <div class="msg">（指导老师）</div>
+                    <div class="msg">团队合作，各尽其职</div>
+                </div>
+            </div>
+            <!-- 轮播页面 -->
+            <div class="swiper-slide img" style="background-image:url(../img/about/2.jpg)">
+                <div class="text">
+                    <div class="name">蒋秋婷</div>
+                    <div class="msg">读万卷书，行万里路</div>
+                </div>
+            </div>
+            <!-- 轮播页面 -->
+            <div class="swiper-slide img" style="background-image:url(../img/about/3.jpg)">
+                <div class="text">
+                    <div class="name">黄诗捷</div>
+                    <div class="msg">每一天都是崭新的一天</div>
+                </div>
+            </div>
+            <!-- 轮播页面 -->
+            <div class="swiper-slide img" style="background-image:url(../img/about/4.jpg)">
+                <div class="text">
+                    <div class="name">陈永乐</div>
+                    <div class="msg">保持好奇，不断探索新的世界</div>
+                </div>
+            </div>
+        </div>
+        <!--左箭头-->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <!--右箭头-->
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <div class="container">
+            <!-- 网站地图 -->
+            <ul class="sitemap">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="economy.html">五彩八桂</a></li>
+                <li><a href="difficulty.html">改革攻坚</a></li>
+                <li><a href="humanity.html">时代先锋</a></li>
+                <li><a href="discuss.html">共话改革</a></li>
+                <li><a href="plan.html">发展新篇</a></li>
+            </ul>
+            <!-- 版权声明 -->
+            <div class="copyright">
+                <a href="about.html">© 广西民族大学相思湖学院 · 收割机队</a>
+            </div>
+        </div>
+    </footer>
+    <!-- bootcss代码库 -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 基本脚本库 -->
+    <script type="text/javascript" src="../js/base.js"></script>
+    <!-- Swiper JS -->
+    <script src="../js/swiper.min.js"></script>
+    <!-- 初始化 Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        speed: 1000,
+        autoplay: {
+            disableOnInteraction: false,
+        },
+        loop: true,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+    });
+    </script>
+</body>
+</html>
