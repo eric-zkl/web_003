@@ -65,9 +65,6 @@
     </nav>
     <!-- 头版大图 -->
     <section class="top-pic" id="scene"></section>
-    <!--<section class="top-pic">-->
-        <!--<img src="../img/dminfo.jpg">-->
-    <!--</section>-->
     <!-- 深化改革 -->
     <section class="container">
         <h1>人民网</h1>
@@ -135,71 +132,9 @@
         </div>
     </section>
     <!-- 扶贫 -->
-    <section>
-        <div class="container">
-            <h1>扶贫有“方”</h1>
-        </div>
-        <div id="aid_the_poor">
-            <!-- 版块01 -->
-            <div class="row nomargin part part-1">
-                <!-- 文本 -->
-                <div class="col-sm-6 text">
-                    <!-- 标题 -->
-                    <h2>二级标题</h2>
-                    <!-- 段落 -->
-                    <p>广西是集老 少 边 山 穷于一体的全国脱贫攻坚主战场之一，广西壮族自治区党委政府，坚决贯彻落实中央各项决策部署，主动担当，积极作为，把总书记最牵挂的事，牢记心头，全区上下凝心聚力，克难攻坚，脱贫取得了巨大成就。</p>
-                </div>
-                <!-- 视频包装 -->
-                <div class="col-sm-6 col-xs-12 video-wrapper">
-                    <!-- 视频 -->
-                    <video controls="controls">
-                        <source src="../video/300.mp4" type="video/mp4">
-                    </video>
-                    <!-- 三角形（指示器） -->
-                    <div class="hidden-xs delta delta-left"></div>
-                    <div class="visible-xs-block delta delta-top"></div>
-                </div>
-            </div>
-            <div class="row nomargin">
-                <!-- 版块02 -->
-                <div class="col-md-6 col-sm-12 part part-2">
-                    <div class="row">
-                        <!-- 文本 -->
-                        <div class="col-sm-6 col-sm-push-6 col-md-push-0  text">
-                            <!-- 标题 -->
-                            <h2>落实脱贫重要举措——打赢脱贫攻坚战</h2>
-                           <!-- 文本 -->
-                            <p>本次约谈是贯彻落实习近平总书记关于脱贫攻坚考核评估指示精神的重要举措，是压紧压实攻坚责任、提升脱贫质量的具体行动。要全面深刻认识这次约谈，把压力转为动力，迅速扭转脱贫攻坚工作的被动局面。要针对国家和自治区反馈的问题，主动认领、举一反三，从严从实抓好问题整改。要坚决防止脱贫攻坚工作中出现形式主义、官僚主义、弄虚作假问题，以良好的作风扎实做好各项工作。要把脱贫攻坚作为头等大事和第一民生工程，扎实做好产业扶贫、易地扶贫搬迁、教育扶贫、医疗扶贫等重点工作，坚决打赢脱贫攻坚战。</p>
-                        </div>
-                        <!-- 图片 -->
-                        <div class="col-sm-6 col-sm-pull-6 col-md-pull-0 img" style="background-image: url(../img/difficulty/tuopin1.jpg);">
-                            <!-- 三角形（指示器） -->
-                            <div class="hidden-xs delta delta-left"></div>
-                            <div class="visible-xs-block delta delta-top"></div>
-                            <div class="visible-sm-block delta delta-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 版块03 -->
-                <div class="col-md-6 col-sm-12 part part-3">
-                    <div class="row">
-                        <!-- 文本 -->
-                        <div class="col-sm-6 text">
-                            <!-- 标题 -->
-                            <h2>助力扶贫攻坚战——增加人民获得感</h2>
-                            <!-- 标题 -->
-                            <p>　交通运输是贫困地区脱贫致富的重要保障。多年来，广西攻坚克难，勇于担当，全力以赴推进交通扶贫脱贫攻坚。农村交通基础设施建设在扶贫脱贫攻坚工作中起着基础支撑作用，是实现精准扶贫、精准脱贫的先手棋，是破解贫困地区经济社会发展瓶颈的关键举措。广西财政把大力支持农村交通扶贫脱贫攻坚战作为深入学习贯彻习近平总书记视察广西重要讲话精神的重要举措，加快构建农村“外通内联、通村畅乡、班车到村、安全便捷”的交通运输网络，提升交通运输基本公共服务均等化水平，不断增加人民群众的“获得感”，提高贫困地区脱贫致富能力。</p>
-                        </div>
-                        <!-- 图片 -->
-                        <div class="col-sm-6 img" style="background-image: url(../img/difficulty/huodegan.png);">
-                            <!-- 三角形（指示器） -->
-                            <div class="hidden-xs delta delta-left"></div>
-                            <div class="visible-xs-block delta delta-top"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="container">
+        <h1>扶贫有“方”</h1>
+        <div id="menuDiv"></div>
     </section>
     <!-- 网上政府 -->
     <section class="container">
@@ -351,6 +286,11 @@
     <script>
       panoMain(3)
     </script>
+    <script type="text/javascript" src="../js/three.min.js"></script>
+    <script type="text/javascript">
+        var img_path = '../img/difficulty/menu_cn/';
+    </script>
+    <script type="text/javascript" src="../js/menu3d.js"></script>
     <!-- 滚动动画 -->
     <script src="../js/jquery.smoove.min.js"></script>
     <script type="text/javascript">
@@ -381,6 +321,10 @@
           offset  : '10%',
           transformOrigin : '50% 0',
           scale : '1, 0',
+        });
+        $("#menuDiv").smoove({
+          offset  : '10%',
+          scale : '0.3',
         });
     </script>
 </body>

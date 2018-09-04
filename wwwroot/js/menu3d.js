@@ -4,7 +4,10 @@ var camera, scene, raycaster, renderer;
 var mouse = new THREE.Vector2(0,-1), INTERSECTED;
 var obj, objs = [], currentIndex = 1 //获取得到第几个
 var radius = 100, theta = 0;
-var sum = 5  //总共图片数量
+
+if (typeof(sum) == 'undefined') {
+  sum = 4  //总共图片数量
+}
 
 init();
 animate();
@@ -99,8 +102,8 @@ function init() {
   container.addEventListener( 'mousedown', onDocumentMouseClic, false );
   container.addEventListener( 'mouseout', function() {
     if(!currentIndex) return
-    mouse.x = 99;
-    mouse.y = 99;
+    mouse.x = 9999;
+    mouse.y = 9999;
   }, false );
 
   //
@@ -126,7 +129,7 @@ function onDocumentMouseMove( event ) {
   var tx =  ( event.clientX / window.innerWidth ) * 2 - 1;
   var ty = - ( event.clientY / window.innerHeight ) * 2 + 1;
   // if(tx > container.offsetWidth || ty < container.offsetHeight) return
-  console.log(tx, ty, container.offsetHeight)
+  // console.log(tx, ty, container.offsetHeight)
 
   mouse.x = tx
   mouse.y = ty
@@ -192,5 +195,5 @@ function render() {
 function onDocumentMouseClic () {
   if(!currentIndex) return
   window.location.href = img_url[currentIndex - 1];
-  console.log('dianji ', currentIndex)
+  // console.log('dianji ', currentIndex)
 }
