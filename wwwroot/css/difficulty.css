@@ -66,7 +66,12 @@
 /* 列表条目 */
 #gov_online li {
 	padding: 24px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-transition: background 0.5s;
+	-o-transition: background 0.5s;
 	transition: background 0.5s;
 }
 #gov_online li:hover {
@@ -77,15 +82,27 @@
 #gov_online .icon {
 	width: 60px;
 	height: 60px;
-	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
 }
 
 /* 文本 */
 #gov_online .text {
 	margin-left: 24px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
 
@@ -114,8 +131,14 @@
 #ecology_tab .nav-tabs {
 	margin: 36px 8px;
 	border: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 /* 标签按钮 */
@@ -128,6 +151,8 @@
 	border: 1px #333 solid;
     border-radius: 9999999999999px;
     display: inline-block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 #ecology_tab .tab-button:hover, #ecology_tab .active .tab-button {
@@ -138,20 +163,26 @@
 
 /* 标签内容 */
 #ecology_tab .tab-content {
-	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
 }
 
 /* 版块 */
 #ecology_tab .fade{
 	background: #f8f8f8;
-	transform-style: preserve-3d;
-	transform: rotateY(5deg);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transform: rotateY(5deg);
+	        transform: rotateY(5deg);
+	-webkit-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
 	transition: all 0.5s ;
 }
 
 /* 版块进入 */
 #ecology_tab .fade.in{
-	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	        transform: rotateY(0deg);
 }
 
 /*  */
@@ -173,6 +204,8 @@
 	border-radius: 0;
 	color: #fff;
 	background: #9FCB28;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 #ecology_tab .button:hover {
@@ -183,6 +216,8 @@
 /* 了解更多按钮的图标 */
 #ecology_tab .button .glyphicon {
 	margin-left: 8px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 #ecology_tab .button:hover .glyphicon {

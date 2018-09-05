@@ -1,9 +1,9 @@
 /*
-	时代先锋专题样式表
+    时代先锋专题样式表
 
-	作者：cyl
-	创建日期：2018-08-16 17:38:34
-	最后修改时间：2018-09-02 13:13:38
+    作者：cyl
+    创建日期：2018-08-16 17:38:34
+    最后修改时间：2018-09-02 13:13:38
  */
 
 /************ 中央综合推荐 ************/
@@ -34,6 +34,8 @@
     top: 0;
     bottom: 0;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 #human .row>.bg-to-right {
@@ -58,16 +60,26 @@
     color: #444;
     margin: 16px 0 36px;
     font-weight: bold;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 /* 姓名 */
 #human h2 .name {
     width: 100%;
     text-align: center;
-    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
 }
 
 /* 标签 */
@@ -101,8 +113,14 @@
 #mien_tab .nav-tabs {
     margin: 60px 0;
     border: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* 标签 */
@@ -114,6 +132,8 @@
     border-radius: 0;
     background-color: #665094;
     opacity: 0.6;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 #mien_tab .tab-label:hover, #mien_tab .active .tab-label {
@@ -123,13 +143,21 @@
 
 /* 标签页 */
 #mien_tab .tab-pane {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 
 /* 标签页包装 */
 #mien_tab .tab-pane-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 /* 标签页中的图片 */
@@ -137,7 +165,9 @@
     width: 50%;
     height: 300px;
     background-color: #eee;
-    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
 }
 
 /* 标签页中的卡片 */
@@ -145,7 +175,9 @@
     width: 60%;
     margin-top: 36px;
     margin-left: -10%;
-    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
     background: #665094;
 }
 
@@ -159,6 +191,8 @@
 }
 #mien_tab .bg {
     z-index: -1;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
     transition: background 0.5s;
 }
 #mien_tab .bg:after {

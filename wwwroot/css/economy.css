@@ -20,10 +20,16 @@
 /* 图片 */
 #special_economic_zone .part .img {
     height: 100%;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
     transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
 }
 #special_economic_zone .part:hover .img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /* 标题 */
@@ -45,6 +51,8 @@
     content: "";
     background: #999;
     display: block;
+    -webkit-transition: width 0.8s;
+    -o-transition: width 0.8s;
     transition: width 0.8s;
 }
 #special_economic_zone .part:hover hr:after {
@@ -54,6 +62,8 @@
 /* 段落 */
 #special_economic_zone .part p {
     opacity: 0.86;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 #special_economic_zone .part:hover p {
@@ -64,6 +74,8 @@
 #special_economic_zone .part .button {
     margin: 16px 0;
     opacity: 0.5;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
     transition: all 0.8s;
 }
 #special_economic_zone .part:hover .button {
@@ -99,9 +111,21 @@
     background: rgba(0,0,0,0.3);
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
     overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: opacity 1s, color 0.8s;
+    -o-transition: opacity 1s, color 0.8s;
     transition: opacity 1s, color 0.8s;
 }
 .pic-wall .img:hover .text {

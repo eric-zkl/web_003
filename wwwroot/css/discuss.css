@@ -31,15 +31,26 @@
 
 /* 版块 */
 #img_wall .part {
+	-webkit-transition: background 0.5s;
+	-o-transition: background 0.5s;
 	transition: background 0.5s;
 	background: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 
 /* 版块内嵌行 */
 #img_wall .part>.row {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 
 /* 图片 */
@@ -48,6 +59,8 @@
 	padding: 0;
 	opacity: 0.8;
 	position: relative;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
 #img_wall .part:hover .img {
@@ -61,6 +74,8 @@
 	border: 12px solid;
 	position: absolute;
 	border-color: #fff;
+	-webkit-transition: border-color 0.5s;
+	-o-transition: border-color 0.5s;
 	transition: border-color 0.5s;
 }
 #img_wall .part .delta-left {
@@ -112,6 +127,8 @@
 	padding: 40px 0;
 	color: #fff;
 	background-color: rgba(234, 94, 58, 0.8);
+	-webkit-transition: background 0.5s;
+	-o-transition: background 0.5s;
 	transition: background 0.5s;
 }
 #laoganbu .card:hover {
@@ -126,8 +143,12 @@
 /************** 评论 **************/
 /* 评论 */
 .comment {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
 }
 
 /* 时间线 */
@@ -136,7 +157,9 @@
 	margin: 0 8px;
 	background: red;
 	position: relative;
-	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
 }
 .comment .timeline:before {
 	content: "";
@@ -148,29 +171,47 @@
 	border-radius: 99999999999px;
 	display: block;
 	position: absolute;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .comment:hover .timeline:before {
 	background: red;
-	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	        transform: scale(1.5);
 }
 
 /* 文本包装 */
 .comment .text-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	transform-origin: 0 42px;
+	-webkit-transform-origin: 0 42px;
+	    -ms-transform-origin: 0 42px;
+	        transform-origin: 0 42px;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-o-transition: transform 0.5s;
 	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .comment .text-wrapper:before {
 	content: "";
 	margin-top: 34px;
 	border: transparent 8px solid;
 	border-right-color: #eee;
-	flex-shrink: 0;
-	align-self: flex-start;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
 }
 .comment:hover .text-wrapper {
-	transform: rotate3d(15,15,0,10deg);
+	-webkit-transform: rotate3d(15,15,0,10deg);
+	        transform: rotate3d(15,15,0,10deg);
 }
 
 /* 文本 */

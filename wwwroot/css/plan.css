@@ -32,6 +32,8 @@
     top: 0;
     bottom: 0;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 #news_wall .part-wrapper>.bg-to-right {
@@ -92,6 +94,9 @@
 .tab-timeline .nav-tabs {
 	margin: 24px 0;
 	padding: 16px 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	border: none;
 }
@@ -99,7 +104,10 @@
 /* 标签栏条目 */
 .tab-timeline .nav-tabs>li {
 	display: block;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 
 /* 标签 */
@@ -109,9 +117,17 @@
 	border: none;
 	color: rgba(0,0,0,0.5);
 	text-decoration: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .tab-timeline .nav-tabs>li>a:hover, .tab-timeline .nav-tabs>li>a:focus {
 	background: unset;
@@ -141,9 +157,18 @@
 	width: 100%;
 	position: absolute;
 	top: 7px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .tab-timeline .nav-tabs .time:before, .tab-timeline .nav-tabs .time:after {
 	content: "";
@@ -169,6 +194,8 @@
 	width: 15px;
 	border: red 1px solid;
 	border-radius: 999999999999px;
+	-webkit-transition: background 0.3s;
+	-o-transition: background 0.3s;
 	transition: background 0.3s;
 }
 
@@ -220,6 +247,8 @@
 	margin: 0;
 	padding: 0;
 	border: rgba(0,0,0,0.2) 1px solid;
+	-webkit-transition: border 0.3s;
+	-o-transition: border 0.3s;
 	transition: border 0.3s;
 }
 #traffic ul:hover {
@@ -230,13 +259,18 @@
 #traffic li {
 	padding: 24px;
 	list-style: none;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
 	transition: all 0.2s;
 }
 #traffic li:hover {
 	color: #fff;
 	background: #266083;
-	transform: translateY(-8px);
-	box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+	-webkit-transform: translateY(-8px);
+	    -ms-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+	        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 /* 标题 */
@@ -254,9 +288,18 @@
 #traffic .see-more {
 	padding: 0;
 	background: #eee;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 /* 链接 */
@@ -265,7 +308,12 @@
 	color: #337ab7;
 	opacity: 0.7;
 	text-decoration: none;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
 	transition: color 0.3s;
 }
 #traffic .see-more a:hover {
@@ -284,9 +332,13 @@
 
 /* 聊天对话 */
 .chat-dialogue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     margin: 18px 0;
-	perspective: 5000px;
+	-webkit-perspective: 5000px;
+	        perspective: 5000px;
 }
 
 /* 聊天头像 */
@@ -294,7 +346,9 @@
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
     background-color: #ddd; /* cyl - TODO: only dome */
 }
 
@@ -302,27 +356,50 @@
 .chat-bubble {
     max-width: 65%;
     margin: 0 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .chat-dialogue-left, .chat-dialogue-left .chat-bubble {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .chat-dialogue-right, .chat-dialogue-right .chat-bubble {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 .chat-dialogue-left .chat-bubble {
-	transform-origin: 0;
+	-webkit-transform-origin: 0;
+	    -ms-transform-origin: 0;
+	        transform-origin: 0;
 }
 .chat-dialogue-right .chat-bubble {
-	transform-origin: 100% 0;
+	-webkit-transform-origin: 100% 0;
+	    -ms-transform-origin: 100% 0;
+	        transform-origin: 100% 0;
 }
 .chat-dialogue-left .chat-bubble:hover {
-	transform: rotate3d(15,15,0,10deg);	
+	-webkit-transform: rotate3d(15,15,0,10deg);
+	        transform: rotate3d(15,15,0,10deg);	
 }
 .chat-dialogue-right .chat-bubble:hover {
-	transform: rotate3d(15,-15,0,10deg);	
+	-webkit-transform: rotate3d(15,-15,0,10deg);
+	        transform: rotate3d(15,-15,0,10deg);	
 }
 
 /* 姓名 */
@@ -330,7 +407,10 @@
 	width: 100%;
 	margin: 8px 0;
 	opacity: 0.7;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 .chat-dialogue-left .name {
 	text-align: left;
@@ -349,10 +429,12 @@
 .chat-dialogue-left .chat-msg {
     background-color: #1987DC;
     border-top-left-radius: 0;
-	box-shadow: 0 6px 0 #3279AF;
+	-webkit-box-shadow: 0 6px 0 #3279AF;
+	        box-shadow: 0 6px 0 #3279AF;
 }
 .chat-dialogue-right .chat-msg {
     background-color: #f3cb43;
     border-top-right-radius: 0;
-	box-shadow: 0 6px 0 #e0bb3c;
+	-webkit-box-shadow: 0 6px 0 #e0bb3c;
+	        box-shadow: 0 6px 0 #e0bb3c;
 }
