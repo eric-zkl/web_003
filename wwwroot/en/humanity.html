@@ -65,8 +65,14 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- 头版大图 -->
-    <section class="top-pic">
-        <img src="../img/dminfo.jpg">
+    <section class="top-pic" id="scene">
+        <div class="mask">
+            <div class="container text">
+                <img class="border" src="../img/title_border_left.png">
+                <span class="title">Time pioneer</span>
+                <img class="border" src="../img/title_border_right.png">
+            </div>
+        </div>
     </section>
     <!-- 中央综合推荐 -->
     <section class="container">
@@ -266,6 +272,13 @@
             prevEl: '.button-prev',
         },
     });
+    </script>
+    <!-- 全景图 -->
+    <script src="../js/three.min.js"></script>
+    <script src="../js/OrbitControls.js"></script>
+    <script src="../js/dest.js"></script>
+    <script>
+        panoMain(4)
     </script>
     <!-- 滚动动画 -->
     <script src="../js/jquery.smoove.min.js"></script>
